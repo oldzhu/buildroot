@@ -350,6 +350,7 @@ define HOST_QEMU_CONFIGURE_CMDS
 		--disable-vnc-png \
 		--disable-vnc-sasl \
 		--disable-tests \
+		--enable-debug \
 		$(HOST_QEMU_OPTS)
 endef
 
