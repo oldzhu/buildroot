@@ -117,6 +117,7 @@ GLIBC_CONF_ENV += ac_cv_prog_MAKE="$(BR2_MAKE)"
 # built with -O2, so we pass our own CFLAGS and CXXFLAGS below.
 define GLIBC_CONFIGURE_CMDS
 	mkdir -p $(@D)/build
+	$(GLIBC_PKGDIR)/add-build-id.sh $(@D)
 	# Do the configuration
 	(cd $(@D)/build; \
 		$(TARGET_CONFIGURE_OPTS) \
@@ -135,7 +136,7 @@ define GLIBC_CONFIGURE_CMDS
 		--disable-werror \
 		--without-gd \
 		--enable-kernel=$(call qstrip,$(BR2_TOOLCHAIN_HEADERS_AT_LEAST)) \
-		--with-headers=$(STAGING_DIR)/usr/include)
+		--with-headers=$(STAGING_DIR)/usr/include) 
 	$(GLIBC_ADD_MISSING_STUB_H)
 endef
 
