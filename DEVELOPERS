@@ -124,10 +124,7 @@ F:	package/python-docopt/
 N:	Anders Darander <anders@chargestorm.se>
 F:	package/ktap/
 
-N:	André Hentschel <nerv@dawncrow.de>
-F:	board/freescale/imx8qxpmek/
-F:	configs/freescale_imx8qxpmek_defconfig
-F:	package/freescale-imx/imx-sc-firmware/
+N:	André Zwing <nerv@dawncrow.de>
 F:	package/libkrb5/
 F:	package/openal/
 F:	package/p7zip/
@@ -528,7 +525,7 @@ F:	package/rtl8821au/
 F:	package/runc/
 F:	package/tini/
 
-N:	Christophe Priouzeau <christophe.priouzeau@st.com>
+N:	Christophe Priouzeau <christophe.priouzeau@foss.st.com>
 F:	board/stmicroelectronics/stm32f429-disco/
 F:	board/stmicroelectronics/stm32f469-disco/
 F:	configs/stm32f429_disco_defconfig
@@ -1267,11 +1264,6 @@ F:	package/sysrepo/
 
 N:	Jan Pedersen <jp@jp-embedded.com>
 F:	package/zip/
-
-N:	Jan Viktorin <viktorin@rehivetech.com>
-F:	package/python-pexpect/
-F:	package/python-ptyprocess/
-F:	package/zynq-boot-bin/
 
 N:	Jarkko Sakkinen <jarkko.sakkinen@intel.com>
 F:	package/quota/
@@ -2791,9 +2783,6 @@ N:	Yair Ben Avraham <yairba@protonmail.com>
 F:	package/casync/
 F:	package/gloox/
 F:	package/tpm2-pkcs11/
-
-N:	Yann CARDAILLAC <ycardaillac@sepro-group.com>
-F:	package/open62541/
 
 N:	Yann E. MORIN <yann.morin.1998@free.fr>
 F:	board/friendlyarm/nanopi-neo/
