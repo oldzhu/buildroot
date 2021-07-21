@@ -498,6 +498,9 @@ F:	package/libsvg-cairo/
 N:	Cédric Chépied <cedric.chepied@gmail.com>
 F:	package/znc/
 
+N:	Charles Hardin <ckhardin@gmail.com>
+F:	package/alsa-plugins/
+
 N:	Chris Packham <judge.packham@gmail.com>
 F:	package/coremark/
 F:	package/coremark-pro/
@@ -2156,6 +2159,7 @@ F:	package/qt5/
 F:	package/quotatool/
 F:	package/racehound/
 F:	package/redir/
+F:	package/rtl8812au-aircrack-ng/
 F:	package/uredir/
 F:	package/wayland-utils/
 
@@ -2253,7 +2257,8 @@ F:	package/nanomsg/
 N:	Ramon Fried <rfried.dev@gmail.com>
 F:	package/bitwise/
 
-N:	Raphaël Mélotte <raphael.melotte@essensium.com>
+N:	Raphaël Mélotte <raphael.melotte@mind.be>
+F:	package/gumbo-parser/
 F:	package/jbig2dec/
 F:	package/mupdf/
 F:	package/python-boto3/

@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-SYSTEMD_VERSION = 249
+SYSTEMD_VERSION = 249.1
 SYSTEMD_SITE = $(call github,systemd,systemd-stable,v$(SYSTEMD_VERSION))
 SYSTEMD_LICENSE = LGPL-2.1+, GPL-2.0+ (udev), Public Domain (few source files, see README), BSD-3-Clause (tools/chromiumos)
 SYSTEMD_LICENSE_FILES = LICENSE.GPL2 LICENSE.LGPL2.1 README tools/chromiumos/LICENSE
@@ -57,6 +57,12 @@ SYSTEMD_DEPENDENCIES += acl
 SYSTEMD_CONF_OPTS += -Dacl=true
 else
 SYSTEMD_CONF_OPTS += -Dacl=false
+endif
+
+ifeq ($(BR2_PACKAGE_LESS),y)
+SYSTEMD_CONF_OPTS += -Durlify=true
+else
+SYSTEMD_CONF_OPTS += -Durlify=false
 endif
 
 ifeq ($(BR2_PACKAGE_LIBAPPARMOR),y)
