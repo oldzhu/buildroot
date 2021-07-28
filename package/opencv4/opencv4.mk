@@ -4,11 +4,13 @@
 #
 ################################################################################
 
-OPENCV4_VERSION = 4.5.1
+OPENCV4_VERSION = 4.5.3
 OPENCV4_SITE = $(call github,opencv,opencv,$(OPENCV4_VERSION))
 OPENCV4_INSTALL_STAGING = YES
 OPENCV4_LICENSE = Apache-2.0
 OPENCV4_LICENSE_FILES = LICENSE
+OPENCV4_CPE_ID_VENDOR = opencv
+OPENCV4_CPE_ID_PRODUCT = opencv
 OPENCV4_SUPPORTS_IN_SOURCE_BUILD = NO
 
 OPENCV4_CXXFLAGS = $(TARGET_CXXFLAGS)
