@@ -1835,6 +1835,7 @@ F:	package/raptor/
 F:	package/rng-tools/
 F:	package/rsyslog/
 F:	package/setools/
+F:	package/sloci-image/
 F:	package/smcroute/
 F:	package/tclap/
 F:	package/tini/
@@ -1845,6 +1846,7 @@ F:	package/wpa_supplicant/
 F:	package/wireless_tools/
 F:	package/xen/
 F:	package/xml-security-c/
+F:	support/testing/tests/fs/test_oci.py
 F:	support/testing/tests/package/br2-external/openjdk/
 F:	support/testing/tests/package/test_openjdk.py
 F:	support/testing/tests/package/test_opkg/
@@ -2435,6 +2437,7 @@ F:	package/curlpp/
 F:	package/daq/
 F:	package/libgdiplus/
 F:	package/pimd/
+F:	package/sloci-image/
 F:	package/snort/
 F:	package/stella/
 F:	package/tio/
@@ -2480,6 +2483,10 @@ F:	package/vlc/
 F:	package/xscreensaver/
 F:	package/zmqpp/
 F:	package/zyre/
+
+N:	Simon Doppler <dopsi@dopsi.ch>
+F:	board/seeed/
+F:	configs/stm32mp157c_odyssey_defconfig
 
 N:	Spenser Gilliland <spenser@gillilanding.com>
 F:	arch/Config.in.microblaze
