@@ -1151,6 +1151,8 @@ F:	package/json-glib/
 
 N:	Hervé Codina <herve.codina@bootlin.com>
 F:	package/dtbocfg/
+F:	package/libdbi/
+F:	package/libdbi-drivers/
 F:	package/lua-augeas/
 F:	support/testing/tests/package/test_dtbocfg.py
 F:	support/testing/tests/package/test_lua_augeas.py
@@ -1247,6 +1249,7 @@ F:	package/python-aiozipkin/
 F:	package/python-argon2-cffi/
 F:	package/python-async-lru/
 F:	package/python-async-timeout/
+F:	package/python-bidict/
 F:	package/python-brotli/
 F:	package/python-cbor2/
 F:	package/python-cchardet/
@@ -1988,6 +1991,8 @@ F:	configs/galileo_defconfig
 
 N:	Nicolas Carrier <nicolas.carrier@orolia.com>
 F:	package/bmap-tools/
+F:	package/libdbi/
+F:	package/libdbi-drivers/
 F:	package/lua-augeas/
 F:	package/php-xdebug/
 F:	package/python-augeas/
