@@ -17,6 +17,8 @@ FRR_DEPENDENCIES = host-frr readline json-c \
 
 HOST_FRR_DEPENDENCIES = host-flex host-bison host-elfutils host-python3
 
+FRR_CONF_ENV = ac_cv_lib_cunit_CU_initialize_registry=no
+
 FRR_CONF_OPTS = --with-clippy=$(HOST_DIR)/bin/clippy \
 	--sysconfdir=/etc/frr \
 	--localstatedir=/var/run/frr \
@@ -29,10 +31,23 @@ FRR_CONF_OPTS = --with-clippy=$(HOST_DIR)/bin/clippy \
 	--enable-user=frr \
 	--enable-group=frr \
 	--enable-vty-group=frrvty \
-	--disable-capabilities \
 	--enable-fpm
 
 HOST_FRR_CONF_OPTS = --enable-clippy-only
+
+ifeq ($(BR2_PACKAGE_LIBCAP),y)
+FRR_DEPENDENCIES += libcap
+FRR_CONF_OPTS += --enable-capabilities
+else
+FRR_CONF_OPTS += --disable-capabilities
+endif
+
+ifeq ($(BR2_PACKAGE_ZEROMQ),y)
+FRR_DEPENDENCIES += zeromq
+FRR_CONF_OPTS += --enable-zeromq
+else
+FRR_CONF_OPTS += --disable-zeromq
+endif
 
 ifeq ($(BR2_TOOLCHAIN_HAS_LIBATOMIC),y)
 FRR_CONF_ENV += LIBS=-latomic
