@@ -313,6 +313,7 @@ F:	package/apg/
 F:	package/apr/
 F:	package/apr-util/
 F:	package/bcg729/
+F:	package/bento4/
 F:	package/bitcoin/
 F:	package/bluez-tools/
 F:	package/boinc/
@@ -1288,6 +1289,7 @@ F:	package/python-tinycss2/
 F:	package/python-weasyprint/
 F:	package/python-yarl/
 F:	package/python-zopfli/
+F:	package/zchunk/
 
 N:	James Knight <james.knight@collins.com>
 F:	package/atkmm/
@@ -2430,18 +2432,6 @@ F:	package/zziplib/
 F:	support/testing/tests/package/test_glxinfo.py
 F:	support/testing/tests/package/test_openssh.py
 F:	toolchain/
-
-N:	Ryan Barnett <ryan.barnett@collins.com>
-F:	package/atftp/
-F:	package/c-periphery/
-F:	package/miraclecast/
-F:	package/opkg/
-F:	package/opkg-utils/
-F:	package/python-pysnmp/
-F:	package/python-pysnmp-mibs/
-F:	package/python-tornado/
-F:	package/resiprocate/
-F:	package/websocketpp/
 
 N:	Ryan Wilkins <ryan@deadfrog.net>
 F:	package/biosdevname/
