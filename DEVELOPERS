@@ -906,6 +906,7 @@ F:	package/librsync/
 F:	package/libsoup/
 F:	package/libsoxr/
 F:	package/libupnp/
+F:	package/liburing/
 F:	package/libv4l/
 F:	package/libxslt/
 F:	package/mbedtls/
@@ -1021,7 +1022,6 @@ N:	Gaël Portay <gael.portay@collabora.com>
 F:	package/qt5/qt5virtualkeyboard/
 F:	package/qt5/qt5webengine/
 F:	package/qt5/qt5webkit/
-F:	package/qt5/qt5webkit-examples/
 
 N:	Gao Xiang <hsiangkao@aol.com>
 F:	package/erofs-utils/
@@ -1124,6 +1124,9 @@ F:	package/liquid-dsp/
 F:	package/pixiewps/
 F:	package/python-pybind/
 F:	package/reaver/
+F:	support/testing/tests/package/br2-external/python-pybind
+F:	support/testing/tests/package/sample_python_pybind.py
+F:	support/testing/tests/package/test_python_pybind.py
 
 N:	Guo Ren <ren_guo@c-sky.com>
 F:	arch/Config.in.csky
@@ -2800,6 +2803,9 @@ F:	package/openjdk/
 N:	Tzu-Jung Lee <roylee17@gmail.com>
 F:	package/dropwatch/
 F:	package/tstools/
+
+N:	Uladzimir Bely <wiselord1983@gmail.com>
+F:	package/python-mpd2/
 
 N:	Vadim Kochan <vadim4j@gmail.com>
 F:	package/brcm-patchram-plus/
