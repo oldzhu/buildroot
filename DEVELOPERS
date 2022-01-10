@@ -533,6 +533,7 @@ F:	package/fuse-overlayfs/
 F:	package/go/
 F:	package/gocryptfs/
 F:	package/mbpfan/
+F:	package/moby-buildkit/
 F:	package/mosh/
 F:	package/pkg-golang.mk
 F:	package/rtl8821au/
@@ -1093,9 +1094,11 @@ F:	package/harfbuzz/
 F:	package/libfuse3/
 F:	package/libnspr/
 F:	package/libnss/
+F:	package/mali-driver/
 F:	package/minicom/
 F:	package/nfs-utils/
 F:	package/python-uvloop/
+F:	package/rockchip-mali/
 F:	package/sunxi-mali-utgard/
 F:	package/sunxi-mali-utgard-driver/
 F:	package/trace-cmd/
@@ -1291,6 +1294,7 @@ F:	package/python-aiorwlock/
 F:	package/python-aiosignal/
 F:	package/python-aiozipkin/
 F:	package/python-argon2-cffi/
+F:	package/python-argon2-cffi-bindings/
 F:	package/python-async-lru/
 F:	package/python-async-timeout/
 F:	package/python-bidict/
@@ -1303,11 +1307,14 @@ F:	package/python-flatbuffers/
 F:	package/python-fonttools/
 F:	package/python-frozenlist/
 F:	package/python-greenlet/
+F:	package/python-installer/
 F:	package/python-janus/
 F:	package/python-logstash/
 F:	package/python-multidict/
+F:	package/python-pep517/
 F:	package/python-pycares/
 F:	package/python-pydyf/
+F:	package/python-pypa-build/
 F:	package/python-pyphen/
 F:	package/python-snappy/
 F:	package/python-sockjs/
@@ -3017,4 +3024,5 @@ F:	package/python-iniparse/
 F:	package/qjson/
 F:	package/quazip/
 F:	package/shapelib/
+F:	package/simple-mail/
 F:	package/tinc/

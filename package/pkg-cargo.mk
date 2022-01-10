@@ -20,14 +20,34 @@
 #
 ################################################################################
 
+PKG_COMMON_CARGO_ENV = \
+	CARGO_HOME=$(HOST_DIR)/share/cargo
+
 # __CARGO_TEST_CHANNEL_OVERRIDE_DO_NOT_USE_THIS is needed to allow
 # passing the -Z target-applies-to-host, which is needed together with
 # CARGO_TARGET_APPLIES_TO_HOST to fix build problems when target
 # architecture == host architecture.
+
+# __CARGO_TEST_CHANNEL_OVERRIDE_DO_NOT_USE_THIS="nightly" is to allow
+# using nighly features on stable releases, i.e features that are not
+# yet considered stable.
+#
+# CARGO_UNSTABLE_TARGET_APPLIES_TO_HOST="true" "enables the nightly
+# configuration option target-applies-to-host value to be set
+#
+# CARGO_TARGET_APPLIES_TO_HOST="false" is actually setting the value
+# for this feature, which we disable, to make sure builds where target
+# arch == host arch work correctly
 PKG_CARGO_ENV = \
-	CARGO_HOME=$(HOST_DIR)/share/cargo \
+	$(PKG_COMMON_CARGO_ENV) \
 	__CARGO_TEST_CHANNEL_OVERRIDE_DO_NOT_USE_THIS="nightly" \
-	CARGO_TARGET_APPLIES_TO_HOST="false"
+	CARGO_UNSTABLE_TARGET_APPLIES_TO_HOST="true" \
+	CARGO_TARGET_APPLIES_TO_HOST="false" \
+	CARGO_BUILD_TARGET="$(RUSTC_TARGET_NAME)" \
+	CARGO_TARGET_$(call UPPERCASE,$(RUSTC_TARGET_NAME))_LINKER=$(notdir $(TARGET_CROSS))gcc
+
+HOST_PKG_CARGO_ENV = \
+	$(PKG_COMMON_CARGO_ENV)
 
 ################################################################################
 # inner-cargo-package -- defines how the configuration, compilation and
@@ -84,11 +104,9 @@ define $(2)_BUILD_CMDS
 		$$($(2)_CARGO_ENV) \
 		cargo build \
 			--offline \
-			--target $$(RUSTC_TARGET_NAME) \
 			$$(if $$(BR2_ENABLE_DEBUG),--debug,--release) \
 			--manifest-path Cargo.toml \
 			--locked \
-			-Z target-applies-to-host \
 			$$($(2)_CARGO_BUILD_OPTS)
 endef
 else # ifeq ($(4),target)
@@ -97,7 +115,7 @@ define $(2)_BUILD_CMDS
 	$$(HOST_MAKE_ENV) \
 		RUSTFLAGS="$$(addprefix -C link-args=,$$(HOST_LDFLAGS))" \
 		$$(HOST_CONFIGURE_OPTS) \
-		$$(PKG_CARGO_ENV) \
+		$$(HOST_PKG_CARGO_ENV) \
 		$$($(2)_CARGO_ENV) \
 		cargo build \
 			--offline \
@@ -121,7 +139,6 @@ define $(2)_INSTALL_TARGET_CMDS
 		$$(PKG_CARGO_ENV) \
 		$$($(2)_CARGO_ENV) \
 		cargo install \
-			--target $$(RUSTC_TARGET_NAME) \
 			--offline \
 			--root $$(TARGET_DIR)/usr/ \
 			--bins \
@@ -139,7 +156,7 @@ define $(2)_INSTALL_CMDS
 	$$(HOST_MAKE_ENV) \
 		RUSTFLAGS="$$(addprefix -C link-args=,$$(HOST_LDFLAGS))" \
 		$$(HOST_CONFIGURE_OPTS) \
-		$$(PKG_CARGO_ENV) \
+		$$(HOST_PKG_CARGO_ENV) \
 		$$($(2)_CARGO_ENV) \
 		cargo install \
 			--offline \
