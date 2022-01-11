@@ -504,6 +504,12 @@ F:	package/libsvg-cairo/
 N:	Cédric Chépied <cedric.chepied@gmail.com>
 F:	package/znc/
 
+N:	Cédric Le Goater <clg@kaod.org>
+F:	board/qemu/ppc-bamboo/
+F:	board/qemu/ppc64le-powernv8/readme.txt
+F:	configs/qemu_ppc_bamboo_defconfig
+F:	configs/qemu_ppc64le_powernv8_defconfig
+
 N:	Charles Hardin <ckhardin@gmail.com>
 F:	package/alsa-plugins/
 
@@ -1183,9 +1189,6 @@ F:	package/linuxptp/
 F:	package/netopeer2/
 F:	package/sysrepo/
 
-N:	Henrique Camargo <henrique@henriquecamargo.com>
-F:	package/json-glib/
-
 N:	Hervé Codina <herve.codina@bootlin.com>
 F:	package/dtbocfg/
 F:	package/libdbi/
@@ -1585,10 +1588,12 @@ F:	package/paho-mqtt-c
 
 N:	Julien Olivain <ju.o@free.fr>
 F:	board/qmtech/zynq/
+F:	board/spike/
 F:	board/technexion/imx8mmpico/
 F:	board/technexion/imx8mpico/
 F:	configs/imx8mmpico_defconfig
 F:	configs/imx8mpico_defconfig
+F:	configs/spike_riscv64_defconfig
 F:	configs/zynq_qmtech_defconfig
 F:	package/fluid-soundfont/
 F:	package/fluidsynth/
@@ -1596,6 +1601,7 @@ F:	package/glslsandbox-player/
 F:	package/ptm2human/
 F:	package/python-distro/
 F:	package/python-pyalsa/
+F:	package/riscv-isa-sim/
 
 N:	Julien Viard de Galbert <julien@vdg.name>
 F:	package/dieharder/
