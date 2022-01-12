@@ -1190,16 +1190,21 @@ F:	package/netopeer2/
 F:	package/sysrepo/
 
 N:	Hervé Codina <herve.codina@bootlin.com>
+F:	package/alchemy/
 F:	package/dtbocfg/
 F:	package/libdbi/
 F:	package/libdbi-drivers/
+F:	package/libfutils/
+F:	package/libshdata/
 F:	package/lua-augeas/
 F:	package/modsecurity2/
 F:	package/php-apcu/
 F:	package/php-lua/
 F:	package/php-pam/
 F:	package/php-pecl-dbus/
+F:	package/ulog/
 F:	support/testing/tests/package/test_dtbocfg.py
+F:	support/testing/tests/package/test_libshdata.py
 F:	support/testing/tests/package/test_lua_augeas.py
 F:	support/testing/tests/package/test_php_apcu.py
 F:	support/testing/tests/package/test_php_lua.py
@@ -1997,6 +2002,7 @@ N:	Michael Nosthoff <buildroot@heine.tech>
 F:	package/grpc/
 F:	package/gtest/
 F:	package/libabseil-cpp/
+F:	package/networkd-dispatcher/
 F:	package/protobuf/
 F:	package/re2/
 
