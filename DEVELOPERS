@@ -971,6 +971,9 @@ N:	Floris Bos <bos@je-eigen-domein.nl>
 F:	package/ipmitool/
 F:	package/odhcploc/
 
+N:	Francis Laniel <flaniel@linux.microsoft.com>
+F:	package/pahole/
+
 N:	Francisco Gonzalez <gzmorell@gmail.com>
 F:	package/ser2net/
 
@@ -1605,6 +1608,7 @@ F:	package/fluidsynth/
 F:	package/glslsandbox-player/
 F:	package/ptm2human/
 F:	package/python-distro/
+F:	package/python-gnupg/
 F:	package/python-pyalsa/
 F:	package/riscv-isa-sim/
 
