@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-MONGODB_VERSION = 4.2.11
+MONGODB_VERSION = 4.2.18
 MONGODB_SITE = https://fastdl.mongodb.org/src
 MONGODB_SOURCE = mongodb-src-r$(MONGODB_VERSION).tar.gz
 
@@ -18,7 +18,7 @@ MONGODB_DEPENDENCIES = \
 	boost \
 	host-python3-cheetah \
 	host-python3-psutil \
-	host-python3-pyyaml \
+	host-python-pyyaml \
 	host-python3-regex \
 	host-python-requests \
 	host-scons \
