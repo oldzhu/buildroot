@@ -532,6 +532,7 @@ F:	package/python-pylibftdi/
 N:	Christian Stewart <christian@paral.in>
 F:	package/batman-adv/
 F:	package/containerd/
+F:	package/crun/
 F:	package/delve/
 F:	package/docker-cli/
 F:	package/docker-compose/
@@ -1551,6 +1552,7 @@ F:	package/erlang-p1-xmpp/
 F:	package/erlang-p1-yaml/
 F:	package/erlang-p1-yconf/
 F:	package/erlang-p1-zlib/
+F:	package/forge/
 F:	package/nginx-dav-ext/
 F:	package/vis-network/
 F:	package/vuejs/
@@ -2780,6 +2782,9 @@ F:	package/python-influxdb/
 
 N:	Sven Oliver Moll <svolli@svolli.de>
 F:	package/most/
+
+N:	TIAN Yuanhao <tianyuanhao3@163.com>
+F:	package/open-isns/
 
 N:	Theo Debrouwere <t.debrouwere@televic.com>
 F:	board/beagleboardx15/
