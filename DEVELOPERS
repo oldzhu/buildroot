@@ -533,6 +533,8 @@ F:	package/python-pylibftdi/
 
 N:	Christian Stewart <christian@paral.in>
 F:	package/batman-adv/
+F:	package/catatonit/
+F:	package/cni-plugins/
 F:	package/containerd/
 F:	package/crun/
 F:	package/delve/
@@ -778,6 +780,9 @@ N:	Edgar Bonet <bonet@grenoble.cnrs.fr>
 F:	board/acmesystems/acqua-a5/
 F:	configs/acmesystems_acqua_a5_256mb_defconfig
 F:	configs/acmesystems_acqua_a5_512mb_defconfig
+
+N:	Eero Aaltonen <eero.aaltonen@vaisala.com>
+F:	package/docopt-cpp/
 
 N:	Eloi Bail <eloi.bail@savoirfairelinux.com>
 F:	package/bayer2rgb-neon/
@@ -2784,6 +2789,9 @@ F:	package/most/
 N:	TIAN Yuanhao <tianyuanhao3@163.com>
 F:	package/open-isns/
 
+N:	Tan En De <ende.tan@starfivetech.com>
+F:	package/libkcapi/
+
 N:	Theo Debrouwere <t.debrouwere@televic.com>
 F:	board/beagleboardx15/
 F:	configs/beagleboardx15_defconfig
@@ -2983,6 +2991,10 @@ F:	support/testing/tests/core/test_root_password.py
 N:	Vincent Prince <vincent.prince.fr@gmail.com>
 F:	package/nss-myhostname/
 F:	package/utp_com/
+
+N:	Vincent Stehlé <vincent.stehle@arm.com>
+F:	board/qemu/aarch64-ebbr/
+F:	configs/qemu_aarch64_ebbr_defconfig
 
 N:	Vincent Stehlé <vincent.stehle@laposte.net>
 F:	board/bananapi/bananapi-m2-zero/
