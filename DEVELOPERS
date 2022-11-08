@@ -721,8 +721,6 @@ N:	David Pierret <david.pierret@smile.fr>
 F:	package/bat/
 
 N:	Davide Viti <zinosat@gmail.com>
-F:	board/friendlyarm/nanopi-r1/
-F:	configs/friendlyarm_nanopi_r1_defconfig
 F:	package/flann/
 F:	package/python-paho-mqtt/
 F:	package/qhull/
@@ -1004,10 +1002,6 @@ F:	configs/freescale_imx6ullevk_defconfig
 N:	Falco Hyfing <hyfinglists@gmail.com>
 F:	package/python-pymodbus/
 
-N:	Filip Skoneczny <fskoneczny@gmail.com>
-F:	board/sinovoip/m1-plus
-F:	configs/bananapi_m1_plus_defconfig
-
 N:	Florian Fainelli <f.fainelli@gmail.com>
 F:	package/cpulimit/
 
@@ -1221,10 +1215,6 @@ F:	support/testing/tests/package/test_python_scipy.py
 N:	Gustavo Heinz <gustavo@gsthnz.com>
 F:	package/python-m2crypto/
 
-N:	Gustavo Pimentel <gustavo.pimentel@synopsys.com>
-F:	configs/arm_juno_defconfig
-F:	board/arm/juno/
-
 N:	Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com>
 F:	board/terasic/de10nano_cyclone5/
 F:	configs/terasic_de10nano_cyclone5_defconfig
@@ -1309,36 +1299,23 @@ F:	board/amarula/
 F:	board/asus/
 F:	board/bananapi/
 F:	board/engicam/
-F:	board/friendlyarm/nanopi-a64/
-F:	board/friendlyarm/nanopi-neo2/
 F:	board/olimex/a33_olinuxino/
 F:	board/olimex/a64-olinuxino/
 F:	board/orangepi/orangepi-lite2/
 F:	board/orangepi/orangepi-one-plus
-F:	board/orangepi/orangepi-pc2/
-F:	board/orangepi/orangepi-prime/
-F:	board/orangepi/orangepi-win/
 F:	board/orangepi/orangepi-zero-plus2/
 F:	board/pine64/
-F:	configs/amarula_a64_relic_defconfig
 F:	configs/amarula_vyasa_rk3288_defconfig
 F:	configs/asus_tinker_rk3288_defconfig
-F:	configs/bananapi_m1_defconfig
-F:	configs/bananapi_m64_defconfig
 F:	configs/engicam_imx6qdl_icore_defconfig
 F:	configs/engicam_imx6qdl_icore_qt5_defconfig
 F:	configs/engicam_imx6qdl_icore_rqs_defconfig
 F:	configs/engicam_imx6ul_geam_defconfig
 F:	configs/engicam_imx6ul_isiot_defconfig
-F:	configs/friendlyarm_nanopi_a64_defconfig
-F:	configs/friendlyarm_nanopi_neo2_defconfig
 F:	configs/olimex_a33_olinuxino_defconfig
 F:	configs/olimex_a64_olinuxino_defconfig
 F:	configs/orangepi_lite2_defconfig
 F:	configs/orangepi_one_plus_defconfig
-F:	configs/orangepi_pc2_defconfig
-F:	configs/orangepi_prime_defconfig
-F:	configs/orangepi_win_defconfig
 F:	configs/orangepi_zero_plus2_defconfig
 F:	configs/pine64_defconfig
 F:	configs/pine64_sopine_defconfig
@@ -1795,8 +1772,6 @@ F:	package/ti-sgx-km/
 F:	package/ti-sgx-um/
 
 N:	Louis Aussedat <aussedat.louis@gmail.com>
-F:	board/friendlyarm/nanopi-neo-plus2/
-F:	configs/friendlyarm_nanopi_neo_plus2_defconfig
 F:	package/mfoc
 F:	package/libpam-nfc
 F:	package/python-dnspython/
@@ -1911,8 +1886,6 @@ F:	utils/config
 F:	utils/diffconfig
 
 N:	Marek Belisko <marek.belisko@open-nandra.com>
-F:	board/friendlyarm/nanopi-neo4/
-F:	configs/friendlyarm_nanopi_neo4_defconfig
 F:	package/libatasmart/
 F:	package/polkit/
 F:	package/sg3_utils/
@@ -2151,10 +2124,6 @@ F:	configs/licheepi_zero_defconfig
 
 N:	Mike Frampton <mikeframpo@gmail.com>
 F:	package/qcom-db410c-firmware/
-
-N:	Mike Harmony <mike.harmony@snapav.com>
-F:	board/sinovoip/m2-plus/
-F:	configs/bananapi_m2_plus_defconfig
 
 N:	Mikhail Boiko <mikhailboiko85@gmail.com>
 F:	package/libfribidi/
@@ -2760,16 +2729,11 @@ F:	package/powertop/
 
 N:	Suniel Mahesh <sunil@amarulasolutions.com>
 F:	board/firefly/
-F:	board/friendlyarm/nanopc-t4
 F:	board/friendlyarm/nanopi-m4
-F:	board/orangepi/orangepi-rk3399
 F:	board/pine64/rockpro64
 F:	board/radxa/rockpi-4
 F:	board/radxa/rockpi-n8
 F:	board/radxa/rockpi-n10
-F:	configs/friendlyarm_nanopc_t4_defconfig
-F:	configs/friendlyarm_nanopi_m4_defconfig
-F:	configs/orangepi_rk3399_defconfig
 F:	configs/roc_pc_rk3399_defconfig
 F:	configs/rock_pi_4_defconfig
 F:	configs/rock_pi_n8_defconfig
