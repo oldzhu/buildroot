@@ -92,7 +92,7 @@ all:
 .PHONY: all
 
 # Set and export the version string
-export BR2_VERSION := 2022.11-rc3
+export BR2_VERSION := 2023.02-git
 # Actual time the release is cut (for reproducible builds)
 BR2_VERSION_EPOCH = 1669308000
 
@@ -395,6 +395,9 @@ unexport DESTDIR
 
 # Causes breakage with packages that needs host-ruby
 unexport RUBYOPT
+
+# Compilation of perl-related packages will fail otherwise
+unexport PERL_MM_OPT
 
 include package/pkg-utils.mk
 include package/doc-asciidoc.mk
