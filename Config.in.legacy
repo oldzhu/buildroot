@@ -146,6 +146,25 @@ endif
 
 comment "Legacy options removed in 2023.02"
 
+config BR2_PACKAGE_PYTHON_M2R
+	bool "python-m2r removed"
+	select BR2_LEGACY
+	help
+	  The python-m2r package is unmaintained.
+
+config BR2_PACKAGE_MESA3D_XVMC
+	bool "mesa Gallium XvMC state tracker removed"
+	select BR2_LEGACY
+	help
+	  The Gallium XvMC state tracker was removed upstream.
+
+config BR2_KERNEL_HEADERS_5_19
+	bool "kernel headers version 5.19.x are no longer supported"
+	select BR2_LEGACY
+	help
+	  Version 5.19.x of the Linux kernel headers are no longer
+	  maintained upstream and are now removed.
+
 config BR2_PACKAGE_XDRIVER_XF86_VIDEO_TGA
 	bool "xf86-video-tga removed"
 	select BR2_LEGACY
