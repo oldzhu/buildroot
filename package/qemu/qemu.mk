@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-QEMU_VERSION = 7.1.0
+QEMU_VERSION = 7.2.0
 QEMU_SOURCE = qemu-$(QEMU_VERSION).tar.xz
 QEMU_SITE = http://download.qemu.org
 QEMU_LICENSE = GPL-2.0, LGPL-2.1, MIT, BSD-3-Clause, BSD-2-Clause, Others/BSD-1c
@@ -20,7 +20,13 @@ QEMU_CPE_ID_VENDOR = qemu
 # However, building is still done with configure and make as in previous versions of QEMU.
 
 # Target-qemu
-QEMU_DEPENDENCIES = host-meson host-pkgconf libglib2 zlib pixman host-python3
+QEMU_DEPENDENCIES = \
+	host-meson \
+	host-pkgconf \
+	host-python3 \
+	libglib2 \
+	pixman \
+	zlib
 
 # Need the LIBS variable because librt and libm are
 # not automatically pulled. :-(
@@ -63,7 +69,7 @@ QEMU_OPTS += --enable-vhost-user
 endif
 
 ifeq ($(BR2_PACKAGE_QEMU_SLIRP),y)
-QEMU_OPTS += --enable-slirp=system
+QEMU_OPTS += --enable-slirp
 QEMU_DEPENDENCIES += slirp
 else
 QEMU_OPTS += --disable-slirp
@@ -246,7 +252,14 @@ $(eval $(generic-package))
 #-------------------------------------------------------------
 # Host-qemu
 
-HOST_QEMU_DEPENDENCIES = host-meson host-pkgconf host-zlib host-libglib2 host-pixman host-python3
+HOST_QEMU_DEPENDENCIES = \
+	host-libglib2 \
+	host-meson \
+	host-pixman \
+	host-pkgconf \
+	host-python3 \
+	host-slirp \
+	host-zlib
 
 #       BR ARCH         qemu
 #       -------         ----
@@ -391,6 +404,7 @@ define HOST_QEMU_CONFIGURE_CMDS
 		--disable-png \
 		--disable-vnc-sasl \
 		--enable-debug \
+		--enable-slirp \
 		--enable-tools \
 		$(HOST_QEMU_OPTS)
 endef
