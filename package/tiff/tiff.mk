@@ -14,7 +14,6 @@ TIFF_INSTALL_STAGING = YES
 
 TIFF_CONF_OPTS = \
 	--disable-contrib \
-	--disable-cxx \
 	--disable-tests \
 	--without-x
 
@@ -29,8 +28,21 @@ HOST_TIFF_CONF_OPTS = \
 	--disable-tests
 HOST_TIFF_DEPENDENCIES = host-pkgconf
 
+ifeq ($(BR2_INSTALL_LIBSTDCPP),y)
+TIFF_CONF_OPTS += --enable-cxx
+else
+TIFF_CONF_OPTS += --disable-cxx
+endif
+
 ifneq ($(BR2_PACKAGE_TIFF_CCITT),y)
 TIFF_CONF_OPTS += --disable-ccitt
+endif
+
+ifeq ($(BR2_PACKAGE_TIFF_LIBDEFLATE),y)
+TIFF_CONF_OPTS += --enable-libdeflate
+TIFF_DEPENDENCIES += libdeflate
+else
+TIFF_CONF_OPTS += --disable-libdeflate
 endif
 
 ifneq ($(BR2_PACKAGE_TIFF_PACKBITS),y)
@@ -91,6 +103,20 @@ ifeq ($(BR2_PACKAGE_TIFF_UTILITIES),y)
 TIFF_CONF_OPTS += --enable-tools
 else
 TIFF_CONF_OPTS += --disable-tools
+endif
+
+ifeq ($(BR2_PACKAGE_TIFF_WEBP),y)
+TIFF_CONF_OPTS += --enable-webp
+TIFF_DEPENDENCIES += webp
+else
+TIFF_CONF_OPTS += --disable-webp
+endif
+
+ifeq ($(BR2_PACKAGE_TIFF_ZSTD),y)
+TIFF_CONF_OPTS += --enable-zstd
+TIFF_DEPENDENCIES += zstd
+else
+TIFF_CONF_OPTS += --disable-zstd
 endif
 
 $(eval $(autotools-package))
