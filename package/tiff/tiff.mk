@@ -12,9 +12,12 @@ TIFF_CPE_ID_VENDOR = libtiff
 TIFF_CPE_ID_PRODUCT = libtiff
 TIFF_INSTALL_STAGING = YES
 
+# webp has a (optional) dependency on tiff, so we can't have webp
+# support in tiff, or that would create a circular dependency.
 TIFF_CONF_OPTS = \
 	--disable-contrib \
 	--disable-tests \
+	--disable-webp \
 	--without-x
 
 TIFF_DEPENDENCIES = host-pkgconf
@@ -103,13 +106,6 @@ ifeq ($(BR2_PACKAGE_TIFF_UTILITIES),y)
 TIFF_CONF_OPTS += --enable-tools
 else
 TIFF_CONF_OPTS += --disable-tools
-endif
-
-ifeq ($(BR2_PACKAGE_TIFF_WEBP),y)
-TIFF_CONF_OPTS += --enable-webp
-TIFF_DEPENDENCIES += webp
-else
-TIFF_CONF_OPTS += --disable-webp
 endif
 
 ifeq ($(BR2_PACKAGE_TIFF_ZSTD),y)
