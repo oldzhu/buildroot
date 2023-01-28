@@ -225,6 +225,8 @@ F:	configs/snps_archs38_haps_defconfig
 F:	configs/snps_archs38_hsdk_defconfig
 
 N:	Ariel D'Alessandro <ariel@vanguardiasur.com.ar>
+F:	board/bsh/
+F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
 F:	package/axfsutils/
 F:	package/mali-t76x/
 
@@ -686,6 +688,9 @@ F:	package/luaexpat/
 F:	package/xinetd/
 
 N:	Dario Binacchi <dario.binacchi@amarulasolutions.com>
+F:	board/bsh/
+F:	configs/imx8mn_bsh_smm_s2_defconfig
+F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
 F:	package/sscep/
 F:	package/uuu/
 
@@ -1396,6 +1401,7 @@ F:	package/python-tinycss2/
 F:	package/python-tomli/
 F:	package/python-typeguard/
 F:	package/python-typing-inspect/
+F:	package/python-uhid/
 F:	package/python-weasyprint/
 F:	package/python-yarl/
 F:	package/python-zopfli/
@@ -2087,6 +2093,7 @@ F:	package/libgeos/
 F:	package/libosmium/
 F:	package/osm2pgsql/
 F:	package/postgis/
+F:	package/postgresql/
 F:	package/protozero/
 F:	package/timescaledb/
 
@@ -2117,6 +2124,9 @@ F:	package/python-crc16/
 F:	package/python-pyzmq/
 
 N:	Michael Trimarchi <michael@amarulasolutions.com>
+F:	board/bsh/
+F:	configs/imx8mn_bsh_smm_s2_defconfig
+F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
 F:	package/python-spidev/
 
 N:	Michael Vetter <jubalh@iodoru.org>
