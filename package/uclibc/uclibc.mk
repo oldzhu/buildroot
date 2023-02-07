@@ -217,7 +217,7 @@ endif
 #
 # Debug
 #
-ifeq ($(BR2_ENABLE_DEBUG),y)
+ifeq ($(BR2_ENABLE_RUNTIME_DEBUG),y)
 define UCLIBC_DEBUG_CONFIG
 	$(call KCONFIG_ENABLE_OPT,DODEBUG)
 endef
@@ -375,7 +375,7 @@ endif
 # Commands
 #
 
-UCLIBC_EXTRA_CFLAGS = $(TARGET_ABI)
+UCLIBC_EXTRA_CFLAGS = $(TARGET_ABI) $(TARGET_DEBUGGING)
 
 # uClibc-ng does not build with LTO, so explicitly disable it
 # when using a compiler that may have support for LTO
@@ -397,6 +397,7 @@ define UCLIBC_KCONFIG_FIXUP_CMDS
 	$(call KCONFIG_SET_OPT,RUNTIME_PREFIX,"/")
 	$(call KCONFIG_SET_OPT,DEVEL_PREFIX,"/usr")
 	$(call KCONFIG_SET_OPT,SHARED_LIB_LOADER_PREFIX,"/lib")
+	$(call KCONFIG_DISABLE_OPT,DOSTRIP)
 	$(UCLIBC_MMU_CONFIG)
 	$(UCLIBC_BINFMT_CONFIG)
 	$(UCLIBC_AARCH64_PAGE_SIZE_CONFIG)

@@ -545,7 +545,6 @@ F:	package/delve/
 F:	package/docker-cli/
 F:	package/docker-compose/
 F:	package/docker-engine/
-F:	package/docker-proxy/
 F:	package/embiggen-disk/
 F:	package/fuse-overlayfs/
 F:	package/go/
@@ -1694,7 +1693,12 @@ F:	package/perftest/
 F:	package/ptm2human/
 F:	package/python-distro/
 F:	package/python-gnupg/
+F:	package/python-hkdf/
+F:	package/python-magic-wormhole/
+F:	package/python-magic-wormhole-mailbox-server/
+F:	package/python-magic-wormhole-transit-relay/
 F:	package/python-pyalsa/
+F:	package/python-spake2/
 F:	package/rdma-core/
 F:	package/riscv-isa-sim/
 F:	package/tinycompress/
@@ -1703,6 +1707,7 @@ F:	package/zynaddsubfx/
 F:	support/testing/tests/package/sample_python_distro.py
 F:	support/testing/tests/package/sample_python_gnupg.py
 F:	support/testing/tests/package/sample_python_pyalsa.py
+F:	support/testing/tests/package/sample_python_spake2.py
 F:	support/testing/tests/package/test_hwloc.py
 F:	support/testing/tests/package/test_ncdu.py
 F:	support/testing/tests/package/test_octave.py
@@ -1710,8 +1715,11 @@ F:	support/testing/tests/package/test_ola.py
 F:	support/testing/tests/package/test_ola/
 F:	support/testing/tests/package/test_perftest.py
 F:	support/testing/tests/package/test_python_distro.py
+F:	support/testing/tests/package/test_python_hkdf.py
 F:	support/testing/tests/package/test_python_gnupg.py
+F:	support/testing/tests/package/test_python_magic_wormhole.py
 F:	support/testing/tests/package/test_python_pyalsa.py
+F:	support/testing/tests/package/test_python_spake2.py
 F:	support/testing/tests/package/test_rdma_core.py
 F:	support/testing/tests/package/test_rdma_core/
 F:	support/testing/tests/package/test_z3.py
@@ -2040,7 +2048,6 @@ F:	package/policycoreutils/
 F:	package/proftpd/
 F:	package/protobuf-c/
 F:	package/protobuf/
-F:	package/python-bunch/
 F:	package/python-colorama/
 F:	package/python-filelock/
 F:	package/python-flask-cors/
@@ -2780,7 +2787,12 @@ N:	Sven Oliver Moll <svolli@svolli.de>
 F:	package/most/
 
 N:	TIAN Yuanhao <tianyuanhao3@163.com>
+F:	package/cli11/
+F:	package/libsolv/
 F:	package/open-isns/
+F:	package/reproc/
+F:	package/termcolor/
+F:	package/tl-expected/
 
 N:	Tan En De <ende.tan@starfivetech.com>
 F:	package/libkcapi/
