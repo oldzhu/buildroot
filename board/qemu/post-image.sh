@@ -1,8 +1,8 @@
 #!/bin/bash
 
-QEMU_BOARD_DIR="$(dirname $0)"
-DEFCONFIG_NAME="$(basename $2)"
-README_FILES="${QEMU_BOARD_DIR}/*/readme.txt"
+QEMU_BOARD_DIR="$(dirname "$0")"
+DEFCONFIG_NAME="$(basename "$2")"
+README_FILE="${QEMU_BOARD_DIR}/*/readme.txt"
 START_QEMU_SCRIPT="${BINARIES_DIR}/start-qemu.sh"
 
 if [[ "${DEFCONFIG_NAME}" =~ ^"qemu_*" ]]; then
@@ -12,7 +12,7 @@ fi
 
 # Search for "# qemu_*_defconfig" tag in all readme.txt files.
 # Qemu command line on multilines using back slash are accepted.
-QEMU_CMD_LINE=$(sed -r ':a; /\\$/N; s/\\\n//; s/\t/ /; ta; /# '${DEFCONFIG_NAME}'$/!d; s/#.*//' ${README_FILES})
+QEMU_CMD_LINE="$(sed -r ':a; /\\$/N; s/\\\n//; s/\t/ /; ta; /# '"${DEFCONFIG_NAME}"'$/!d; s/#.*//' \ "${README_FILE}")"
 
 if [ -z "${QEMU_CMD_LINE}" ]; then
     # No Qemu cmd line found, can't test.
@@ -41,21 +41,10 @@ case ${DEFCONFIG_NAME} in
     ;;
 esac
 
-cat <<-_EOF_ > "${START_QEMU_SCRIPT}"
-	#!/bin/sh
-	(
-	BINARIES_DIR="\${0%/*}/"
-	cd \${BINARIES_DIR}
-
-	if [ "\${1}" = "serial-only" ]; then
-	    EXTRA_ARGS='${SERIAL_ARGS}'
-	else
-	    EXTRA_ARGS='${DEFAULT_ARGS}'
-	fi
-
-	export PATH="${HOST_DIR}/bin:\${PATH}"
-	exec ${QEMU_CMD_LINE} \${EXTRA_ARGS}
-	)
-_EOF_
-
+sed "s|@SERIAL_ARGS@|${SERIAL_ARGS}|g" \
+    "s|@DEFAULT_ARGS@|${DEFAULT_ARGS}|g" \
+    "s|@QEMU_CMD_LINE@|${QEMU_CMD_LINE}|g" \
+    "s|@HOST_DIR@|${HOST_DIR}|g" \
+    <"${QEMU_BOARD_DIR}/start-qemu.sh.in" \
+    >"${START_QEMU_SCRIPT}"
 chmod +x "${START_QEMU_SCRIPT}"
