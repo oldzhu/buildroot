@@ -181,7 +181,6 @@ package/asterisk/0003-build-ensure-target-directory-for-modules-exists.patch Ups
 package/asterisk/0004-install-samples-need-the-data-files.patch Upstream
 package/asterisk/0005-configure-fix-detection-of-re-entrant-resolver-funct.patch Upstream
 package/asterisk/0006-main-iostream.c-fix-build-with-libressl.patch Upstream
-package/at-spi2-atk/0001-meson-add-tests-option.patch Upstream
 package/at/0001-Makefile.in-fix-make-install-for-non-root-don-t-stri.patch Upstream
 package/at/S99at Indent Variables
 package/atest/0001-seq.h-fix-build-with-gcc-10.patch Upstream
@@ -585,7 +584,6 @@ package/gli/0001-Optional-building-tests.patch Upstream
 package/glmark2/0001-wscript-use-find_program-to-find-wayland-scanner.patch Upstream
 package/glmark2/0002-libmatrix-Add-missing-utility-include.patch Upstream
 package/glog/0001-added-emscripten-support.patch Upstream
-package/gloox/0001-src-connectiontcpserver-cpp-fix-musl.patch Upstream
 package/glorytun/0001-Add-support-for-Apple-silicon.patch Upstream
 package/glorytun/0002-aegis256.c-fix-aarch64-build-with-uclibc.patch Upstream
 package/gmp/0001-mpz-inp_raw.c-Avoid-bit-size-overflows.patch Upstream
@@ -773,8 +771,7 @@ package/libgpgme/0001-Fix-build-without-threads.patch Upstream
 package/libgpiod/0001-build-add-a-configure-switch-for-building-examples.patch Upstream
 package/libgsm/0001-misc-fixes-from-archlinux.patch Upstream
 package/libgtk2/0001-reduce-dependencies.patch Upstream
-package/libgtk3/0001-disable-atk-bridge.patch Upstream
-package/libgtk3/0002-Remove-Gdk-dependency-from-gtk-encode-symbolic-svg.patch Upstream
+package/libgtk3/0001-Remove-Gdk-dependency-from-gtk-encode-symbolic-svg.patch Upstream
 package/libhdhomerun/0001-dont-strip.patch Upstream
 package/libhid/0001-dont-fiddle-with-debug-flags.patch Upstream
 package/libhid/0002-no-newline-in-ldflags.patch Upstream
