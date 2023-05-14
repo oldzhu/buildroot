@@ -997,9 +997,6 @@ package/mender-connect/S43mender-connect Shellcheck
 package/menu-cache/0001-Support-gcc10-compilation.patch Upstream
 package/mesa3d-demos/0001-demos-makes-opengl-an-optional-component.patch Upstream
 package/mesa3d/0001-meson-Set-proper-value-for-LIBCLC_INCLUDEDIR.patch Upstream
-package/mesa3d/0002-vc4-add-meson-option-to-disable-optional-neon-suppor.patch Upstream
-package/mesa3d/0003-src-util-rand_xor-Include-stddef.h-to-fix-build-erro.patch Upstream
-package/mesa3d/0004-Fix-uClibc-build.patch Upstream
 package/meson-tools/0001-amlbootenc-gxl-remove-non-std-C-convention-in-for.patch Upstream
 package/meson/0001-Prefer-ext-static-libs-when-default-library-static.patch Upstream
 package/meson/0002-mesonbuild-dependencies-base.py-add-pkg_config_stati.patch Upstream
@@ -1075,8 +1072,6 @@ package/nettle/0001-disable-testsuite-examples.patch Upstream
 package/network-manager/0001-build-meson-add-option-to-set-the-mobile-broadband-p.patch Upstream
 package/network-manager/0002-meson.build-fix-build-failure-with-Dmodem_manager-fa.patch Upstream
 package/network-manager/S45network-manager ConsecutiveEmptyLines EmptyLastLine Shellcheck Variables
-package/nfs-utils/0001-nfsrahead-fix-linking-while-static-linking.patch Upstream
-package/nfs-utils/0002-configure.ac-allow-to-disable-nfsrahead-tool.patch Upstream
 package/nfs-utils/S60nfs ConsecutiveEmptyLines Shellcheck Variables
 package/nginx-modsecurity/0001-config-use-pkg-config.patch Upstream
 package/nginx/0001-auto-type-sizeof-rework-autotest-to-be-cross-compila.patch Upstream
@@ -1130,7 +1125,6 @@ package/odb/0011-Adjust-to-changes-in-GCC-10.patch Upstream
 package/odb/0012-Adjust-to-changes-in-GCC-11.patch Upstream
 package/odb/0013-Resolve-name-lookup-ambiguity-causing-error-with-GCC.patch Upstream
 package/ofono/0001-uclibc-backtrace.patch Upstream
-package/ofono/0002-fix-musl-compile.patch Upstream
 package/ofono/S46ofono Variables
 package/ola/0001-ola-fix-compilation-with-musl-1-2-3.patch Upstream
 package/olsr/0001-olsrd-migrate-to-using-bison-3.7.1.patch Upstream
@@ -1332,7 +1326,6 @@ package/python3/0030-Add-an-option-to-disable-the-berkeleydb-module.patch Upstre
 package/python3/0031-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch Upstream
 package/qemu/0001-tests-fp-disable-fp-bench-build-by-default.patch Upstream
 package/qemu/0002-softmmu-qemu-seccomp.c-add-missing-header-for-CLONE_.patch Upstream
-package/qemu/0003-target-sh4-Mask-restore-of-env-flags-from-tb-flags.patch Upstream
 package/qextserialport/0001-Create-a-main-include-file-QExtSerialPort.patch Upstream
 package/qextserialport/0002-Tell-qmake-to-add-a-pkgconfig-file-to-ease-usage-wit.patch Upstream
 package/qt5/qt5base/0001-qtbase-Fix-build-error-when-using-EGL.patch Upstream
