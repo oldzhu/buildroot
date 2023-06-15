@@ -444,8 +444,6 @@ package/exim/0009-Fix-non-WITH_CONTENT_SCAN-build-3.patch Upstream
 package/exim/S86exim Indent Variables
 package/expect/0001-enable-cross-compilation.patch Upstream
 package/expect/0002-allow-tcl-build-directory.patch Upstream
-package/f2fs-tools/0001-configure-ac-fix-cross-compilation.patch Upstream
-package/f2fs-tools/0002-f2fs-tools-fix-build-error-on-lz4-1-9-4.patch Upstream
 package/faifa/0001-sha2.c-explicitly-include-endian.h-for-BYTE_ORDER-ma.patch Upstream
 package/faifa/0002-hpav_cfg.c-do-not-include-linux-if_ether.h-for-musl-.patch Upstream
 package/faifa/0003-Makefile.in-fix-asbolute-symlink-of-libfaifa.so.patch Upstream
@@ -742,7 +740,6 @@ package/libftdi1/0002-CMakeLists.txt-fix-paths-when-FTDIPP-is-set.patch Upstream
 package/libftdi1/0003-CMakeLists.txt-fix-static-build-with-libusb-and-lato.patch Upstream
 package/libfuse/0001-fix-aarch64-build.patch Upstream
 package/libfuse/0002-util-ulockmgr_server-c-conditionally-define-closefrom-fix-glibc-2-34.patch Upstream
-package/libfuse3/0001-Fix-MS_LAZYTIME-not-defined-on-uclibc.patch Upstream
 package/libgcrypt/0001-configure.ac-add-an-option-to-disable-tests.patch Upstream
 package/libgdiplus/0001-Build-unit-tests-only-when-enable-unit-tests-is-pass.patch Upstream
 package/libglfw/0001-Wayland-Remove-extra-cmake-modules-dependency.patch Upstream
