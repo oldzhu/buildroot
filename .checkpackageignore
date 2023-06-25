@@ -1115,7 +1115,6 @@ package/olsr/S50olsr Indent Shellcheck Variables
 package/omxplayer/0001-Update-Makefile-to-be-compatible-with-buildroot.patch Upstream
 package/open-iscsi/0001-SHA3-is-not-supported-by-libressl.patch Upstream
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch Upstream
-package/open-plc-utils/0002-plc-plc.h-fix-build-with-gcc-10.patch Upstream
 package/open2300/0001-fix-makefile.patch Upstream
 package/openjdk/17.0.7+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
 package/openldap/0001-fix_cross_strip.patch Upstream
@@ -1339,8 +1338,6 @@ package/quotatool/0001-fix-missing-__P-definition-for-musl-compile.patch Upstrea
 package/racehound/0001-Fix-module-install-path-lib-instead-of-usr-lib-prefi.patch Upstream
 package/ranger/0001-colorscheme-check-for-compiled-python-files.patch Upstream
 package/rapidxml/0001-ensure-internal-print-operations-are-declared-before.patch Upstream
-package/raptor/0002-Calcualte-max-nspace-declarations-correctly-for-XML-.patch Upstream
-package/raptor/0003-XML-Writer-compare-namespace-declarations-correctly.patch Upstream
 package/raspberrypi-usbboot/0001-Makefile-allow-passing-CFLAGS-LDFLAGS.patch Upstream
 package/rdesktop/0001-8bit-colors.patch Sob Upstream
 package/read-edid/0001-Fix-install-file-list.patch Upstream
