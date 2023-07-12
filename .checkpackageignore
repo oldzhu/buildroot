@@ -418,7 +418,6 @@ package/erlang/0002-erts-emulator-reorder-inclued-headers-paths.patch Upstream
 package/erlang/0003-crypto-Fixes-for-LibreSSL-3-5-0.patch Upstream
 package/espeak/0001-Fix-build-of-shared-library-on-architectures-needing.patch Upstream
 package/espeak/0002-tr_languages-cast-string_ordinal-init-values.patch Upstream
-package/eudev/0001-Only-use-pragma-for-ignoring-diagnostics-if-.patch Upstream
 package/eudev/S10udev ConsecutiveEmptyLines Indent Shellcheck Variables
 package/evemu/0001-Include-limits.h-for-PATH_MAX.patch Upstream
 package/evemu/0002-evemu-Update-struct-input_event.patch Upstream
@@ -1066,8 +1065,6 @@ package/norm/0003-Fix-mixed-tabs-spaces-in-protolib-wscript.patch Upstream
 package/nss-pam-ldapd/S45nslcd EmptyLastLine Indent Shellcheck Variables
 package/ntp/0001-nano.patch Upstream
 package/ntp/0002-ntp-syscalls-fallback.patch Upstream
-package/ntp/0003-override-shell.patch Upstream
-package/ntp/0004-libntp-Do-not-use-PTHREAD_STACK_MIN-on-glibc.patch Upstream
 package/ntp/S49ntp.in Variables
 package/ntpsec/0001-wscript-remove-checks-for-bsd-string.h-fixes-host-co.patch Upstream
 package/ntpsec/0002-wscript-fix-build-without-stack-protector.patch Upstream
@@ -1241,7 +1238,6 @@ package/python-crossbar/0002-requirements-min.txt-drop-indirect-dependencies.pat
 package/python-crossbar/0003-crossbar-webservice-wap-use-markupsafe-instead-of-we.patch Upstream
 package/python-daphne/0001-remove-pytest-runner-requirement.patch Upstream
 package/python-dnspython/0001-Remove-spurious-wheel-build-dependency.patch Upstream
-package/python-hiredis/0001-setup.py-fix-build-with-gcc-4.8.patch Upstream
 package/python-m2crypto/0001-Mitigate-the-Bleichenbacher-timing-attacks-in-the-RSA-decryption-API-CVE-2020-25657.patch Upstream
 package/python-pybind/0001-pybind11-commands.py-support-STAGING_DIR.patch Upstream
 package/python-pylibftdi/0001-do-not-use-find-library.patch Upstream
