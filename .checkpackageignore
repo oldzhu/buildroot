@@ -495,7 +495,6 @@ package/fxload/0001-fix-static-build.patch Upstream
 package/gamin/0001-no-abstract-sockets.patch Upstream
 package/gamin/0002-no-const-return.patch Sob Upstream
 package/gamin/0003-fix-missing-PTHREAD_MUTEX_RECURSIVE_NP.patch Upstream
-package/gawk/0001-Fix-a-bug-with-Node_elem_new.patch Upstream
 package/gcc/10.4.0/0001-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch Upstream
 package/gcc/10.4.0/0002-or1k-Add-mcmodel-option-to-handle-large-GOTs.patch Upstream
 package/gcc/10.4.0/0003-or1k-Use-cmodel-large-when-building-crtstuff.patch Upstream
@@ -559,8 +558,6 @@ package/gmp/0001-mpz-inp_raw.c-Avoid-bit-size-overflows.patch Upstream
 package/gnu-efi/0001-Make.defaults-don-t-override-ARCH-when-cross-compili.patch Upstream
 package/gnupg/0001-build-Always-use-EXTERN_UNLESS_MAIN_MODULE-pattern.patch Upstream
 package/gnuplot/0001-configure-add-without-demo-option.patch Upstream
-package/gnuradio/0001-blocks-Including-missing-vector-in-blockinterleaver.patch Upstream
-package/gnuradio/0002-blocks-blockinterleaving.h-add-missing-cstddef-heade.patch Upstream
 package/go/0001-build.go-explicit-option-for-crosscompilation.patch Upstream
 package/gob2/0001-dont-include-from-prefix.patch Upstream
 package/gobject-introspection/0001-disable-tests.patch Upstream
@@ -1195,8 +1192,6 @@ package/poke/0002-lib-getrandom.c-fix-build-with-uclibc-1.0.35.patch Upstream
 package/policycoreutils/0001-Add-DESTDIR-to-all-paths-that-use-an-absolute-path.patch Upstream
 package/policycoreutils/0002-Add-PREFIX-to-host-paths.patch Upstream
 package/postgresql/S50postgresql Variables
-package/pound/0001-fix-openssl-1.0.2.patch Upstream
-package/pound/0002-fix-openssl-1.1.0.patch Upstream
 package/powertop/0001-dont-force-stack-smashing-protection.patch Upstream
 package/pppd/0001-pppd-Fix-compilation-with-older-glibc-or-kernel-headers.patch Upstream
 package/pppd/0002-pppd-eap-tls.c-fix-build-with-libressl.patch Upstream
