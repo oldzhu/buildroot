@@ -136,7 +136,6 @@ package/4th/0001-avoid-regen-during-install.patch Upstream
 package/ace/0001-ACE-ace-SSL-SSL_Asynch_BIO.cpp-fix-build-with-libres.patch Upstream
 package/ace/0002-ACE-ace-SSL-SSL_Asynch_BIO.cpp-fix-build-with-libres.patch Upstream
 package/acl/0001-Build-with-old-GCC-versions.patch Upstream
-package/acpica/0001-build-do-not-use-Werror.patch Upstream
 package/acpid/0001-dont-use-isfdtype.patch Upstream
 package/alchemy/0001-toolchains-remove-hash-style-management.patch Upstream
 package/alsamixergui/0001-misc-fixes.patch Sob Upstream
@@ -584,7 +583,6 @@ package/haveged/S21haveged Shellcheck Variables
 package/heirloom-mailx/0001-fix-libressl-support.patch Upstream
 package/highway/0001-Fix-compilation-for-armv7-with-gcc-8.patch Upstream
 package/highway/0002-Fix-compilation-for-armv7-targets-with-vfp-v4-and-gc.patch Upstream
-package/hiredis/0001-CMakeLists.txt-respect-BUILD_SHARED_LIBS.patch Upstream
 package/hplip/0001-build-use-pkg-config-to-discover-libusb.patch Upstream
 package/hplip/0002-configure.in-fix-AM_INIT_AUTOMAKE-call.patch Upstream
 package/htpdate/S43htpdate Shellcheck
@@ -924,8 +922,6 @@ package/madplay/0001-switch-to-new-alsa-api.patch Sob Upstream
 package/madplay/0002-configure-ac-automake-foreign.patch Upstream
 package/madplay/0003-configure-ac-use-pkg-config-to-find-id3tag.patch Upstream
 package/madplay/0004-configure-ac-call-AM_MKINSTALLDIRS.patch Upstream
-package/make/0001-configure.ac-Support-GLIBC-glob-interface-version-2.patch Upstream
-package/make/0001-glob-Do-not-assume-glibc-glob-internals.patch Upstream
 package/makedumpfile/0002-Handle-__mips64.patch Upstream
 package/mariadb/0001-add-extra-check-for-librt.patch Upstream
 package/mariadb/S97mysqld Indent Shellcheck Variables
@@ -937,7 +933,6 @@ package/matchbox-panel/0003-mb-applet-battery.patch Upstream
 package/matchbox-startup-monitor/0001-true-false.patch Upstream
 package/matchbox/0001-defaulttheme.patch Upstream
 package/matchbox/0002-src-Fix-build-with-gcc-10.patch Upstream
-package/mbw/0001-CMakeLists.txt-fix-build-without-C.patch Upstream
 package/mediastreamer/0001-src-videofilters-nowebcam.c-fix-build-without-ffmpeg.patch Upstream
 package/mediastreamer/0002-Use-AV_INPUT_BUFFER_PADDING_SIZE-to-determine-paddin.patch Upstream
 package/memcached/0001-logger.c-initialize-rport.patch Upstream
