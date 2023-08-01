@@ -2200,6 +2200,7 @@ F:	configs/galileo_defconfig
 
 N:	Nicolas Carrier <nicolas.carrier@orolia.com>
 F:	package/bmap-tools/
+F:	package/composer/
 F:	package/libdbi/
 F:	package/libdbi-drivers/
 F:	package/lua-augeas/
@@ -2540,6 +2541,7 @@ F:	package/azmq/
 
 N:	Robert Marko <robimarko@gmail.com>
 F:	package/mdio-tools/
+F:	package/mhz/
 
 N:	Robert Rose <robertroyrose@gmail.com>
 F:	package/grpc/
