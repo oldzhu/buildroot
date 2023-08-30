@@ -107,7 +107,6 @@ boot/at91bootstrap/0003-u-boot-relocation-fix.patch Upstream
 boot/at91dataflashboot/0001-do-not-install.patch Upstream
 boot/at91dataflashboot/0002-eabi-fixes.patch Upstream
 boot/grub2/0001-Makefile-Make-grub_fstest.pp-depend-on-config-util.h.patch Upstream
-boot/grub2/0002-grub-mkconfig-Restore-umask-for-the-grub.cfg.patch Upstream
 boot/optee-os/3.13.0/0001-core-zlib-fix-build-warning-when-_LFS64_LARGEFILE-is.patch Upstream
 boot/syslinux/0001-bios-Fix-alignment-change-with-gcc-5.patch Upstream
 boot/syslinux/0002-Disable-PIE-to-avoid-FTBFS-on-amd64.patch Upstream
@@ -1052,7 +1051,7 @@ package/omxplayer/0001-Update-Makefile-to-be-compatible-with-buildroot.patch Ups
 package/open-iscsi/0001-SHA3-is-not-supported-by-libressl.patch Upstream
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch Upstream
 package/open2300/0001-fix-makefile.patch Upstream
-package/openjdk/17.0.7+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
+package/openjdk/17.0.8+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
 package/openldap/0001-fix_cross_strip.patch Upstream
 package/openldap/0002-fix-bignum.patch Upstream
 package/openldap/0003-disable-docs.patch Upstream
