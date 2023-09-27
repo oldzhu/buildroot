@@ -221,8 +221,6 @@ package/bridge-utils/0001-fix-build-on-musl.patch Upstream
 package/brltty/0001-Fix-linking-error-on-mips64el.patch Upstream
 package/brltty/0002-shell-prologue-runProgramTerminationCommands-used-a-.patch Upstream
 package/brltty/S10brltty Indent Shellcheck Variables
-package/brotli/0001-CMake-Allow-using-BUILD_SHARED_LIBS-to-choose-static.patch Upstream
-package/brotli/0002-Revert-Add-runtime-linker-path-to-pkg-config-files.patch Upstream
 package/bsdiff/0001-Add-missing-header-for-u_char.patch Upstream
 package/bustle/0001-Makefile-fix-pcap-config-call.patch Upstream
 package/busybox/0001-networking-libiproute-use-linux-if_packet.h-instead-.patch Upstream
@@ -653,7 +651,6 @@ package/libcorrect/0002-CMakeLists.txt-conditionally-use-fsanitize-address.patch
 package/libcuefile/0001-fix-static-link.patch Upstream
 package/libdaemon/0001-testd-use-unistd-h-instead-of-sys-unistd-h.patch Upstream
 package/libdnet/0001-python-makefile.patch Upstream
-package/libdnet/0002-Correct-path-to-string-h-from-bsd.patch Upstream
 package/libdrm/0001-tests-meson.build-disable-nouveau-tests-for-static-b.patch Upstream
 package/libdvbcsa/0001-altivec-powerpc64.patch Upstream
 package/libeXosip2/0001-src-eXtl_dtls.c-fix-build-with-libressl-3.4.1.patch Upstream
@@ -884,9 +881,6 @@ package/matchbox/0001-defaulttheme.patch Upstream
 package/matchbox/0002-src-Fix-build-with-gcc-10.patch Upstream
 package/mediastreamer/0001-src-videofilters-nowebcam.c-fix-build-without-ffmpeg.patch Upstream
 package/mediastreamer/0002-Use-AV_INPUT_BUFFER_PADDING_SIZE-to-determine-paddin.patch Upstream
-package/memcached/0001-logger.c-initialize-rport.patch Upstream
-package/memcached/0002-check-for-sys-auxv.h.patch Upstream
-package/memcached/0003-configure.ac-add-disable-werror.patch Upstream
 package/memstat/0001-PATH_MAX.patch Upstream
 package/mender-connect/S43mender-connect Shellcheck
 package/menu-cache/0001-Support-gcc10-compilation.patch Upstream
@@ -1308,8 +1302,6 @@ package/ser2net/S50ser2net Indent Shellcheck Variables
 package/setools/0001-Do-not-export-use-setools.InfoFlowAnalysis-and-setoo.patch Upstream
 package/setserial/0001-build-system-fix.patch Upstream
 package/setserial/0002-tiocghayesesp-build-fix.patch Upstream
-package/sg3_utils/0001-src-sg_dd.c-fix-musl-build.patch Upstream
-package/sg3_utils/0002-configure.ac-fix-uclibc-ng-build.patch Upstream
 package/shadowsocks-libev/0001-configure.ac-use-pkg-config-to-find-netfilter_conntr.patch Upstream
 package/shadowsocks-libev/0002-fix-maybe-uninitialized-errors.patch Upstream
 package/shadowsocks-libev/0003-lib-Makefile.am-remove-static-from-LDFLAGS.patch Upstream
@@ -1325,7 +1317,6 @@ package/smcroute/S41smcroute Indent NotExecutable Variables
 package/smstools3/0001-fix-Makefile.patch Upstream
 package/smstools3/0002-fix-build-with-gcc-10.x.patch Upstream
 package/smstools3/S50smsd Shellcheck Variables
-package/snappy/0001-Add-inline-with-SNAPPY_ATTRIBUTE_ALWAYS_INLINE.patch Upstream
 package/snmppp/0001-fix-build-without-v3.patch Upstream
 package/snort/0001-configure.in-Avoid-path-poisoning-with-libpcap.patch Upstream
 package/snort/0002-configure.in-Allow-to-override-the-INADDR_NONE-check.patch Upstream
@@ -1432,7 +1423,6 @@ package/uhttpd/0002-Fix-TCP_FASTOPEN-related-compile-error.patch Upstream
 package/umtprd/0001-Fix-output_dir-make-dependency.patch Upstream
 package/unbound/S70unbound Shellcheck
 package/unifdef/0001-Makefile-fix-error-on-install.patch Upstream
-package/unixodbc/0001-DriverManager-drivermanager.h-fix-build-without-thre.patch Upstream
 package/unscd/S46unscd Indent Shellcheck Variables
 package/unzip/0001-Add-a-CMakeFile.txt-to-ease-cross-compilation.patch Upstream
 package/upmpdcli/S99upmpdcli Indent Shellcheck Variables
@@ -1558,10 +1548,6 @@ package/xinetd/0004-configure-rlim_t.patch Upstream
 package/xinetd/0005-CVE-2013-4342-xinetd-ignores-user-and-group-directiv.patch Upstream
 package/xl2tp/xl2tpd TrailingSpace
 package/xml-security-c/0001-fix-build-with-libressl-3.5.0.patch Upstream
-package/xxhash/0001-fix-man-page-installation.patch Upstream
-package/xxhash/0002-Makefile-add-dedicated-install-targets.patch Upstream
-package/xxhash/0003-do-no-longer-depend-on-assert-h-for-XXH_STATIC_ASSERT.patch Upstream
-package/xxhash/0004-Makefile-add-install_libxxhash.includes-target.patch Upstream
 package/yajl/0001-Let-the-shared-and-the-static-library-have-the-same-.patch Upstream
 package/yajl/0002-cmake-disable-shared-library-build-when-BUILD_SHARED.patch Upstream
 package/yajl/0003-Link-with-shared-libyajl-in-a-shared-build.patch Upstream
