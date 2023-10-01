@@ -31,6 +31,14 @@ F:	package/firewalld/
 F:	package/vulkan-loader/
 F:	package/vulkan-tools/
 
+N:	Adam Duskett <adam.duskett@amarulasolutions.com>
+F:	package/depot-tools/
+F:	package/flutter-engine/
+F:	package/flutter-gallery/
+F:	package/flutter-pi/
+F:	package/flutter-sdk-bin/
+F:	support/testing/tests/package/test_flutter.py
+
 N:	Adam Heinrich <adam@adamh.cz>
 F:	package/jack1/
 
@@ -513,6 +521,9 @@ F:	package/iftop/
 F:	package/ncdu/
 
 N:	Brandon Maier <brandon.maier@collins.com>
+F:	board/freescale/ls1046a-frwy/
+F:	configs/ls1046a-frwy_defconfig
+F:	package/qoriq-fm-ucode/
 F:	package/unifdef/
 F:	package/vmtouch/
 
@@ -840,7 +851,7 @@ F:	package/bayer2rgb-neon/
 F:	package/gstreamer1/gst1-plugins-bayer2rgb-neon/
 
 N:	Eric Le Bihan <eric.le.bihan.dev@free.fr>
-F:	docs/manual/adding-packages-meson.txt
+F:	docs/manual/adding-packages-meson.adoc
 F:	package/adwaita-icon-theme/
 F:	package/darkhttpd/
 F:	package/eudev/
@@ -1191,6 +1202,7 @@ F:	board/freescale/imxrt1050evk/
 F:	board/olimex/a*
 F:	configs/amarula_vyasa_rk3288_defconfig
 F:	configs/asus_tinker_rk3288_defconfig
+F:	configs/bananapi_m2_berry_defconfig
 F:	configs/bananapi_m2_ultra_defconfig
 F:	configs/freescale_imx6ullevk_defconfig
 F:	configs/imx6ullevk_defconfig
@@ -1203,9 +1215,11 @@ F:	package/erlang-jiffy/
 F:	package/esp-hosted/
 F:	package/gcc/
 F:	package/harfbuzz/
+F:	package/libblockdev/
 F:	package/libfuse3/
 F:	package/libnspr/
 F:	package/libnss/
+F:	package/libnvme/
 F:	package/mali-driver/
 F:	package/minicom/
 F:	package/mmc-utils/
@@ -1401,6 +1415,7 @@ F:	package/fxdiv/
 F:	package/gensio/
 F:	package/lua-std-debug/
 F:	package/lua-std-normalize/
+F:	package/libucontext/
 F:	package/lilv/
 F:	package/lv2/
 F:	package/neon-2-sse/
@@ -1954,8 +1969,10 @@ F:	package/ecryptfs-utils/
 N:	Marcin Niestroj <m.niestroj@grinn-global.com>
 F:	board/grinn/
 F:	board/orangepi/orangepi-zero-plus/
+F:	board/orangepi/orangepi-zero3/
 F:	configs/grinn_*
 F:	configs/orangepi_zero_plus_defconfig
+F:	configs/orangepi_zero3_defconfig
 F:	package/argparse/
 F:	package/dt-utils/
 F:	package/easydbus/
@@ -2494,6 +2511,7 @@ F:	support/testing/tests/package/test_python_rsa.py
 F:	support/testing/tests/package/test_python_s3transfer.py
 
 N:	Raphael Pavlidis <raphael.pavlidis@gmail.com>
+F:	package/nvidia-persistenced/
 F:	package/shadow/
 F:	package/slirp4netns/
 F:	package/sway/
@@ -2595,8 +2613,11 @@ F:	package/upower/
 F:	package/waffle/
 F:	package/xenomai/
 F:	package/zziplib/
+F:	support/testing/tests/package/sample_python_mako.py
+F:	support/testing/tests/package/sample_python_mako_ext.py
 F:	support/testing/tests/package/test_glxinfo.py
 F:	support/testing/tests/package/test_openssh.py
+F:	support/testing/tests/package/test_python_mako.py
 F:	toolchain/
 
 N:	Rufus Segar <rhs@riseup.net>
@@ -2626,6 +2647,7 @@ N:	Sam Voss <sam.voss@gmail.com>
 F:	package/ripgrep/
 
 N:	Sebastian Weyer <sebastian.weyer@smile.fr>
+F:      package/amlogic-boot-fip/
 F:	package/nushell/
 F:	support/testing/tests/package/sample_nu.nu
 F:	support/testing/tests/package/test_nu.py
