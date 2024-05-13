@@ -1,7 +1,11 @@
 # Architecture
 BR2_riscv=y
-BR2_RISCV_64=y
+BR2_RISCV_32=y
 # BR2_RISCV_USE_MMU is not set
+
+# Hashes
+BR2_GLOBAL_PATCH_DIR="board/qemu/riscv32-virt/patches"
+BR2_DOWNLOAD_FORCE_CHECK_HASHES=y
 
 # Linux headers same as kernel
 BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_6_6=y
@@ -22,7 +26,7 @@ BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_CUSTOM_VERSION=y
 BR2_LINUX_KERNEL_CUSTOM_VERSION_VALUE="6.6.18"
 BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
-BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/qemu/riscv64-virt/linux-nommu.config"
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/qemu/riscv32-virt/linux-nommu.config"
 BR2_LINUX_KERNEL_IMAGE=y
 
 # host-qemu for gitlab testing
