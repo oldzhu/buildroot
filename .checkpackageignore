@@ -571,7 +571,6 @@ package/elftosb/0001-fixes-includes.patch lib_patch.Upstream
 package/elftosb/0002-force-cxx-compiler.patch lib_patch.Upstream
 package/elfutils/0001-Add-a-enable-disable-progs-configure-option.patch lib_patch.Upstream
 package/elfutils/0002-Really-make-Werror-conditional-to-BUILD_WERROR.patch lib_patch.Upstream
-package/empty/0001-respect-LDFLAGS.patch lib_patch.Upstream
 package/erlang-p1-sip/0001-correct-include.patch lib_patch.Upstream
 package/erlang-p1-xmpp/0001-fix-includes.patch lib_patch.Upstream
 package/erlang-rebar/0001-src-rebar_port_compiler-add-fPIC-to-LDFLAGS-by-defau.patch lib_patch.Upstream
@@ -616,7 +615,6 @@ package/ffmpeg/0002-avcodec-vaapi_h264-skip-decode-if-pic-has-no-slices.patch li
 package/ffmpeg/0003-libavutil-Fix-mips-build.patch lib_patch.Upstream
 package/ffmpeg/0004-configure-add-extralibs-to-extralibs_xxx.patch lib_patch.Upstream
 package/ficl/0001-fix-Makefile.patch lib_patch.Upstream
-package/ficl/0002-Makefile.linux-pass-LDFLAGS.patch lib_patch.Upstream
 package/flatbuffers/0001-include-flatbuffers-base.h-fix-build-on-musl.patch lib_patch.Upstream
 package/flex/0001-build-AC_USE_SYSTEM_EXTENSIONS-in-configure.ac.patch lib_patch.Upstream
 package/flex/0002-build-make-it-possible-to-disable-the-build-of-the-f.patch lib_patch.Upstream
@@ -695,7 +693,6 @@ package/gobject-introspection/0002-Add-rpath-links-to-ccompiler.patch lib_patch.
 package/gobject-introspection/0003-giscanner-ignore-error-return-codes-from-ldd-wrapper.patch lib_patch.Upstream
 package/gpm/0001-Added-musl-support-to-libgpm-and-the-daemon.patch lib_patch.Upstream
 package/gpm/0002-Install-unversioned-solibrary.patch lib_patch.Upstream
-package/gpm/0003-src-Makefile.in-Really-install-unversioned-solibrary.patch lib_patch.Upstream
 package/gpm/0004-Use-sigemptyset-API-instead-of-__sigemptyset.patch lib_patch.Upstream
 package/gpm/0005-fix-building-w-newer-glibc.patch lib_patch.Upstream
 package/gpm/0006-src-headers-daemon.h-avoid-redefinition-of-last_sele.patch lib_patch.Upstream
@@ -703,7 +700,6 @@ package/gpsd/S50gpsd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/gptfdisk/0001-gptcurses-partially-revert-Tweaks-for-building-on-th.patch lib_patch.Upstream
 package/graphite2/0001-don-t-install-a-libtool-file-with-static-library.patch lib_patch.Upstream
 package/grpc/0002-wrap_memcpy.cc-add-GPR_DISABLE_WRAPPED_MEMCPY.patch lib_patch.Upstream
-package/grpc/0003-host-grpc-only-cpp-plugin.patch lib_patch.Upstream
 package/grpc/0004-disable-unconditionally-downloading-api-repos.patch lib_patch.Upstream
 package/gstreamer1/gstd/0001-Don-t-require-gstd-check-user-xenv.sh-for-systemd-se.patch lib_patch.Upstream
 package/guile/0001-calculate-csqrt_manually.patch lib_patch.Upstream
@@ -912,7 +908,6 @@ package/libsvgtiny/0004-Build-Include-gperf-generated-code-directly.patch lib_pa
 package/libtalloc/0001-buildtools-wafsamba-add-disable-stack-protector-opti.patch lib_patch.Upstream
 package/libtelnet/0001-fix-compilation-without-zlib.patch lib_patch.Upstream
 package/libtheora/0001-link-libtheoradec.patch lib_patch.Upstream
-package/libtheora/0002-fix-autoreconf.patch lib_patch.Upstream
 package/libtomcrypt/0001-fix-CVE-2019-17362.patch lib_patch.Upstream
 package/libtommath/0001-Build-test-bn_mp_set_double-c-on-more-platforms.patch lib_patch.Upstream
 package/libtorrent/0001-libtorrent.pc.in-add-Libs.Private.patch lib_patch.Upstream
@@ -1580,8 +1575,6 @@ package/xen/0004-libs-light-fix-tv_sec-fprintf-format.patch lib_patch.Upstream
 package/xenomai/3.0.10/0001-lib-boilerplate-iniparser-Allow-building-with-GCC-10-2-2020101.patch lib_patch.Upstream
 package/xenomai/3.0.10/0002-Add-disable-demo-testsuite-options.patch lib_patch.Upstream
 package/xenomai/3.0.10/0003-lib-cobalt-copperplate-Use-valid-addresses-for-pthread_setspecific.patch lib_patch.Upstream
-package/xfsprogs/0001-mdrestore-do-not-do-dynamic-linking-of-libtool-libra.patch lib_patch.Upstream
-package/xfsprogs/0002-libxfs-do-not-try-to-run-the-crc32selftest.patch lib_patch.Upstream
 package/xinetd/0001-ar.patch lib_patch.Upstream
 package/xinetd/0002-destdir.patch lib_patch.Upstream
 package/xinetd/0003-rpc-fix.patch lib_patch.Upstream
