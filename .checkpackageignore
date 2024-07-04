@@ -809,7 +809,7 @@ package/libeXosip2/0001-src-eXtl_dtls.c-fix-build-with-libressl-3.4.1.patch lib_
 package/libedit/0001-check-bsd-functions-in-libbsd.patch lib_patch.Upstream
 package/libevent/0001-Don-t-define-BIO_get_init-for-LibreSSL-3-5.patch lib_patch.Upstream
 package/libfcgi/0001-link-against-math.patch lib_patch.Upstream
-package/libfcgi/0002-disable-examples.patch lib_patch.Sob lib_patch.Upstream
+package/libfcgi/0002-disable-examples.patch lib_patch.Upstream
 package/libffi/0001-Fix-use-of-compact-eh-frames-on-MIPS.patch lib_patch.Upstream
 package/libfm/0001-modules-fix-cross-compilation.patch lib_patch.Upstream
 package/libfreeimage/0001-no-root-install.patch lib_patch.Upstream
@@ -1053,7 +1053,6 @@ package/musl/0001-avoid-kernel-if_ether.h.patch lib_patch.Upstream
 package/musl/0002-package-musl-Make-scheduler-functions-Linux-compatib.patch lib_patch.Upstream
 package/nano/0001-lib-getrandom.c-fix-build-with-uclibc-1.0.35.patch lib_patch.Upstream
 package/nanocom/0001-fix-build-with-gcc-10.patch lib_patch.Upstream
-package/ncmpc/0001-meson.build-add-atomic-dependency-for-sparc.patch lib_patch.Upstream
 package/ne10/0001-CMakeLists-don-t-hard-code-thumb-code-generation.patch lib_patch.Upstream
 package/ne10/0002-fix-build-without-C.patch lib_patch.Upstream
 package/neard/S53neard Shellcheck lib_sysv.Indent lib_sysv.Variables
@@ -1207,7 +1206,6 @@ package/pkgconf/0001-Only-prefix-with-the-sysroot-a-subset-of-variables.patch li
 package/pkgconf/0002-Revert-main-assume-modversion-insted-of-version-if-o.patch lib_patch.Upstream
 package/pkgconf/pkg-config.in Shellcheck
 package/poke/0001-configure.ac-HELP2MAN-replace-by-true-when-cross-com.patch lib_patch.Upstream
-package/poke/0002-lib-getrandom.c-fix-build-with-uclibc-1.0.35.patch lib_patch.Upstream
 package/policycoreutils/0001-Add-DESTDIR-to-all-paths-that-use-an-absolute-path.patch lib_patch.Upstream
 package/policycoreutils/0002-Add-PREFIX-to-host-paths.patch lib_patch.Upstream
 package/postgresql/S50postgresql lib_sysv.Variables
