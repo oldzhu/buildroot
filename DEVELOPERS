@@ -542,6 +542,7 @@ F:	package/ncdu/
 N:	Brandon Maier <brandon.maier@collins.com>
 F:	board/freescale/ls1046a-frwy/
 F:	configs/ls1046a-frwy_defconfig
+F:	package/atftp/
 F:	package/bats-assert/
 F:	package/bats-file/
 F:	package/bats-support/
@@ -550,6 +551,7 @@ F:	package/python-pysensors/
 F:	package/qoriq-fm-ucode/
 F:	package/unifdef/
 F:	package/vmtouch/
+F:	support/testing/tests/package/test_atftp.py
 F:	support/testing/tests/package/test_zip.py
 
 N:	Brock Williams <brock@cottonwoodcomputer.com>
@@ -1087,6 +1089,10 @@ F:	configs/freescale_imx6ullevk_defconfig
 
 N:	Falco Hyfing <hyfinglists@gmail.com>
 F:	package/python-pymodbus/
+
+N:	Fiona Klute <fiona.klute@gmx.de>
+F:	package/python-pyasynchat/
+F:	package/python-pyasyncore/
 
 N:	Flávio Tapajós <flavio.tapajos@newtesc.com.br>
 F:	configs/asus_tinker-s_rk3288_defconfig
