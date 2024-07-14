@@ -55,6 +55,8 @@ F:	package/brotli/
 F:	package/bubblewrap/
 F:	package/cage/
 F:	package/cog/
+F:	package/libavif/
+F:	package/libdex/
 F:	package/libepoxy/
 F:	package/libmanette/
 F:	package/libpsl/
@@ -559,8 +561,10 @@ F:	package/pdmenu/
 
 N:	Bryan Brattlof <bb@ti.com>
 F:	board/ti/
+F:	board/beagleboard/beagleplay/
 F:	boot/ti-k3-boot-firmware/
 F:	boot/ti-k3-r5-loader/
+F:	configs/beagleplay_defconfig
 F:	configs/ti_am62x_sk_defconfig
 F:	configs/ti_am64x_sk_defconfig
 
@@ -778,6 +782,7 @@ F:	package/xinetd/
 N:	Dario Binacchi <dario.binacchi@amarulasolutions.com>
 F:	board/bsh/
 F:	board/stmicroelectronics/stm32f769-disco/
+F:	configs/imx6ulz_bsh_smm_m2_defconfig
 F:	configs/imx8mn_bsh_smm_s2_defconfig
 F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
 F:	configs/stm32f769_disco_sd_defconfig
@@ -851,6 +856,7 @@ F:	package/wireless-regdb/
 N:	Dmitry Chestnykh <dm.chestnykh@gmail.com>
 F:	board/qemu/sparc-ss10/
 F:	configs/qemu_sparc_ss10_defconfig
+F:	package/uclibc-ng-test/
 
 N:	Dominik Faessler <faessler@was.ch>
 F:	package/logsurfer/
@@ -1205,6 +1211,10 @@ F:	package/flannel/
 N:	Geoffrey Ragot <geoffreyragot@gmail.com>
 F:	package/python-pyyaml/
 
+N:	Gero Schwaericke <gero.schwaericke@posteo.de>
+F:	board/cubietech/cubieboard1/
+F:	configs/cubieboard1_defconfig
+
 N:	Gilles Talis <gilles.talis@gmail.com>
 F:	board/freescale/imx8mmevk/
 F:	board/friendlyarm/nanopi-r2s/
@@ -1365,6 +1375,7 @@ F:	configs/kontron_bl_imx8mm_defconfig
 F:	configs/kontron_smarc_sal28_defconfig
 F:	configs/kontron_pitx_imx8m_defconfig
 F:	package/altera-stapl/
+F:	package/blake3/
 F:	package/ipmitool/
 F:	package/libnetconf2/
 F:	package/libyang/
@@ -1495,7 +1506,9 @@ F:	package/swaybg/
 F:	package/yad/
 
 N:	Jamie Gibbons <jamie.gibbons@microchip.com>
+F:	board/beagleboard/beaglev_fire/
 F:	board/microchip/mpfs_icicle/
+F:	configs/beaglev_fire_defconfig
 F:	configs/microchip_mpfs_icicle_defconfig
 F:	package/microchip-hss-payload-generator/
 
@@ -1752,10 +1765,9 @@ N:	Julien Olivain <ju.o@free.fr>
 F:	board/qemu/riscv64-virt-efi/
 F:	board/spike/
 F:	board/technexion/imx8mmpico/
-F:	board/technexion/imx8mpico/
 F:	configs/imx8mmpico_defconfig
-F:	configs/imx8mpico_defconfig
 F:	configs/qemu_riscv64_virt_efi_defconfig
+F:	configs/spike_riscv32_defconfig
 F:	configs/spike_riscv64_defconfig
 F:	package/fluid-soundfont/
 F:	package/fluidsynth/
@@ -1764,6 +1776,7 @@ F:	package/gnupg2/
 F:	package/highway/
 F:	package/kexec/
 F:	package/libjxl/
+F:	package/libopenmpt/
 F:	package/mokutil/
 F:	package/octave/
 F:	package/ola/
@@ -1785,6 +1798,7 @@ F:	package/python-pyalsa/
 F:	package/python-spake2/
 F:	package/rdma-core/
 F:	package/riscv-isa-sim/
+F:	package/tig/
 F:	package/tinycompress/
 F:	package/z3/
 F:	package/zynaddsubfx/
@@ -1804,6 +1818,8 @@ F:	support/testing/tests/package/test_acpica.py
 F:	support/testing/tests/package/test_acpica/
 F:	support/testing/tests/package/test_apache.py
 F:	support/testing/tests/package/test_bc.py
+F:	support/testing/tests/package/test_bcc.py
+F:	support/testing/tests/package/test_bcc/
 F:	support/testing/tests/package/test_bitcoin.py
 F:	support/testing/tests/package/test_brotli.py
 F:	support/testing/tests/package/test_bzip2.py
@@ -1868,6 +1884,7 @@ F:	support/testing/tests/package/test_mdadm.py
 F:	support/testing/tests/package/test_mdadm/
 F:	support/testing/tests/package/test_micropython.py
 F:	support/testing/tests/package/test_micropython/
+F:	support/testing/tests/package/test_mosquitto.py
 F:	support/testing/tests/package/test_mtools.py
 F:	support/testing/tests/package/test_mtr.py
 F:	support/testing/tests/package/test_ncdu.py
@@ -1922,6 +1939,8 @@ F:	support/testing/tests/package/test_usbutils/
 F:	support/testing/tests/package/test_weston.py
 F:	support/testing/tests/package/test_weston/
 F:	support/testing/tests/package/test_wine.py
+F:	support/testing/tests/package/test_xfsprogs.py
+F:	support/testing/tests/package/test_xfsprogs/
 F:	support/testing/tests/package/test_xz.py
 F:	support/testing/tests/package/test_z3.py
 F:	support/testing/tests/package/test_z3/
@@ -2019,7 +2038,7 @@ F:	package/mongrel2/
 
 N:	Lothar Felten <lothar.felten@gmail.com>
 F:	board/bananapi/bananapi-m2-ultra/
-F:	board/beaglebone/
+F:	board/beagleboard/beaglebone/
 F:	configs/bananapi_m2_ultra_defconfig
 F:	configs/beaglebone_defconfig
 F:	configs/beaglebone_qt5_defconfig
@@ -2155,8 +2174,11 @@ F:	utils/diffconfig
 
 N:	Marcus Hoffmann <bubu@bubu1.eu>
 F:	package/python-jc/
+F:	package/python-ruamel-yaml-clib/
 F:	support/testing/tests/package/test_python_fastapi.py
+F:	support/testing/tests/package/test_python_ruamel_yaml.py
 F:	support/testing/tests/package/sample_python_fastapi.py
+F:	support/testing/tests/package/sample_python_ruamel_yaml.py
 
 N:	Marek Belisko <marek.belisko@open-nandra.com>
 F:	package/libatasmart/
@@ -2285,6 +2307,7 @@ F:	package/sqlitecpp/
 
 N:	Michael Trimarchi <michael@amarulasolutions.com>
 F:	board/bsh/
+F:	configs/imx6ulz_bsh_smm_m2_defconfig
 F:	configs/imx8mn_bsh_smm_s2_defconfig
 F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
 F:	package/python-spidev/
@@ -2491,7 +2514,7 @@ F:	package/libunistring/
 
 N:	Peter Korsgaard <peter@korsgaard.com>
 F:	board/arrow/avenger96/
-F:	board/beagleboneai/
+F:	board/beagleboard/beagleboneai/
 F:	board/minnowboard/
 F:	board/nezha/
 F:	board/librecomputer/lafrite/
@@ -2674,9 +2697,11 @@ F:	package/python-pymupdf/
 F:	package/python-rsa/
 F:	package/python-s3transfer/
 F:	support/testing/tests/package/sample_python_jmespath.py
+F:	support/testing/tests/package/sample_python_pymupdf.py
 F:	support/testing/tests/package/sample_python_rsa.py
 F:	support/testing/tests/package/sample_python_s3transfer.py
 F:	support/testing/tests/package/test_python_jmespath.py
+F:	support/testing/tests/package/test_python_pymupdf.py
 F:	support/testing/tests/package/test_python_rsa.py
 F:	support/testing/tests/package/test_python_s3transfer.py
 
@@ -2796,6 +2821,16 @@ F:	support/testing/tests/package/test_openssh.py
 F:	support/testing/tests/package/test_python_mako.py
 F:	toolchain/
 
+N:	Roy Kollen Svendsen <roykollensvendsen@gmail.com>
+F:	package/qt6/qt6declarative/
+F:	package/qt6/qt6languageserver/
+F:	package/qt6/qt6mqtt/
+F:	package/qt6/qt6shadertools/
+F:	package/qt6/qt6tools/
+F:	package/qt6/qt6virtualkeyboard/
+F:	package/qt6/qt6wayland/
+F:	package/qt6/qt6websockets/
+
 N:	Rufus Segar <rhs@riseup.net>
 F:	package/agent-proxy/
 
@@ -2805,6 +2840,8 @@ F:	package/biosdevname/
 N:	Saeed Kazemi <kazemi.ms@gmail.com>
 F:	package/eza/
 F:	package/procs/
+F:	package/mxt-app/
+F:	package/zoxide/
 
 N:	Sam Lancia <sam@gpsm.co.uk>
 F:	package/lrzip/
@@ -2900,7 +2937,6 @@ F:	package/json-javascript/
 F:	package/lcdapi/
 F:	package/libfreefare/
 F:	package/libjson/
-F:	package/libnfc/
 F:	package/libnfc/
 F:	package/libserial/
 F:	package/libsigsegv/
@@ -3004,8 +3040,6 @@ N:	Tan En De <ende.tan@starfivetech.com>
 F:	package/libkcapi/
 
 N:	Theo Debrouwere <t.debrouwere@televic.com>
-F:	board/beagleboardx15/
-F:	configs/beagleboardx15_defconfig
 F:	package/pugixml/
 
 N:	Thierry Bultel <tbultel@free.fr>
@@ -3044,13 +3078,9 @@ F:	package/go/
 
 N:	Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 F:	arch/Config.in.arm
-F:	board/beaglev/
 F:	board/stmicroelectronics/stm32mp157c-dk2/
-F:	boot/beaglev-ddrinit/
-F:	boot/beaglev-secondboot/
 F:	boot/boot-wrapper-aarch64/
 F:	boot/grub2/
-F:	configs/beaglev_defconfig
 F:	configs/stm32mp157c_dk2_defconfig
 F:	package/android-tools/
 F:	package/b43-firmware/
@@ -3317,6 +3347,7 @@ F:	support/download/
 N:	Yann E. MORIN <yann.morin@orange.com>
 F:	.editorconfig
 F:	package/gpsd/
+F:	package/skopeo/
 
 N:	Yegor Yefremov <yegorslists@googlemail.com>
 F:	configs/beaglebone_defconfig

@@ -74,6 +74,40 @@ def test_Ifdef(testname, filename, string, expected):
     assert warnings == expected
 
 
+get_package_prefix_from_filename = [
+    ('linux extension',
+     'linux/linux-ext-aufs.mk',
+     ['aufs', 'AUFS']),
+    ('linux tool',
+     'package/linux-tools/linux-tool-gpio.mk.in',
+     ['gpio', 'GPIO']),
+    ('boot',
+     'boot/binaries-marvell/binaries-marvell.mk',
+     ['binaries-marvell', 'BINARIES_MARVELL']),
+    ('toolchain',
+     'toolchain/toolchain-external/toolchain-external-bootlin/toolchain-external-bootlin.mk',
+     ['toolchain-external-bootlin', 'TOOLCHAIN_EXTERNAL_BOOTLIN']),
+    ('package, underscore, subfolder',
+     'package/x11r7/xapp_bitmap/xapp_bitmap.mk',
+     ['xapp_bitmap', 'XAPP_BITMAP']),
+    ('package, starting with number',
+     'package/4th/4th.mk',
+     ['4th', '4TH']),
+    ('package, long name',
+     'package/perl-mojolicious-plugin-authentication/perl-mojolicious-plugin-authentication.mk',
+     ['perl-mojolicious-plugin-authentication', 'PERL_MOJOLICIOUS_PLUGIN_AUTHENTICATION']),
+    ('package, case sensitive',
+     'package/libeXosip2/libeXosip2.mk',
+     ['libeXosip2', 'LIBEXOSIP2']),
+    ]
+
+
+@pytest.mark.parametrize('testname,filename,expected', get_package_prefix_from_filename)
+def test_get_package_prefix_from_filename(testname, filename, expected):
+    prefix_lower, prefix_upper = m.get_package_prefix_from_filename(filename)
+    assert [prefix_lower, prefix_upper] == expected
+
+
 Indent = [
     ('ignore comment at beginning of line',
      'any',
@@ -567,6 +601,12 @@ TypoInPackageVariable = [
      'OTHERS_VAR = \n',
      [['any.mk:2: possible typo: OTHERS_VAR -> *ANY*',
        'OTHERS_VAR = \n']]),
+    ('linux tool',
+     'package/linux-tools/linux-tool-cpupower.mk.in',
+     'CPUPOWER_DEPENDENCIES =\n'
+     'POWER_DEPENDENCIES +=\n',
+     [['package/linux-tools/linux-tool-cpupower.mk.in:2: possible typo: POWER_DEPENDENCIES -> *CPUPOWER*',
+       'POWER_DEPENDENCIES +=\n']]),
     ]
 
 
@@ -602,13 +642,13 @@ UselessFlag = [
     ('generic',
      'any.mk',
      'ANY_INSTALL_IMAGES = NO\n'
-     'ANY_INSTALL_REDISTRIBUTE = YES\n'
+     'ANY_REDISTRIBUTE = YES\n'
      'ANY_INSTALL_STAGING = NO\n'
      'ANY_INSTALL_TARGET = YES\n',
      [['any.mk:1: useless default value (url#_infrastructure_for_packages_with_specific_build_systems)',
        'ANY_INSTALL_IMAGES = NO\n'],
       ['any.mk:2: useless default value (url#_infrastructure_for_packages_with_specific_build_systems)',
-       'ANY_INSTALL_REDISTRIBUTE = YES\n'],
+       'ANY_REDISTRIBUTE = YES\n'],
       ['any.mk:3: useless default value (url#_infrastructure_for_packages_with_specific_build_systems)',
        'ANY_INSTALL_STAGING = NO\n'],
       ['any.mk:4: useless default value (url#_infrastructure_for_packages_with_specific_build_systems)',
@@ -618,9 +658,9 @@ UselessFlag = [
      'ifneq (condition)\n'
      'ANY_INSTALL_IMAGES = NO\n'
      'endif\n'
-     'ANY_INSTALL_REDISTRIBUTE = YES\n',
+     'ANY_REDISTRIBUTE = YES\n',
      [['any.mk:4: useless default value (url#_infrastructure_for_packages_with_specific_build_systems)',
-       'ANY_INSTALL_REDISTRIBUTE = YES\n']]),
+       'ANY_REDISTRIBUTE = YES\n']]),
     ]
 
 

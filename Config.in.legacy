@@ -146,6 +146,27 @@ endif
 
 comment "Legacy options removed in 2024.08"
 
+config BR2_GDB_VERSION_12
+	bool "gdb 12.x has been removed"
+	select BR2_LEGACY
+	help
+	  GDB 12.x has been removed. The new default version of GDB
+	  14.x has been automatically selected instead.
+
+config BR2_TARGET_BEAGLEV_DDRINIT
+	bool "beaglev-ddrinit has been removed"
+	select BR2_LEGACY
+	help
+	  The beaglev-secondboot package has been removed after
+	  the beaglev_defconfig removal.
+
+config BR2_TARGET_BEAGLEV_SECONDBOOT
+	bool "beaglev-secondboot has been removed"
+	select BR2_LEGACY
+	help
+	  The beaglev-secondboot package has been removed after
+	  the beaglev_defconfig removal.
+
 config BR2_PACKAGE_ONEVPL_INTEL_GPU
 	bool "onevpl-intel-gpu has been renamed"
 	select BR2_LEGACY
@@ -159,6 +180,13 @@ config BR2_PACKAGE_CGIC
 	select BR2_LEGACY
 	help
 	  the cgic upstream no longer exists.
+
+config BR2_PACKAGE_BEECRYPT
+	bool "beecrypt package removed"
+	select BR2_LEGACY
+	help
+	  The beecrypt package was removed as it is not maintained
+	  anymore (no release since 2015).
 
 config BR2_PACKAGE_VERSAL_FIRMWARE
 	bool "versal-firmware has been replaced by xilinx-prebuilt"
