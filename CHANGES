@@ -1,3 +1,21 @@
+2024.05.1, released July 13th, 2024
+
+	Important / security related fixes.
+
+	Infrastructure: Ensure support/scripts/apply-patches can be
+	used outside Buildroot (regression in 2024.05).
+
+	Defconfig: Pine64 rockpro64: Build ethernet driver in kernel
+	rather than as module. QEMU sh4: Change to initramfs to
+	workaround regression in QEMU. Visionfive2: Correct kernel
+	headers version
+
+	Updated/fixed packages: apache, avro-c, daq, dav1d,
+	fluent-bit, ghostscript, glibc, libmad, libopenssl,
+	linux-firmware, mesa3d, network-manager, ntp, nut, octave,
+	openssh, openvpn, php, raspberrypi-usbboot, redis, sentry-cli,
+	tor, uuu, vlc, xmrig, znc
+
 2024.05, released June 12th, 2024
 
 	Various fixes.
@@ -126,6 +144,22 @@
         #16009: 'select' does not work with 'choice'
         #16036: android-tools version is too old
         #16075: Cannot use linux kernel extensions from external tree..
+
+2024.02.4, released July 13th, 2024
+
+	Important / security related fixes.
+
+	Infrastructure: Ensure a custom tar program specified with
+	make TAR=/path/to/custom/tar is used everwhere.
+
+	Defconfig: Pine64 rockpro64: Build ethernet driver in kernel
+	rather than as module.
+
+	Updated/fixed packages: apache, composer, daq, fluent-bit,
+	ghostscript, glibc, liblockfile, libmad, libopenssl, mesa3d,
+	network-manager, ntp, octave, openssh, openvpn, php, python3,
+	qt6base, raspberrypi-usbboot, redis, sentry-cli, systemd, tor,
+	vlc, xmrig, znc
 
 2024.02.3, released June 10th, 2024
 

@@ -276,7 +276,7 @@ $(BUILD_DIR)/%/.stamp_configured:
 	$(Q)touch $@
 
 # Build
-$(BUILD_DIR)/%/.stamp_built::
+$(BUILD_DIR)/%/.stamp_built:
 	@$(call step_start,build)
 	@$(call MESSAGE,"Building")
 	$(foreach hook,$($(PKG)_PRE_BUILD_HOOKS),$(call $(hook))$(sep))
@@ -761,6 +761,7 @@ endif # ifeq ($$($(2)_CPE_ID_VALID),YES)
 # Similarly for the skeleton.
 $(2)_ADD_TOOLCHAIN_DEPENDENCY	?= YES
 $(2)_ADD_SKELETON_DEPENDENCY	?= YES
+$(2)_ADD_CCACHE_DEPENDENCY	?= YES
 
 
 ifeq ($(4),target)
@@ -770,6 +771,10 @@ endif
 ifeq ($$($(2)_ADD_TOOLCHAIN_DEPENDENCY),YES)
 $(2)_DEPENDENCIES += toolchain
 endif
+endif
+
+ifeq ($$(BR2_CCACHE):$$($(2)_ADD_CCACHE_DEPENDENCY),y:YES)
+$(2)_DEPENDENCIES += host-ccache
 endif
 
 ifneq ($(1),host-skeleton)
@@ -790,12 +795,6 @@ ifeq ($$(filter host-tar host-skeleton host-xz host-lzip host-fakedate,$(1)),)
 $(2)_EXTRACT_DEPENDENCIES += \
 	$$(foreach dl,$$($(2)_ALL_DOWNLOADS),\
 		$$(call extractor-pkg-dependency,$$(notdir $$(dl))))
-endif
-
-ifeq ($$(BR2_CCACHE),y)
-ifeq ($$(filter host-tar host-skeleton host-xz host-lzip host-fakedate host-ccache host-cmake host-hiredis host-pkgconf host-zstd,$(1)),)
-$(2)_DEPENDENCIES += host-ccache
-endif
 endif
 
 ifeq ($$(BR2_REPRODUCIBLE),y)
@@ -1253,6 +1252,8 @@ else ifeq ($$($(2)_SITE_METHOD),hg)
 DL_TOOLS_DEPENDENCIES += hg
 else ifeq ($$($(2)_SITE_METHOD),cvs)
 DL_TOOLS_DEPENDENCIES += cvs
+else ifneq ($(filter ftp ftps,$$($(2)_SITE_METHOD)),)
+DL_TOOLS_DEPENDENCIES += curl
 endif # SITE_METHOD
 
 # cargo/go vendoring (may) need git
