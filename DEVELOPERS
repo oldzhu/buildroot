@@ -201,6 +201,7 @@ F:	package/cups-filters/
 F:	package/cutekeyboard/
 F:	package/fail2ban/
 F:	package/grep/
+F:	package/gtkiostream/
 F:	package/htpdate/
 F:	package/i2c-tools/
 F:	package/jq/
@@ -565,6 +566,7 @@ F:	board/beagleboard/beagleplay/
 F:	boot/ti-k3-boot-firmware/
 F:	boot/ti-k3-r5-loader/
 F:	configs/beagleplay_defconfig
+F:	configs/ti_am62ax_sk_defconfig
 F:	configs/ti_am62x_sk_defconfig
 F:	configs/ti_am64x_sk_defconfig
 
@@ -1441,6 +1443,9 @@ N:	Ismael Luceno <ismael@iodev.co.uk>
 F:	package/axel/
 F:	package/mawk/
 
+N:	J. Neuschäfer <j.neuschaefer@gmx.net>
+F:	package/tipidee
+
 N:	Jagan Teki <jagan@amarulasolutions.com>
 F:	board/amarula/
 F:	board/asus/
@@ -1804,6 +1809,8 @@ F:	package/z3/
 F:	package/zynaddsubfx/
 F:	support/testing/tests/boot/test_optee_os.py
 F:	support/testing/tests/boot/test_optee_os/
+F:	support/testing/tests/fs/test_btrfs.py
+F:	support/testing/tests/fs/test_btrfs/
 F:	support/testing/tests/package/sample_python_distro.py
 F:	support/testing/tests/package/sample_python_gnupg.py
 F:	support/testing/tests/package/sample_python_hwdata.py
@@ -1817,11 +1824,14 @@ F:	support/testing/tests/package/test_acl.py
 F:	support/testing/tests/package/test_acpica.py
 F:	support/testing/tests/package/test_acpica/
 F:	support/testing/tests/package/test_apache.py
+F:	support/testing/tests/package/test_attr.py
 F:	support/testing/tests/package/test_bc.py
 F:	support/testing/tests/package/test_bcc.py
 F:	support/testing/tests/package/test_bcc/
 F:	support/testing/tests/package/test_bitcoin.py
 F:	support/testing/tests/package/test_brotli.py
+F:	support/testing/tests/package/test_btrfs_progs.py
+F:	support/testing/tests/package/test_btrfs_progs/
 F:	support/testing/tests/package/test_bzip2.py
 F:	support/testing/tests/package/test_compressor_base.py
 F:	support/testing/tests/package/test_coremark.py
@@ -1829,6 +1839,7 @@ F:	support/testing/tests/package/test_cryptsetup.py
 F:	support/testing/tests/package/test_cryptsetup/
 F:	support/testing/tests/package/test_ddrescue.py
 F:	support/testing/tests/package/test_ddrescue/
+F:	support/testing/tests/package/test_dmidecode.py
 F:	support/testing/tests/package/test_dos2unix.py
 F:	support/testing/tests/package/test_ed.py
 F:	support/testing/tests/package/test_ethtool.py
@@ -2169,6 +2180,8 @@ F:	package/libselinux/
 F:	package/libsemanage/
 F:	package/libsepol/
 F:	package/selinux-python/
+F:	support/testing/tests/package/sample_python_asn1crypto.py
+F:	support/testing/tests/package/test_python_asn1crypto.py
 F:	utils/config
 F:	utils/diffconfig
 
@@ -2238,6 +2251,9 @@ F:	support/testing/tests/package/test_python_construct.py
 N:	Masahiro Yamada <yamada.masahiro@socionext.com>
 F:	board/arm/foundation-v8/
 F:	configs/arm_foundationv8_defconfig
+
+N:	Matt Flax <flatmax@flatmax.org>
+F:	package/gtkiostream/
 
 N:	Matt Silva <dev@matt-silva.com>
 F:	package/rlwrap/
@@ -2371,6 +2387,7 @@ F:	board/zynq/
 F:	board/zynqmp/
 F:	boot/xilinx-prebuilt/
 F:	configs/versal_vck190_defconfig
+F:	configs/versal_vpk180_defconfig
 F:	configs/zynq_zc702_defconfig
 F:	configs/zynq_zc706_defconfig
 F:	configs/zynqmp_kria_kd240_defconfig
@@ -2453,6 +2470,7 @@ F:	package/tcf-agent/
 N:	Yu Chien Peter Lin <peterlin@andestech.com>
 F:	board/andes
 F:	configs/andes_ae350_45_defconfig
+F:	package/kmon/
 
 N:	Olaf Rempel <razzor@kopf-tisch.de>
 F:	package/ctorrent/
@@ -2822,14 +2840,7 @@ F:	support/testing/tests/package/test_python_mako.py
 F:	toolchain/
 
 N:	Roy Kollen Svendsen <roykollensvendsen@gmail.com>
-F:	package/qt6/qt6declarative/
-F:	package/qt6/qt6languageserver/
-F:	package/qt6/qt6mqtt/
-F:	package/qt6/qt6shadertools/
-F:	package/qt6/qt6tools/
-F:	package/qt6/qt6virtualkeyboard/
-F:	package/qt6/qt6wayland/
-F:	package/qt6/qt6websockets/
+F:	package/qt6/
 
 N:	Rufus Segar <rhs@riseup.net>
 F:	package/agent-proxy/
@@ -3212,8 +3223,10 @@ F:	package/nss-myhostname/
 F:	package/utp_com/
 
 N:	Vincent Stehlé <vincent.stehle@arm.com>
+F:	board/arm/fvp-ebbr/
 F:	board/qemu/aarch64-ebbr/
 F:	board/qemu/arm-ebbr/
+F:	configs/arm_fvp_ebbr_defconfig
 F:	configs/qemu_aarch64_ebbr_defconfig
 F:	configs/qemu_arm_ebbr_defconfig
 F:	package/edk2-non-osi/
@@ -3280,6 +3293,7 @@ N:	Wojciech Niziński <niziak@spox.org>
 F:	package/fwup/
 
 N:	Woodrow Douglass <wdouglass@carnegierobotics.com>
+F:	package/chicken
 F:	package/opencv4
 F:	package/opencv4-contrib
 

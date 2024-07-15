@@ -233,7 +233,6 @@ configs/olimex_a64_olinuxino_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo175_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo1_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_lite2_defconfig lib_defconfig.ForceCheckHash
-configs/orangepi_lite_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_one_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_one_plus_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_pc2_defconfig lib_defconfig.ForceCheckHash
@@ -278,7 +277,6 @@ configs/socrates_cyclone5_defconfig lib_defconfig.ForceCheckHash
 configs/solidrun_clearfog_defconfig lib_defconfig.ForceCheckHash
 configs/solidrun_clearfog_gt_8k_defconfig lib_defconfig.ForceCheckHash
 configs/solidrun_macchiatobin_defconfig lib_defconfig.ForceCheckHash
-configs/stm32mp157c_dk2_defconfig lib_defconfig.ForceCheckHash
 configs/stm32mp157c_odyssey_defconfig lib_defconfig.ForceCheckHash
 configs/terasic_de10nano_cyclone5_defconfig lib_defconfig.ForceCheckHash
 configs/toradex_apalis_imx6_defconfig lib_defconfig.ForceCheckHash
@@ -389,8 +387,6 @@ package/c-icap/0001-Required-fixes-to-compile-and-run-under-cygwin.patch lib_pat
 package/c-icap/S96cicap Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/ca-certificates/0001-mozilla-certdata2pem.py-make-cryptography-module-opt.patch lib_patch.Upstream
 package/cache-calibrator/0001-Fix-conflicting-round-function.patch lib_patch.Upstream
-package/cairo/0001-_arc_max_angle_for_tolerance_normalized-fix-infinite.patch lib_patch.Upstream
-package/cairo/0002-Fix-mask-usage-in-image-compositor.patch lib_patch.Upstream
 package/caps/0001-Fix-stdint-types-with-musl.patch lib_patch.Upstream
 package/cdrkit/0001-fix-build-with-uClibc.patch lib_patch.Upstream
 package/cdrkit/0002-define-__THROW-to-avoid-build-issue-with-musl.patch lib_patch.Upstream
@@ -448,11 +444,6 @@ package/dhcp/S80dhcp-relay Shellcheck lib_sysv.Variables
 package/dhcp/S80dhcp-server Shellcheck lib_sysv.Variables
 package/dhcp/dhclient-script Shellcheck lib_shellscript.TrailingSpace
 package/dhcpcd/S41dhcpcd lib_sysv.Indent lib_sysv.Variables
-package/dhrystone/0001-cmdline-nruns.patch lib_patch.Sob lib_patch.Upstream
-package/dhrystone/0002-HZ.patch lib_patch.Sob lib_patch.Upstream
-package/dhrystone/0003-exit.patch lib_patch.Sob lib_patch.Upstream
-package/dhrystone/0004-headers.patch lib_patch.Sob lib_patch.Upstream
-package/dhrystone/0005-prototypes.patch lib_patch.Sob lib_patch.Upstream
 package/dht/0001-cmake.patch lib_patch.Upstream
 package/dillo/0001-usr-local-include.patch lib_patch.Upstream
 package/dillo/0002-Fix-openssl-detection.patch lib_patch.Upstream
@@ -1004,7 +995,6 @@ package/netsurf/0002-do-not-cross-compile-nsgenbind.patch lib_patch.Upstream
 package/netsurf/0003-fix-compilation-without-curl.patch lib_patch.Upstream
 package/netsurf/0004-framebuffer-Fix-internal-font-generated-source-for-GCC-10.patch lib_patch.Upstream
 package/nettle/0001-disable-testsuite-examples.patch lib_patch.Upstream
-package/network-manager/S45network-manager Shellcheck lib_sysv.ConsecutiveEmptyLines lib_sysv.EmptyLastLine lib_sysv.Variables
 package/nfs-utils/S60nfs Shellcheck lib_sysv.ConsecutiveEmptyLines lib_sysv.Variables
 package/nginx-modsecurity/0001-config-use-pkg-config.patch lib_patch.Upstream
 package/nginx/0001-auto-type-sizeof-rework-autotest-to-be-cross-compila.patch lib_patch.Upstream
@@ -1143,6 +1133,7 @@ package/pptp-linux/0001-susv3-legacy.patch lib_patch.Upstream
 package/pptp-linux/0002-fix-parallel-build.patch lib_patch.Upstream
 package/prboom/0001-libpng-1.4.patch lib_patch.Upstream
 package/prboom/0002-configure-remove-predefined-O2-optimization-flag.patch lib_patch.Upstream
+package/prelink-cross/0001-src-rtld-dl-tls.c-Fix-TLS-offsets-computation-for-s3.patch lib_patch.Upstream
 package/procps-ng/0001-configure-Add--disable-w.patch lib_patch.Upstream
 package/procps-ng/0002-escape-c-Fix-missing-nl_langinfo-on-certain-configs.patch lib_patch.Upstream
 package/procps-ng/0003-fix-pifd_open-check.patch lib_patch.Upstream
@@ -1527,8 +1518,6 @@ support/dependencies/check-host-tar.sh Shellcheck
 support/dependencies/check-host-xzcat.sh Shellcheck
 support/dependencies/dependencies.sh Shellcheck
 support/download/bzr Shellcheck lib_shellscript.ConsecutiveEmptyLines
-support/download/cargo-post-process Shellcheck
-support/download/dl-wrapper Shellcheck
 support/download/file Shellcheck
 support/download/go-post-process Shellcheck
 support/download/hg Shellcheck
