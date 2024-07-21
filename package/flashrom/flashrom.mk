@@ -15,7 +15,8 @@ FLASHROM_CONF_OPTS = \
 	-Dclassic_cli_print_wiki=disabled \
 	-Dich_descriptors_tool=enabled \
 	-Dtests=disabled \
-	-Duse_internal_dmi=true
+	-Duse_internal_dmi=true \
+	-Dwerror=false
 
 FLASHROM_PROGRAMMERS = \
 	buspirate_spi \
@@ -64,7 +65,6 @@ FLASHROM_PROGRAMMERS += \
 	nicintel_eeprom \
 	nicintel_spi \
 	ogp_spi \
-	satamv \
 	satasii
 
 ifeq ($(BR2_i386)$(BR2_x86_64),y)
@@ -73,7 +73,8 @@ FLASHROM_PROGRAMMERS += \
 	atapromise \
 	nic3com \
 	nicnatsemi \
-	nicrealtek
+	nicrealtek \
+	satamv
 endif
 endif
 
