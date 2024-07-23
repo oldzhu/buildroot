@@ -342,7 +342,6 @@ package/avahi/S05avahi-setup.sh lib_sysv.Indent lib_sysv.Variables
 package/avahi/S50avahi-daemon lib_sysv.Indent lib_sysv.Variables
 package/babeld/S50babeld Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/babeltrace2/0001-configure-simplify-warning-flags-detection.patch lib_patch.Upstream
-package/bandwidthd/0001-src-bandwidthd.h-fix-build-with-gcc-10.patch lib_patch.Upstream
 package/bash/0001-input.h-add-missing-include-on-stdio.h.patch lib_patch.Upstream
 package/bash/0002-parse.y-fix-compilation-for-non-multibyte-builds.patch lib_patch.Upstream
 package/bash/0003-configure-invert-condition-for-strtoimax-builtin.patch lib_patch.Upstream
@@ -519,9 +518,6 @@ package/exim/0003-Skip-version-check-and-symlink-installation.patch lib_patch.Up
 package/exim/S86exim lib_sysv.Indent lib_sysv.Variables
 package/expect/0001-enable-cross-compilation.patch lib_patch.Upstream
 package/expect/0002-allow-tcl-build-directory.patch lib_patch.Upstream
-package/faifa/0001-sha2.c-explicitly-include-endian.h-for-BYTE_ORDER-ma.patch lib_patch.Upstream
-package/faifa/0002-hpav_cfg.c-do-not-include-linux-if_ether.h-for-musl-.patch lib_patch.Upstream
-package/faifa/0003-Makefile.in-fix-asbolute-symlink-of-libfaifa.so.patch lib_patch.Upstream
 package/fail2ban/S60fail2ban Shellcheck lib_sysv.Variables
 package/fakedate/fakedate Shellcheck
 package/falcosecurity-libs/0001-cmake-Permit-setting-GRPC_CPP_PLUGIN.patch lib_patch.Upstream
@@ -947,7 +943,6 @@ package/mono/0002-Ongoing-work-on-the-cmake-build.patch lib_patch.Upstream
 package/mosquitto/S50mosquitto Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/motion/S99motion Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/mpd/0001-src-event-meson.build-add-atomic-dependency-for-spar.patch lib_patch.Upstream
-package/mpd/S95mpd lib_sysv.Variables
 package/mpir/0001-mpn-arm-udiv.asm-workaround-binutils-bug-14887.patch lib_patch.Upstream
 package/mpv/0001-fix-powerpc64-altivec.patch lib_patch.Upstream
 package/mraa/0001-include-Declare-gVERSION-global-as-extern.patch lib_patch.Upstream
