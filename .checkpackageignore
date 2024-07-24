@@ -562,9 +562,6 @@ package/ftop/0001-overflow.patch lib_patch.Upstream
 package/fwts/0001-build-do-not-use-Werror.patch lib_patch.Upstream
 package/fxdiv/0001-CMake-don-t-enable-CXX-unless-building-tests-benchma.patch lib_patch.Upstream
 package/fxload/0001-fix-static-build.patch lib_patch.Upstream
-package/gamin/0001-no-abstract-sockets.patch lib_patch.Upstream
-package/gamin/0002-no-const-return.patch lib_patch.Sob lib_patch.Upstream
-package/gamin/0003-fix-missing-PTHREAD_MUTEX_RECURSIVE_NP.patch lib_patch.Upstream
 package/gcc/12.4.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/13.3.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/14.1.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
@@ -1118,9 +1115,6 @@ package/pptp-linux/0002-fix-parallel-build.patch lib_patch.Upstream
 package/prboom/0001-libpng-1.4.patch lib_patch.Upstream
 package/prboom/0002-configure-remove-predefined-O2-optimization-flag.patch lib_patch.Upstream
 package/prelink-cross/0001-src-rtld-dl-tls.c-Fix-TLS-offsets-computation-for-s3.patch lib_patch.Upstream
-package/procps-ng/0001-configure-Add--disable-w.patch lib_patch.Upstream
-package/procps-ng/0002-escape-c-Fix-missing-nl_langinfo-on-certain-configs.patch lib_patch.Upstream
-package/procps-ng/0003-fix-pifd_open-check.patch lib_patch.Upstream
 package/procps-ng/S02sysctl lib_sysv.Variables
 package/proftpd/S50proftpd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/prosody/0001-enable-syslog.patch lib_patch.Upstream

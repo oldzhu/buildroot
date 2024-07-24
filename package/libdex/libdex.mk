@@ -15,11 +15,17 @@ LIBDEX_DEPENDENCIES = libglib2
 LIBDEX_CONF_OPTS = \
 	-Ddocs=false \
 	-Dexamples=false \
+	-Dstack-protector=false \
 	-Dsysprof=false \
 	-Dtests=false \
 	-Dvapi=false \
 	-Deventfd=enabled \
 	-Dintrospection=disabled
+
+ifeq ($(BR2_PACKAGE_LIBUCONTEXT),y)
+LIBDEX_DEPENDENCIES += libucontext
+LIBDEX_LDFLAGS += $(TARGET_LDFLAGS) -lucontext
+endif
 
 ifeq ($(BR2_PACKAGE_LIBURING),y)
 LIBDEX_CONF_OPTS += -Dliburing=enabled
