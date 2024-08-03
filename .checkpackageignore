@@ -334,7 +334,6 @@ package/bc/0003-dc-fix-exit-code-of-q-command.patch lib_patch.Upstream
 package/bc/0004-no-gen-libmath.patch lib_patch.Upstream
 package/bcache-tools/0001-Don-t-inline-crc64-for-gcc-5-compatability.patch lib_patch.Upstream
 package/bctoolbox/0001-Fix-Libs.private-flags-for-mbedtls.patch lib_patch.Upstream
-package/bcusdk/0001-fd_set-requires-inclusion-of-sys-select.h.patch lib_patch.Upstream
 package/bcusdk/0002-eibd-fix-endless-recursion-when-using-USB-backends.patch lib_patch.Upstream
 package/bearssl/0001-Fix-missing-objdir-dependency.patch lib_patch.Upstream
 package/benejson/0001-c-std.patch lib_patch.Upstream
@@ -541,7 +540,7 @@ package/fxdiv/0001-CMake-don-t-enable-CXX-unless-building-tests-benchma.patch li
 package/fxload/0001-fix-static-build.patch lib_patch.Upstream
 package/gcc/12.4.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/13.3.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
-package/gcc/14.1.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
+package/gcc/14.2.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/8.4.0/0001-xtensa-fix-PR-target-91880.patch lib_patch.Upstream
 package/gcc/8.4.0/0002-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch lib_patch.Upstream
 package/gcc/8.4.0/0003-libsanitizer-Remove-cyclades-from-libsanitizer.patch lib_patch.Upstream
@@ -984,19 +983,6 @@ package/numactl/0001-link-with-latomic-if-needed-again.patch lib_patch.Upstream
 package/nuttcp/0001-susv3-legacy.patch lib_patch.Upstream
 package/nvidia-driver/0001-use-LDFLAGS.patch lib_patch.Upstream
 package/octave/0001-Fix-BLAS-library-integer-size-detection.patch lib_patch.Upstream
-package/odb/0001-tm.h-include-in-gcc.hxx-appears-to-be-no-longer-nece.patch lib_patch.Upstream
-package/odb/0002-Remove-gratuitous-classes.patch lib_patch.Upstream
-package/odb/0003-Initial-work-to-make-ODB-compatible-with-GCC-6.patch lib_patch.Upstream
-package/odb/0004-Make-compilable-with-GCC-6-in-C-14-mode.patch lib_patch.Upstream
-package/odb/0005-Fix-bug-in-GCC-6-input_location-translation.patch lib_patch.Upstream
-package/odb/0006-Adapt-to-changes-in-GCC-8.patch lib_patch.Upstream
-package/odb/0007-Switch-to-C-11-get-rid-of-auto_ptr-use.patch lib_patch.Upstream
-package/odb/0008-Fix-GCC-8-adaptation-to-be-compatible-with-previous-.patch lib_patch.Upstream
-package/odb/0009-Handle-namespace-aliases-when-parsing-GCC-tree.patch lib_patch.Upstream
-package/odb/0010-Add-initial-support-for-GCC-9.patch lib_patch.Upstream
-package/odb/0011-Adjust-to-changes-in-GCC-10.patch lib_patch.Upstream
-package/odb/0012-Adjust-to-changes-in-GCC-11.patch lib_patch.Upstream
-package/odb/0013-Resolve-name-lookup-ambiguity-causing-error-with-GCC.patch lib_patch.Upstream
 package/ofono/0001-uclibc-backtrace.patch lib_patch.Upstream
 package/ofono/S46ofono lib_sysv.Variables
 package/ola/0001-ola-fix-compilation-with-musl-1-2-3.patch lib_patch.Upstream
@@ -1191,7 +1177,6 @@ package/rpi-userland/0006-interface-vcos-pthreads-CMakeLists.txt-fix-build-wit.p
 package/rpi-userland/0007-GLES2-gl2ext.h-add-GLint64-GLuint64-and-GLsync-typed.patch lib_patch.Upstream
 package/rt-tests/0001-Fix-a-build-issue-with-uClibc-ng.patch lib_patch.Upstream
 package/rtorrent/0001-Added--disable-execinfo-option-to-configure.patch lib_patch.Upstream
-package/rtty/0001-CMakeLists.txt-prefer-pkg_check_modules.patch lib_patch.Upstream
 package/rubix/0001-dont-use-legacy-functions.patch lib_patch.Upstream
 package/rubix/0002-misc-fixes.patch lib_patch.Sob lib_patch.Upstream
 package/rygel/S99rygel Shellcheck lib_sysv.Indent lib_sysv.Variables
@@ -1401,7 +1386,6 @@ package/wipe/0001-musl.patch lib_patch.Upstream
 package/wireless_tools/0001-remove-bzero.patch lib_patch.Upstream
 package/wireshark/0001-cmake-lemon-wipe-CMAKE_-EXE_LINKER_FLAGS-SYSROOT-if-.patch lib_patch.Upstream
 package/woff2/0001-CMake-Handle-multiple-libraries-being-returned-for-B.patch lib_patch.Upstream
-package/wpa_supplicant/0001-build-re-enable-options-for-libwpa_client.so-and-.patch lib_patch.Upstream
 package/wpa_supplicant/ifupdown.sh Shellcheck
 package/x11r7/xapp_luit/0001-posix-openpt.patch lib_patch.Upstream
 package/x11r7/xapp_xdm/S99xdm lib_sysv.Indent lib_sysv.Variables
