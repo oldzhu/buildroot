@@ -1051,6 +1051,7 @@ menu "External python modules"
 	source "package/python-colorama/Config.in"
 	source "package/python-colorlog/Config.in"
 	source "package/python-colorzero/Config.in"
+	source "package/python-configobj/Config.in"
 	source "package/python-configshell-fb/Config.in"
 	source "package/python-constantly/Config.in"
 	source "package/python-construct/Config.in"
@@ -1476,6 +1477,7 @@ endmenu
 endif
 	source "package/quickjs/Config.in"
 	source "package/ruby/Config.in"
+	source "package/swipl/Config.in"
 	source "package/tcl/Config.in"
 if BR2_PACKAGE_TCL
 menu "Tcl libraries/modules"
