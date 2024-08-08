@@ -268,12 +268,6 @@ F:	configs/snps_archs38_axs103_defconfig
 F:	configs/snps_archs38_haps_defconfig
 F:	configs/snps_archs38_hsdk_defconfig
 
-N:	Ariel D'Alessandro <ariel@vanguardiasur.com.ar>
-F:	board/bsh/
-F:	configs/imx8mn_bsh_smm_s2_pro_defconfig
-F:	package/axfsutils/
-F:	package/mali-t76x/
-
 N:	Arnaud Aujon <arnaud@intelibre.fr>
 F:	package/espeak/
 
@@ -1976,6 +1970,7 @@ F:	support/testing/tests/package/test_trace_cmd.py
 F:	support/testing/tests/package/test_trace_cmd/
 F:	support/testing/tests/package/test_usbutils.py
 F:	support/testing/tests/package/test_usbutils/
+F:	support/testing/tests/package/test_vorbis_tools.py
 F:	support/testing/tests/package/test_weston.py
 F:	support/testing/tests/package/test_weston/
 F:	support/testing/tests/package/test_wine.py
@@ -3384,6 +3379,7 @@ F:	package/weston/
 F:	package/wtfutil/
 F:	package/zisofs-tools/
 F:	support/download/
+F:	support/testing/tests/graphics_base.py
 
 N:	Yann E. MORIN <yann.morin@orange.com>
 F:	.editorconfig
