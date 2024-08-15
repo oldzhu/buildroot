@@ -77,6 +77,29 @@
 	- Can't subscribe buildroot mailing list
 	  https://gitlab.com/buildroot.org/buildroot/-/issues/25
 
+2024.05.2, released August 14th, 2024
+
+	Important / security related fixes.
+
+	Various minor improvements to utils/check-package
+
+	Defconfigs: Add download hashes for chromebook-elm,
+	chromebook-snow and stm32mp157a_dk1
+
+	Updated/fixed packages: android-tools, bcc, bitcoin, boost,
+	btrfs-progs, c-ares, cdrkit, check, containerd, directfb,
+	dump1090, ed, exim, fail2ban, frotz, fwts, gcc, gdb, go, gpm,
+	kexec, libarchive, libgeos, libressl, llvm, mupdf, ncftp,
+	nodejs, ntpsec, octave, openssh, pppd, python-mupdf,
+	python-ruamel-yaml, qt5webkit, rawk-hawkbit-updater,
+	rtl8188eu, snappy, squid, sunxi-tools, syslinux, systemd,
+	tcf-agent, tftpd, ubus, util-linux, uvw, webkitgtk, wolfssl,
+	wpewebkit, x265, xlib_libxshmfence, xvisor
+
+	Issues resolved (http://bugs.uclibc.org):
+
+	#15231: gcc --help -v doesn't work correctly with gcc>=10 and..
+
 2024.05.1, released July 13th, 2024
 
 	Important / security related fixes.
@@ -223,6 +246,28 @@
         #16009: 'select' does not work with 'choice'
         #16036: android-tools version is too old
         #16075: Cannot use linux kernel extensions from external tree..
+
+2024.02.5, released August 14th, 2024
+
+	Important / security related fixes.
+
+	Various minor improvements to utils/check-package
+
+	Defconfigs: Add download hashes for chromebook-elm,
+	chromebook-snow and stm32mp157a_dk1
+
+	Updated/fixed packages: bitcoin, boost, btrfs-progs, c-ares,
+	cdrkit, check, containerd, directfb, ed, exim, fwts, gcc, gdb,
+	go, kexec, libarchive, libgeos, libressl, mupdf, nodejs,
+	ntpsec, octave, openssh, pppd, python-mupdf,
+	python-ruamel-yaml, qt5webkit, rauc-hawkbit-updater, snappy,
+	squid, sunxi-tools, syslinux, systemd, tcf-agent, ubus,
+	util-linux, uvw, webkitgtk, wolfssl, wpewebkit, x265,
+	xlib_libxshmfence, xvisor
+
+	Issues resolved (http://bugs.uclibc.org):
+
+	#15231: gcc --help -v doesn't work correctly with gcc>=10 and..
 
 2024.02.4, released July 13th, 2024
 
