@@ -11,7 +11,7 @@
 # When the kernel is directly booted, devtmpfs is not automatically mounted.
 # Manually mount it if needed.
 devmnt=$(mount | grep -c devtmpfs)
-if [ ${devmnt} -eq 0 ]; then
+if [ "${devmnt}" -eq 0 ]; then
     /bin/mount -t devtmpfs devtmpfs /dev
 fi
 
@@ -27,15 +27,6 @@ fi
 
 # Clear memory to reduce page fragmentation
 echo 3 > /proc/sys/vm/drop_caches
-
-# Print a fun logo :)
-echo "          __  _"
-echo "         / / (_) ____   _   _ __  __"
-echo "        / /  | ||  _ \\ | | | |\\ \\/ /"
-echo "       / /___| || | | || |_| | >  < "
-echo "      /_____/|_||_| |_| \\____|/_/\\_\\"
-echo "    64-bits RISC-V Kendryte K210 NOMMU"
-echo ""
 
 # Finally, let's start an interactive shell
 exec /bin/sh
