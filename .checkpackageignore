@@ -22,7 +22,6 @@ board/bsh/imx8mn-bsh-smm-s2-pro/post-image.sh Shellcheck
 board/bsh/imx8mn-bsh-smm-s2/flash.sh Shellcheck lib_shellscript.EmptyLastLine
 board/bsh/imx8mn-bsh-smm-s2/post-build.sh Shellcheck
 board/canaan/k210-soc/post-build.sh Shellcheck
-board/canaan/k210-soc/rootfs_overlay/sbin/init Shellcheck
 board/chromebook/elm/sign.sh Shellcheck
 board/chromebook/mksd.sh Shellcheck
 board/chromebook/snow/sign.sh Shellcheck
@@ -840,7 +839,6 @@ package/lugaru/0001-ImageIO-fix-invalid-conversion.patch lib_patch.Upstream
 package/lugaru/0002-Fix-mismatched-usage-length-build-fail-on-g.patch lib_patch.Upstream
 package/lvm2/0001-cmdline-use-freopen-to-reopen-standard-streams.patch lib_patch.Upstream
 package/lvm2/0002-log-use-freopen-to-reopen-standard-streams.patch lib_patch.Upstream
-package/lz4/0001-build-Support-BUILD_SHARED-no.patch lib_patch.Upstream
 package/lzma/0001-Remove-static-from-LDFLAGS.patch lib_patch.Upstream
 package/lzop/0001-allow-overriding-modification-time.patch lib_patch.Upstream
 package/macchanger/0001-Fix-missing-include-for-caddr_t.patch lib_patch.Upstream
@@ -1138,7 +1136,6 @@ package/ripgrep/0001-puts-jemalloc-allocator-behind-a-cargo-feature-flag.patch l
 package/riscv-isa-sim/0001-riscv-disable-precompiled-headers.patch lib_patch.Upstream
 package/rng-tools/S21rngd Shellcheck lib_sysv.Variables
 package/rocksdb/0001-build_tools-build_detect_platform-fix-C-tests.patch lib_patch.Upstream
-package/rp-pppoe/0001-src-pppoe.h-fix-build-with-musl-libc.patch lib_patch.Upstream
 package/rpcbind/0001-Remove-yellow-pages-support.patch lib_patch.Upstream
 package/rpcbind/S30rpcbind lib_sysv.EmptyLastLine lib_sysv.Indent lib_sysv.Variables
 package/rpi-userland/0001-Add-.pc-files-for-the-OpenGLESv2-EGL-and-bcm_host-li.patch lib_patch.Upstream
