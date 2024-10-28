@@ -418,7 +418,6 @@ F:	package/libfreeglut/
 F:	package/libfribidi/
 F:	package/libg7221/
 F:	package/libglew/
-F:	package/libglfw/
 F:	package/libglu/
 F:	package/libhdhomerun/
 F:	package/libheif/
@@ -1517,6 +1516,7 @@ F:	package/serd/
 F:	package/sord/
 F:	package/sratom/
 F:	package/stb/
+F:	package/tailscale/
 F:	package/zchunk/
 F:	support/testing/tests/package/sample_python_rtoml.py
 F:	support/testing/tests/package/test_python_rtoml.py
