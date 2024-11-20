@@ -282,18 +282,6 @@ F:	package/python-bottle/
 F:	package/sqlcipher/
 F:	package/stress/
 
-N:	Asaf Kahlon <asafka7@gmail.com>
-F:	package/collectd/
-F:	package/libfuse3/
-F:	package/libuv/
-F:	package/python*
-F:	package/snmpclitools/
-F:	package/spdlog/
-F:	package/uftp/
-F:	package/uftrace/
-F:	package/uvw/
-F:	package/zeromq/
-
 N:	Ash Charles <ashcharles@gmail.com>
 F:	package/pru-software-support/
 F:	package/ti-cgt-pru/
@@ -2527,7 +2515,7 @@ F:	package/dbus-broker/
 F:	package/systemd/
 F:	package/tcf-agent/
 
-N:	Yu Chien Peter Lin <peterlin@andestech.com>
+N:	Leo Yu-Chi Liang <ycliang@andestech.com>
 F:	board/andes
 F:	configs/andes_ae350_45_defconfig
 F:	package/andes-spi-burn/
