@@ -146,6 +146,62 @@ endif
 
 comment "Legacy options removed in 2025.02"
 
+config BR2_PACKAGE_DIRECTFB
+	bool "directfb has been removed"
+	select BR2_LEGACY
+	help
+	  This package was no longer maintained upstream, so it was
+	  dropped from Buildroot.
+
+config BR2_PACKAGE_SDL2_DIRECTFB
+	bool "sdl2 directfb support removed"
+	select BR2_LEGACY
+	help
+	  The directfb support from SDL2 is no longer available, as
+	  directfb is no longer packaged in Buildroot.
+
+config BR2_PACKAGE_SDL_DIRECTFB
+	bool "sdl directfb support removed"
+	select BR2_LEGACY
+	help
+	  The directfb support from SDL is no longer available, as
+	  directfb is no longer packaged in Buildroot.
+
+config BR2_PACKAGE_QT5BASE_DIRECTFB
+	bool "qt5base directfb support removed"
+	select BR2_LEGACY
+	help
+	  The directfb support from qt5base is no longer available, as
+	  directfb is no longer packaged in Buildroot.
+
+config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_DIRECTFB
+	bool "gstreamer directfb plugin removed"
+	select BR2_LEGACY
+	help
+	  The directfb plugin from GStreamer is no longer supported,
+	  as directfb is no longer packaged in Buildroot.
+
+config BR2_PACKAGE_LITE
+	bool "lite has been removed"
+	select BR2_LEGACY
+	help
+	  This package was no longer maintained upstream, so it was
+	  dropped from Buildroot.
+
+config BR2_PACKAGE_LINUX_FUSION
+	bool "linux-fusion has been removed"
+	select BR2_LEGACY
+	help
+	  This package was no longer maintained upstream, so it was
+	  dropped from Buildroot.
+
+config BR2_PACKAGE_DIRECTFB_EXAMPLES
+	bool "directfb-examples has been removed"
+	select BR2_LEGACY
+	help
+	  This package was no longer maintained upstream, so it was
+	  dropped from Buildroot.
+
 config BR2_PACKAGE_HIAWATHA
 	bool "hiwatha has been removed"
 	select BR2_LEGACY
@@ -5773,7 +5829,6 @@ config BR2_PACKAGE_KOBS_NG
 config BR2_PACKAGE_SAWMAN
 	bool "sawman package removed"
 	select BR2_LEGACY
-	select BR2_PACKAGE_DIRECTFB_SAWMAN
 	help
 	  This option has been removed because the sawman package no
 	  longer exists: it was merged inside DirectFB itself. This
@@ -5783,7 +5838,6 @@ config BR2_PACKAGE_SAWMAN
 config BR2_PACKAGE_DIVINE
 	bool "divine package removed"
 	select BR2_LEGACY
-	select BR2_PACKAGE_DIRECTFB_DIVINE
 	help
 	  This option has been removed because the divine package no
 	  longer exists: it was merged inside DirectFB itself. This
