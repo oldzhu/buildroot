@@ -399,13 +399,6 @@ package/dht/0001-cmake.patch lib_patch.Upstream
 package/dillo/0001-usr-local-include.patch lib_patch.Upstream
 package/dillo/0002-Fix-openssl-detection.patch lib_patch.Upstream
 package/dillo/0004-fix-build-with-gcc-10.patch lib_patch.Upstream
-package/directfb-examples/0001-remove-bzero.patch lib_patch.Sob lib_patch.Upstream
-package/directfb/0001-fix-missing-davinci-voodoo-header.patch lib_patch.Upstream
-package/directfb/0002-imlib2-config.patch lib_patch.Upstream
-package/directfb/0003-setregion-lock.patch lib_patch.Upstream
-package/directfb/0004-use-gcc-link.patch lib_patch.Upstream
-package/directfb/0005-add-missing-idivine-header.patch lib_patch.Upstream
-package/directfb/0006-fix-client-gfx_state-initialisation.patch lib_patch.Upstream
 package/dmalloc/0001-configure-fix-build-on-mips.patch lib_patch.Upstream
 package/dmalloc/0003-configure-allow-overriding-some-tests.patch lib_patch.Upstream
 package/dmalloc/0004-Makefile-use-the-configure-detected-or-user-supplied.patch lib_patch.Upstream
@@ -761,10 +754,6 @@ package/lighttpd/S50lighttpd Shellcheck lib_sysv.EmptyLastLine lib_sysv.Indent l
 package/linknx/0001-configure-ac-tweak-CPPUNIT-conditional.patch lib_patch.Upstream
 package/linknx/0002-src-Makefile.am-fix-linking-with-log4cpp.patch lib_patch.Upstream
 package/linphone/0001-src-core-paths-paths.cpp-fix-powerpc-build.patch lib_patch.Upstream
-package/linux-fusion/0001-fix-for-linux-4-and-above.patch lib_patch.Upstream
-package/linux-fusion/0002-Fix-mismatched-conversion-spec-and-value-in-printk.patch lib_patch.Upstream
-package/linux-fusion/0003-Fix-fusion-Unknown-symbol-tasklist_lock-err-0.patch lib_patch.Upstream
-package/linux-fusion/0004-Port-one-one_udp.c-to-Linux-4.1.patch lib_patch.Upstream
 package/linux-zigbee/0001-test-serial-Remove-test-serial.patch lib_patch.Upstream
 package/linux-zigbee/0002-addrdb-coord-config-parse.y-add-missing-time.h-inclu.patch lib_patch.Upstream
 package/linuxptp/S65ptp4l Shellcheck lib_sysv.Indent
@@ -772,9 +761,6 @@ package/linuxptp/S66phc2sys Shellcheck lib_sysv.Indent
 package/lirc-tools/0001-plugins-devinput.c-fix-build-with-musl-1.2.0.patch lib_patch.Upstream
 package/lirc-tools/0002-configure-add-disable-doc-option.patch lib_patch.Upstream
 package/lirc-tools/S25lircd lib_sysv.Indent lib_sysv.Variables
-package/lite/0001-dfbspy-stat.patch lib_patch.Sob lib_patch.Upstream
-package/lite/0002-no-tests.patch lib_patch.Sob lib_patch.Upstream
-package/lite/0003-pkg-config.patch lib_patch.Sob lib_patch.Upstream
 package/live555/0001-Add-a-pkg-config-file-for-the-shared-libraries.patch lib_patch.Upstream
 package/lldpd/S60lldpd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/llvm-project/clang/0001-lib-Driver-ToolChains-Gnu-Use-GCC_INSTALL_PREFIX-in-.patch lib_patch.Upstream
@@ -855,7 +841,6 @@ package/mono/0001-Fix-linkage-with-a-system-libatomic_ops-shared-library.patch l
 package/mono/0002-Ongoing-work-on-the-cmake-build.patch lib_patch.Upstream
 package/mosquitto/S50mosquitto Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/motion/S99motion Shellcheck lib_sysv.Indent lib_sysv.Variables
-package/mpd/0001-src-event-meson.build-add-atomic-dependency-for-spar.patch lib_patch.Upstream
 package/mpir/0001-mpn-arm-udiv.asm-workaround-binutils-bug-14887.patch lib_patch.Upstream
 package/mpv/0001-fix-powerpc64-altivec.patch lib_patch.Upstream
 package/mraa/0001-include-Declare-gVERSION-global-as-extern.patch lib_patch.Upstream
@@ -1120,9 +1105,8 @@ package/screen/0002-Change-binary-permission-flags-even-if-chown-fails.patch lib
 package/screen/0003-Support-overriding-SCREEN-to-get-a-non-versioned-bin.patch lib_patch.Upstream
 package/screen/0004-Renamed-sched.h-to-eventqueue.h.patch lib_patch.Upstream
 package/scrub/0001-configure-ac-make-sure-m4-macros-are-included-in-the-build.patch lib_patch.Upstream
-package/sdl/0001-use-correct-directfb-config.patch lib_patch.Upstream
-package/sdl/0002-fix-compilation-with-libx11.patch lib_patch.Upstream
-package/sdl/0003-SDL_x11yuv.c-fix-possible-use-after-free.patch lib_patch.Upstream
+package/sdl/0001-fix-compilation-with-libx11.patch lib_patch.Upstream
+package/sdl/0002-SDL_x11yuv.c-fix-possible-use-after-free.patch lib_patch.Upstream
 package/sdl_mixer/0001-Add-Libs.private-field-to-pkg-config-file.patch lib_patch.Upstream
 package/sdl_mixer/0002-configure__set_macro_directory.patch lib_patch.Upstream
 package/sdl_mixer/0003-configure.ac-fix-static-linking-with-tremor.patch lib_patch.Upstream
