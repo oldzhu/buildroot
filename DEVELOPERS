@@ -509,6 +509,7 @@ F:	package/tor/
 F:	package/transmission/
 F:	package/tvheadend/
 F:	package/unixodbc/
+F:	package/utfcpp/
 F:	package/vlc/
 F:	package/wget/
 F:	package/wireless-regdb/
@@ -1103,6 +1104,8 @@ F:	package/python-dunamai/
 F:	package/python-poetry-dynamic-versioning/
 F:	package/python-pyasynchat/
 F:	package/python-pyasyncore/
+F:	support/testing/tests/package/sample_python_networkmanager_goi.py
+F:	support/testing/tests/package/test_python_networkmanager_goi.py
 
 N:	Flávio Tapajós <flavio.tapajos@newtesc.com.br>
 F:	configs/asus_tinker-s_rk3288_defconfig
@@ -1166,6 +1169,7 @@ F:	package/lpty/
 F:	package/lrandom/
 F:	package/lsqlite3/
 F:	package/lua*
+F:	package/lynis/
 F:	package/lzlib/
 F:	package/moarvm/
 F:	package/mstpd/
@@ -1183,6 +1187,7 @@ F:	package/wsapi-fcgi/
 F:	package/wsapi-xavante/
 F:	package/xavante/
 F:	support/testing/tests/package/test_lua*
+F:	support/testing/tests/package/test_lynis.py
 F:	utils/scancpan
 
 N:	Frank Hunleth <fhunleth@troodon-software.com>
@@ -2052,7 +2057,6 @@ F:	package/openvmtools/
 N:	Kelvin Cheung <keguang.zhang@gmail.com>
 F:	package/cpuload/
 F:	package/bwm-ng/
-F:	package/ramsmp/
 
 N:	Kieran Bingham <kieran.bingham@ideasonboard.com>
 F:	package/libcamera/
@@ -2943,6 +2947,8 @@ F:	package/ripgrep/
 N:	Sébastien Szymanski <sebastien.szymanski@armadeus.com>
 F:	board/armadeus/
 F:	configs/armadeus*
+F:	package/nxp-bt-wifi-firmware/
+F:	package/nxp-mwifiex/
 F:	package/mmc-utils/
 F:	package/python-flask-jsonrpc/
 F:	package/python-flask-login/
@@ -3186,7 +3192,6 @@ F:	package/double-conversion/
 F:	package/flashrom/
 F:	package/gcc/
 F:	package/genext2fs/
-F:	package/genromfs/
 F:	package/getent/
 F:	package/gnu-efi/
 F:	package/heirloom-mailx/
