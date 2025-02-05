@@ -518,7 +518,6 @@ package/gdb/16.1/0007-fix-musl-build-on-riscv.patch lib_patch.Upstream
 package/gdb/16.1/0008-gdbserver-Makefile.in-fix-NLS-build.patch lib_patch.Upstream
 package/gdb/16.1/0009-gdb-Fix-native-build-on-xtensa.patch lib_patch.Upstream
 package/genpart/0001-fix-return-code.patch lib_patch.Upstream
-package/genromfs/0001-build-system.patch lib_patch.Sob lib_patch.Upstream
 package/gensio/0001-Fix-missing-EVP_PKEY_ED25519-build-error-on-libressl.patch lib_patch.Upstream
 package/gerbera/S99gerbera lib_sysv.Indent
 package/git-crypt/0001-fix-build-with-libressl-3.5.0.patch lib_patch.Upstream
@@ -711,7 +710,6 @@ package/libselinux/0001-Do-not-use-PYCEXT-and-rely-on-the-installed-file-nam.pat
 package/libsepol/0001-support-static-only.patch lib_patch.Upstream
 package/libserial/0001-SerialPort.cpp-fix-build-when-size_t-is-an-unsigned-.patch lib_patch.Upstream
 package/libserial/0002-SerialPort.cpp-don-t-use-high-baudrates-when-not-ava.patch lib_patch.Upstream
-package/libserialport/0001-uclinux-detection.patch lib_patch.Upstream
 package/libshdata/0001-backend-Add-missing-include-files.patch lib_patch.Upstream
 package/libshdata/0002-examples-stress_test-Fix-build-with-musl-libc.patch lib_patch.Upstream
 package/libsidplay2/0001-sidplay2-libs-2.1.1.patch lib_patch.Upstream
