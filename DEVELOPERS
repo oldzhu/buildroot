@@ -275,6 +275,9 @@ F:	configs/snps_archs38_hsdk_defconfig
 N:	Arnaud Aujon <arnaud@intelibre.fr>
 F:	package/espeak/
 
+N:	Arno Messiaen <arnomessiaen@gmail.com>
+F:	package/python-aiohttp-sse-client/
+
 N:	Arnout Vandecappelle <arnout@mind.be>
 F:	package/arp-scan/
 F:	package/dehydrated/
@@ -303,6 +306,9 @@ F:	package/orbit/
 
 N:	Attila Wagner <attila.wagner@onyxinsight.com>
 F:	package/python-canopen/
+
+N:	Ayoub Zaki <ayoub.zaki@embetrix.com>
+F:	package/bmap-writer/
 
 N:	Bagas Sanjaya <bagasdotme@gmail.com>
 F:	package/git/
@@ -334,6 +340,9 @@ F:	package/strace/
 F:	package/tcpdump/
 F:	package/ti-uim/
 F:	package/uhubctl/
+
+N:	Baxiche Su <baxiche@gmail.com>
+F:	package/qt6/qt6multimedia/
 
 N:	Ben Boeckel <mathstuf@gmail.com>
 F:	package/taskd/
@@ -595,9 +604,6 @@ F:	package/alsa-plugins/
 
 N:	Changming Huang <jerry.huang@nxp.com>
 F:	package/qoriq-cadence-dp-firmware/
-
-N:	Chris Dimich <chris.dimich@boundarydevices.com>
-F:	package/freescale-imx/imx-vpu-hantro-daemon/
 
 N:	Chris Packham <judge.packham@gmail.com>
 F:	package/coremark/
@@ -1216,6 +1222,7 @@ N:	Gary Bisson <bisson.gary@gmail.com>
 F:	board/boundarydevices/
 F:	configs/nitrogen*
 F:	package/freescale-imx/
+F:	package/freescale-imx/imx-vpu-hantro-daemon/
 F:	package/gstreamer1/gst1-imx/
 F:	package/libimxvpuapi/
 F:	package/mfgtools/
@@ -1466,6 +1473,7 @@ F:	package/s6-networking/
 F:	package/s6-portable-utils/
 F:	package/s6-rc/
 F:	package/skalibs/
+F:	package/snooze/
 F:	package/tipidee/
 
 N:	Jagan Teki <jagan@amarulasolutions.com>
@@ -2256,8 +2264,10 @@ F:	package/picotool/
 F:	package/python-immutabledict/
 F:	package/python-jc/
 F:	package/python-ruamel-yaml-clib/
+F:	package/python-waitress/
 F:	support/testing/tests/package/test_python_fastapi.py
 F:	support/testing/tests/package/test_python_ruamel_yaml.py
+F:	support/testing/tests/package/test_python_waitress.py
 F:	support/testing/tests/package/sample_python_fastapi.py
 F:	support/testing/tests/package/sample_python_ruamel_yaml.py
 
