@@ -6,11 +6,14 @@
 # We use a specific tag for the base image *and* the corresponding date
 # for the repository., so do not forget to update the apt-sources.list
 # file that is shipped next to this Dockerfile.
-FROM debian:bullseye-20230202
+FROM debian:bookworm-20250203
 
 LABEL maintainer="Buildroot mailing list <buildroot@buildroot.org>" \
       vendor="Buildroot" \
 description="Container with everything needed to run Buildroot"
+
+# We need tar >= 1.35
+ARG TAR_VERSION="1.35"
 
 # Setup environment
 ENV DEBIAN_FRONTEND noninteractive
@@ -28,8 +31,10 @@ RUN apt-get -o APT::Retries=3 install -y --no-install-recommends \
         ca-certificates \
         cmake \
         cpio \
+        curl \
         cvs \
         file \
+        flake8 \
         g++-multilib \
         git \
         libc6:i386 \
@@ -54,6 +59,16 @@ RUN apt-get -o APT::Retries=3 install -y --no-install-recommends \
         && \
     apt-get -y autoremove && \
     apt-get -y clean
+
+# Build host-tar
+RUN curl -sfL https://ftpmirror.gnu.org/tar/tar-${TAR_VERSION}.tar.xz | \
+    tar -Jx -C /tmp && \
+    cd /tmp/tar-${TAR_VERSION} && \
+    FORCE_UNSAFE_CONFIGURE=1 ./configure \
+        --disable-year2028 && \
+    make && \
+    make install && \
+    rm -rf /tmp/tar-${TAR_VERSION}
 
 # To be able to generate a toolchain with locales, enable one UTF-8 locale
 RUN sed -i 's/# \(en_US.UTF-8\)/\1/' /etc/locale.gen && \
