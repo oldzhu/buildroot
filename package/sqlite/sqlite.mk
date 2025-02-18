@@ -44,9 +44,12 @@ endif
 
 ifeq ($(BR2_PACKAGE_NCURSES)$(BR2_PACKAGE_READLINE),yy)
 SQLITE_DEPENDENCIES += ncurses readline
-else ifeq ($(BR2_PACKAGE_LIBEDIT),y)
-SQLITE_DEPENDENCIES += libedit
-SQLITE_CONF_OPTS += --disable-readline --editline
+SQLITE_CFLAGS  += -DHAVE_READLINE=1
+SQLITE_LDFLAGS += -lreadline -lncurses
+else ifeq ($(BR2_PACKAGE_NCURSES)$(BR2_PACKAGE_LIBEDIT),yy)
+SQLITE_DEPENDENCIES += ncurses libedit
+SQLITE_CFLAGS  += -DHAVE_EDITLINE=1
+SQLITE_LDFLAGS += -ledit -lncurses
 else
 SQLITE_CONF_OPTS += --disable-readline
 endif
@@ -59,10 +62,12 @@ ifeq ($(BR2_PACKAGE_SQLITE_ENABLE_JSON1),)
 SQLITE_CONF_OPTS += --disable-json
 endif
 
-SQLITE_CONF_ENV = CFLAGS="$(SQLITE_CFLAGS)"
+SQLITE_CONF_ENV = CFLAGS="$(SQLITE_CFLAGS)" LDFLAGS="$(SQLITE_LDFLAGS)"
 
 define SQLITE_CONFIGURE_CMDS
-	(cd $(@D); $(TARGET_CONFIGURE_OPTS) $(SQLITE_CONF_ENV) ./configure \
+	(cd $(@D); $(TARGET_CONFIGURE_OPTS) \
+		$(if $(BR2_INSTALL_LIBSTDCPP),,CXX=false) \
+		$(SQLITE_CONF_ENV) ./configure \
 		--prefix=/usr \
 		--host="$(GNU_TARGET_NAME)" \
 		--build="$(GNU_HOST_NAME)" \
@@ -84,7 +89,8 @@ define SQLITE_INSTALL_TARGET_CMDS
 endef
 
 define HOST_SQLITE_CONFIGURE_CMDS
-	(cd $(@D); $(HOST_CONFIGURE_OPTS) $(SQLITE_CONF_ENV) ./configure \
+	(cd $(@D); $(HOST_CONFIGURE_OPTS) \
+		$(SQLITE_CONF_ENV) ./configure \
 		--prefix=/usr \
 		--host="$(GNU_HOST_NAME)" \
 		--build="$(GNU_HOST_NAME)" \
