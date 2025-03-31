@@ -1,18 +1,18 @@
-SiFive HiFive Unleashed
+SiFive HiFive Unmatched
 =======================
 
 This file describes how to use the pre-defined Buildroot
-configuration for the SiFive HiFive Unleashed board.
+configuration for the SiFive HiFive Unmatched board.
 
-Further information about the HiFive Unleashed board can be found
-at https://www.sifive.com/boards/hifive-unleashed
+Further information about the HiFive Unmatched board can be found
+at https://www.sifive.com/boards/hifive-unmatched
 
 Building
 ========
 
 Configure Buildroot using the default board configuration:
 
-  $ make hifive_unleashed_defconfig
+  $ make hifive_unmatched_defconfig
 
 Customise the build as necessary:
 
@@ -33,7 +33,7 @@ Once the build has finished you will have the following files:
     +-- fw_dynamic.elf
     +-- fw_jump.bin
     +-- fw_jump.elf
-    +-- hifive-unleashed-a00.dtb
+    +-- hifive-unmatched-a00.dtb
     +-- Image
     +-- rootfs.cpio
     +-- rootfs.ext2
@@ -67,7 +67,7 @@ up the board.
 
 Connect the USB cable and open minicom (/dev/ttyUSB1, 115200, 8N1).
 
-See the 'SiFive HiFive Unleashed Getting Started Guide' for
+See the 'SiFive HiFive Unmatched Getting Started Guide' for
 more details (https://www.sifive.com/documentation).
 
 You will get a warning reported by fdisk when you examine the SD card.
@@ -89,31 +89,6 @@ You will see something like this at boot time:
 [    1.062479]  mmcblk0: p1 p2 p3
 
 
-Creating a bootable SPI flash with genimage
-===========================================
-
-Adjust Buildroot configuration by:
-
-  $ make menuconfig
-
-Change "System configuration" -> "Extra arguments passed to custom scripts"
-value to "-c board/sifive/common/genimage_spi-nor.cfg", save the
-configuration and build. This creates a output/images/spi-nor.img that can
-be programmed to the on-board SPI flash.
-
-Boot the board from the SD card prepared above, stop the U-Boot auto boot,
-and type the following commands to program the whole SPI flash:
-
-  => tftp 82000000 output/images/spi-nor.img
-  => sf probe
-  => sf update 82000000 0 2000000
-
-Booting the SPI flash on the board
-==================================
-
-Make sure that the all DIP switches are set to the off position for
-default boot mode (MSEL mode = 0110) to boot from SPI flash.
-
 Testing under QEMU
 ==================
 
@@ -123,10 +98,3 @@ $ qemu-system-riscv64 -M sifive_u,msel=11 -smp 5 -m 8G \
     -display none -serial stdio -nic user \
     -bios output/images/u-boot-spl.bin \
     -drive file=output/images/sdcard.img,if=sd
-
-The SPI flash image can be tested with a slightly different command:
-
-$ qemu-system-riscv64 -M sifive_u,msel=6 -smp 5 -m 8G \
-    -display none -serial stdio -nic user \
-    -bios output/images/u-boot-spl.bin \
-    -drive file=output/images/spi-nor.img,if=mtd
