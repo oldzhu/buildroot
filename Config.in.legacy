@@ -146,6 +146,54 @@ endif
 
 comment "Legacy options removed in 2025.11"
 
+config BR2_LINUX_KERNEL_EXT_AUFS
+	bool "Aufs Filesystem Module patch has been removed"
+	select BR2_LEGACY
+	help
+	  aufs kernel module patch is unmaintained and has been
+	  removed.
+
+config BR2_PACKAGE_AUFS_UTIL
+	bool "aufs-util has been removed"
+	select BR2_LEGACY
+	help
+	  aufs-util package is unmaintained and has been removed.
+
+config BR2_TOOLCHAIN_EXTERNAL_LINARO_ARMEB
+	bool "Linaro armeb 2018.05 external toolchain is deprecated"
+	select BR2_LEGACY
+	help
+	  Linaro armeb 2018.05 is no longer maintained and has been
+	  removed from Buildroot.
+
+config BR2_TOOLCHAIN_EXTERNAL_LINARO_ARM
+	bool "Linaro ARM 2018.05 external toolchain is deprecated"
+	select BR2_LEGACY
+	help
+	  Linaro ARM 2018.05 is no longer maintained and has been
+	  removed from Buildroot.
+
+config BR2_TOOLCHAIN_EXTERNAL_LINARO_AARCH64_BE
+	bool "Linaro AArch64 BE 2018.05 external toolchain is deprecated"
+	select BR2_LEGACY
+	help
+	  Linaro AArch64 2018.05 BE is no longer maintained and has been
+	  removed from Buildroot.
+
+config BR2_TOOLCHAIN_EXTERNAL_LINARO_AARCH64
+	bool "Linaro AArch64 2018.05 external toolchain is deprecated"
+	select BR2_LEGACY
+	help
+	  Linaro AArch64 2018.05 is no longer maintained and has been
+	  removed from Buildroot.
+
+config BR2_TOOLCHAIN_EXTERNAL_CODESOURCERY_MIPS
+	bool "Sourcery CodeBench MIPS external toolchain is deprecated"
+	select BR2_LEGACY
+	help
+	  Sourcery CodeBench MIPS 2016.05 is no longer maintained
+	  and has been removed from Buildroot.
+
 config BR2_LINUX_KERNEL_EXT_EV3DEV_LINUX_DRIVERS
 	bool "ev3dev Linux drivers have been removed"
 	select BR2_LEGACY
