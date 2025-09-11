@@ -146,6 +146,98 @@ endif
 
 comment "Legacy options removed in 2025.11"
 
+config BR2_PACKAGE_SYLPHEED
+	bool "sylpheed has been removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of libgtk2, the sylpheed package has been
+	  removed.
+
+config BR2_PACKAGE_PINENTRY_GTK2
+	bool "gtk2 backend of pinentry has been removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of libgtk2, the gtk2 backend of pinentry
+	  has been removed.
+
+config BR2_PACKAGE_OPENCV4_WITH_GTK
+	bool "opencv4 gtk support has been removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of libgtk2, the gtk support of opencv4
+	  has been removed. gtk3 support is still available.
+
+config BR2_PACKAGE_OPENCV3_WITH_GTK
+	bool "opencv3 gtk support has been removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of libgtk2, the gtk support of opencv3
+	  has been removed. gtk3 support is still available.
+
+config BR2_PACKAGE_NETSURF_GTK
+	bool "gtk frontend of netsurf has been removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of libgtk2, the gtk frontend of netsurf
+	  has been removed. The gtk3 frontend can be used instead for
+	  example.
+
+config BR2_PACKAGE_METACITY
+	bool "metacity has been removed"
+	select BR2_LEGACY
+	help
+	  The metacity package has been removed, as libgtk2 has been
+	  removed as well.
+
+config BR2_PACKAGE_LIBSEXY
+	bool "libsexy has been removed"
+	select BR2_LEGACY
+	help
+	  The libsexy package has been removed, as libgtk2 has been
+	  removed as well.
+
+config BR2_PACKAGE_LIBGLADE
+	bool "libglade has been removed"
+	select BR2_LEGACY
+	help
+	  The libglade package has been removed, as libgtk2 has been
+	  removed as well.
+
+config BR2_PACKAGE_LEAFPAD
+	bool "leafpad has been removed"
+	select BR2_LEGACY
+	help
+	  The leafpad package has been removed, as libgtk2 has been
+	  removed as well.
+
+config BR2_PACKAGE_GTKPERF
+	bool "gtkperf has been removed"
+	select BR2_LEGACY
+	help
+	  The gtkperf package has been removed, as libgtk2 has been
+	  removed as well.
+
+config BR2_PACKAGE_GTK2_ENGINES
+	bool "gtk2-engines has been removed"
+	select BR2_LEGACY
+	help
+	  The gtk2-engines package has been removed, as libgtk2 has
+	  been removed as well.
+
+config BR2_PACKAGE_GKRELLM_CLIENT
+	bool "gkrellm client has been removed"
+	select BR2_LEGACY
+	help
+	  The gkrellm client option has been removed, as it required
+	  libgtk2, which was removed from Buildroot.
+
+config BR2_PACKAGE_CWIID_WMGUI
+	bool "cwiid wmgui has been removed"
+	select BR2_LEGACY
+	help
+	  The wmgui part of cwiid required libgtk2, which has been
+	  removed from Buildroot.
+
 config BR2_LINUX_KERNEL_EXT_AUFS
 	bool "Aufs Filesystem Module patch has been removed"
 	select BR2_LEGACY

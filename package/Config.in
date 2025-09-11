@@ -277,9 +277,6 @@ comment "Sounds"
 	source "package/sound-theme-borealis/Config.in"
 	source "package/sound-theme-freedesktop/Config.in"
 
-comment "Themes"
-	source "package/gtk2-engines/Config.in"
-
 endmenu
 
 menu "Games"
@@ -402,8 +399,6 @@ comment "X applications"
 	source "package/dillo/Config.in"
 	source "package/docker/Config.in"
 	source "package/feh/Config.in"
-	source "package/gtkperf/Config.in"
-	source "package/leafpad/Config.in"
 	source "package/mupdf/Config.in"
 	source "package/nodm/Config.in"
 	source "package/pcmanfm/Config.in"
@@ -422,7 +417,6 @@ comment "X applications"
 comment "X libraries and helper libraries"
 	depends on BR2_PACKAGE_XORG7
 
-	source "package/libsexy/Config.in"
 	source "package/x11r7/xkeyboard-config/Config.in"
 
 comment "X window managers"
@@ -432,7 +426,6 @@ comment "X window managers"
 	source "package/evilwm/Config.in"
 	source "package/fluxbox/Config.in"
 	source "package/matchbox/Config.in"
-	source "package/metacity/Config.in"
 	source "package/openbox/Config.in"
 	source "package/ratpoison/Config.in"
 endmenu
@@ -1763,7 +1756,6 @@ menu "Graphics"
 	source "package/libfreeimage/Config.in"
 	source "package/libgdiplus/Config.in"
 	source "package/libgeotiff/Config.in"
-	source "package/libglade/Config.in"
 	source "package/libglew/Config.in"
 	source "package/libglfw/Config.in"
 	source "package/libglu/Config.in"
@@ -2395,7 +2387,6 @@ menu "Mail"
 	source "package/libesmtp/Config.in"
 	source "package/msmtp/Config.in"
 	source "package/mutt/Config.in"
-	source "package/sylpheed/Config.in"
 endmenu
 
 menu "Miscellaneous"
