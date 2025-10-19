@@ -148,6 +148,9 @@ F:	configs/cubieboard2_defconfig
 N:	Alexey Lukyanchuk <skif@skif-web.ru>
 F:	package/zabbix/
 
+N: 	Alexis Lothoré <alexis.lothore@bootlin.com>
+F: 	package/python-scp
+
 N:	Alistair Francis <alistair@alistair23.me>
 F:	board/sifive/
 F:	boot/opensbi/
@@ -2280,6 +2283,7 @@ F:	package/python-typing-inspection/
 F:	package/python-tzlocal/
 F:	package/python-sdbus-modemmanager/
 F:	package/python-waitress/
+F:	package/python-whitenoise/
 F:	support/testing/tests/package/test_python_apscheduler.py
 F:	support/testing/tests/package/test_python_crc.py
 F:	support/testing/tests/package/test_python_django.py
@@ -2290,6 +2294,7 @@ F:	support/testing/tests/package/test_python_ruamel_yaml.py
 F:	support/testing/tests/package/test_python_sdbus_modemmanager.py
 F:	support/testing/tests/package/test_python_tzlocal.py
 F:	support/testing/tests/package/test_python_waitress.py
+F:	support/testing/tests/package/test_python_whitenoise.py
 F:	support/testing/tests/package/sample_python_apscheduler.py
 F:	support/testing/tests/package/sample_python_crc.py
 F:	support/testing/tests/package/sample_python_django.py
