@@ -583,7 +583,6 @@ F:	package/jailhouse/
 F:	package/sunxi-boards/
 
 N:	Carsten Schoenert <c.schoenert@gmail.com>
-F:	package/dvbsnoop/
 F:	package/libdvbsi/
 F:	package/libsvg/
 F:	package/libsvg-cairo/
@@ -1020,8 +1019,6 @@ F:	package/openzwave/
 
 N:	Fabrice Fontaine <fontaine.fabrice@gmail.com>
 F:	package/bearssl/
-F:	package/belle-sip/
-F:	package/belr/
 F:	package/boinc/
 F:	package/cairo/
 F:	package/daq3/
@@ -1052,7 +1049,6 @@ F:	package/libcue/
 F:	package/libebml/
 F:	package/libgee/
 F:	package/libglib2/
-F:	package/libgtk2/
 F:	package/libgtk3/
 F:	package/libhtp/
 F:	package/libidn/
@@ -2138,9 +2134,6 @@ F:	package/python-flask-babel/
 F:	package/python-gunicorn/
 F:	support/testing/tests/package/sample_python_flask.py
 F:	support/testing/tests/package/test_python_flask.py
-
-N:	Lionel Orry <lionel.orry@gmail.com>
-F:	package/mongrel2/
 
 N:	Lothar Felten <lothar.felten@gmail.com>
 F:	board/bananapi/bananapi-m2-ultra/
@@ -3421,7 +3414,6 @@ F:	configs/stm32f746_disco_sd_defconfig
 F:	package/asterisk/
 F:	package/evilwm/
 F:	package/fbv/
-F:	package/libjwt/
 F:	package/libpam-pkcs11/
 F:	package/mksh/
 F:	package/ruby/
