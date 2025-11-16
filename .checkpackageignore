@@ -596,7 +596,6 @@ package/liboping/0005-src-oping.c-always-use-s-style-format-for-printf-sty.patch
 package/libp11/0001-src-p11_attr.c-fix-build-with-gcc-4.8.patch lib_patch.Upstream
 package/libpthsem/0001-fix-build-on-linux-3.x-host.patch lib_patch.Upstream
 package/libressl/0001-always-expose-SSL_OP_NO_TLSv1_3.patch lib_patch.Upstream
-package/libroxml/0001-src-roxml_mem.h-add-missing-extern.patch lib_patch.Upstream
 package/librsvg/0001-gdk-pixbuf-loader-Makefile.am-set-GDK_PIXBUF_MODULED.patch lib_patch.Upstream
 package/librtlsdr/0001-Makefile.am-respect-DESTDIR-with-install-udev-rules.patch lib_patch.Upstream
 package/libselinux/0001-Do-not-use-PYCEXT-and-rely-on-the-installed-file-nam.patch lib_patch.Upstream
@@ -765,7 +764,6 @@ package/nuttcp/0001-susv3-legacy.patch lib_patch.Upstream
 package/nvidia-driver/0001-use-LDFLAGS.patch lib_patch.Upstream
 package/octave/0001-Fix-BLAS-library-integer-size-detection.patch lib_patch.Upstream
 package/ofono/S46ofono lib_sysv.Variables
-package/ola/0001-ola-fix-compilation-with-musl-1-2-3.patch lib_patch.Upstream
 package/olsr/0001-olsrd-migrate-to-using-bison-3.7.1.patch lib_patch.Upstream
 package/olsr/0002-lib-pud-Makefile-fix-parallel-build.patch lib_patch.Upstream
 package/olsr/0003-pud-adapt-to-API-changes-in-gpsd-3-20.patch lib_patch.Upstream
