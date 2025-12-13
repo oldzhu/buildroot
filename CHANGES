@@ -1,3 +1,18 @@
+2025.11, released December 11th, 2025
+
+	Fixes all over the tree.
+
+	linux: Default to 6.18 for runtime kernel and kernel headers,
+	drop the now EOL 5.4.x series.
+
+	Updated/fixed packages: apache, audit, cryptodev-linux,
+	dmraid, ficl, glibc, go, intel-mediadriver, intel-vpl-gpu-rt,
+	kbd, libcap, libdbi, libgit2, libpng, libtirpc, libxslt,
+	lugaru, mosh, pigz, podman, python-fonttools, python-urllib3,
+	python3, racehound, rdesktop, rtl8188eu, softhsm, sqlite,
+	strace, unbound, unzip, xapp_xkbutils,
+	xdriver_xf86-video-intel, xl2tp, xserver_xorg-server, xwayland
+
 2025.11-rc2, released November 30th, 2025
 
 	Fixes all over the tree.
@@ -52,6 +67,37 @@
 	leafpad, lesstif, libbson, libglade, libgtk2, libjwt, libsexy,
 	linphone, logsurfer, mediastreamer, metacity, mongrel2, ola,
 	ortp, procrank_linux, ramspeed, sylpheed
+
+2025.08.3, released December 11, 2025
+
+	Important / security related fixes:
+
+	- asterisk: CVE-2025-1131, CVE-2025-57767, CVE-2025-49832,
+	            CVE-2025-47780, CVE-2025-47779
+	- gnutls: CVE-2025-9820
+	- libpng: CVE-2025-64505, CVE-2025-64506, CVE-2025-64720, CVE-2025-65018
+	- luksmeta: CVE-2025-11568
+	- mariadb: CVE-2025-30693, CVE-2025-30722, CVE-2023-52969,
+	           CVE-2023-52970, CVE-2023-52971
+	- openvpn: CVE-2025-13086
+	- postgresql: CVE-2025-12817, CVE-2025-12818
+	- python-django: CVE-2025-64458, CVE-2025-64459
+	- python-startlette: GHSA-7f5h-v6xp-fcq8
+
+	Infrastructure updates/fixes:
+
+	- New script support/scripts/cve-check to enricht CycloneDX SBoM with
+	  CVE information from NVD database.
+
+	Updated / fixed packages: 18xx-ti-utils, asterisk, enscript, gnutls,
+	libpng, libroxml, libteam, linux-headers, luksmeta, mariadb, nbd, neard,
+	nss-pam-ldapd, open-plc-utils, openjdk, openjdk-bin, openvpn, oprofile,
+	pdmenu, perl-net-ssleay, postgresql, python-django, python-starlette,
+	redis, sane-bacends, sbc, sdbusplus, sdl, swipl, tailscale, thermald,
+	tmux, tor
+
+	Removed packages: bctoolbox, belle-sip, belr, linphone, mediastreamer,
+	mongrel2, ortp
 
 2025.08.2, released November 20, 2025
 
@@ -632,6 +678,36 @@
 
 	- netsnmp: unexpected header length in /proc/net/snmp...
 	  https://gitlab.com/buildroot.org/buildroot/-/issues/110
+
+2025.02.9, released December 11, 2025
+
+	Important / security related fixes:
+
+	- asterisk: CVE-2025-1131, CVE-2025-57767, CVE-2025-49832,
+	            CVE-2025-47780, CVE-2025-47779
+	- gnutls: CVE-2025-9820
+	- libpng: CVE-2025-64505, CVE-2025-64506, CVE-2025-64720, CVE-2025-65018
+	- luksmeta: CVE-2025-11568
+	- mariadb: CVE-2025-30693, CVE-2025-30722, CVE-2023-52969,
+	           CVE-2023-52970, CVE-2023-52971
+	- openvpn: CVE-2025-13086
+	- postgresql: CVE-2025-12817, CVE-2025-12818
+	- python-django: CVE-2025-64458, CVE-2025-64459
+	- python-startlette: GHSA-7f5h-v6xp-fcq8
+
+	Infrastructure updates/fixes:
+
+	- New script support/scripts/cve-check to enricht CycloneDX SBoM with
+	  CVE information from NVD database.
+
+	Updated / fixed packages: 18xx-ti-utils, asterisk, gnutls, libpng,
+	libroxml, libteam, linux-headers, luksmeta, mariadb, nbd, neard,
+	openjdk, openjdk-bin, openvpn, oprofile, perl-net-ssleay, postgresql,
+	python-django, python-starlette, redis, sdbusplus, sdl, swipl,
+	tailscale, thermald, tmux, tor
+
+	Removed packages: bctoolbox, belle-sip, belr, linphone, mediastreamer,
+	mongrel2, ortp
 
 2025.02.8, released November 20, 2025
 
