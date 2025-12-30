@@ -146,6 +146,194 @@ endif
 
 comment "Legacy options removed in 2026.02"
 
+config BR2_PACKAGE_RPI_USERLAND
+	bool "rpi-userland has been removed"
+	select BR2_LEGACY
+	help
+	  According to https://github.com/raspberrypi/userland, "This
+	  repo is ancient and deprecated. [...] If you are using code
+	  from here you should rethink your solution.".
+
+config BR2_PACKAGE_GST1_PLUGINS_BASE_LIB_OPENGL_DISPMANX
+	bool "gst1-plugins-base dispmanx option removed"
+	select BR2_LEGACY
+	help
+	  Due to the removal of the rpi-userland package, the dispmanx
+	  OpenGL plug-in from GStreamer plugin base has been removed.
+
+config BR2_PACKAGE_RPI_FIRMWARE_INSTALL_VCDBG
+	bool "rpi-firmware vcdbg option removed"
+	select BR2_LEGACY
+	help
+	  rpi-firmware upstream has dropped the vcdbg tool
+
+config BR2_PACKAGE_LIBDNET_PYTHON
+	bool "libdnet python module removed"
+	select BR2_LEGACY
+	help
+	  The libdnet Python module is no longer compatible with
+	  Python >= 3.13, so it had to be removed.
+
+config BR2_PACKAGE_LIBFREEIMAGE
+	bool "libfreeimage"
+	select BR2_LEGACY
+	help
+	  libfreeimage is unmaintained and has been removed
+
+config BR2_PACKAGE_OPENCV3
+	bool "opencv3"
+	select BR2_LEGACY
+	help
+	  opencv3 is unmaintained and has been removed
+
+config BR2_PACKAGE_VLC_OPENCV3_BACKEND
+	bool "opencv3 support in vlc has been removed"
+	select BR2_LEGACY
+	help
+	  OpenCV3 support in VLC has been reported, as OpenCV has been
+	  removed.
+
+config BR2_PACKAGE_CPPDB
+	bool "cppdb has been removed"
+	select BR2_LEGACY
+	help
+	  cppdb was no longer maintained upstream, and therefore was
+	  removed.
+
+config BR2_PACKAGE_PYTHON_AIOREDIS
+	bool "python-aioredis has been removed"
+	select BR2_LEGACY
+	select BR2_PACKAGE_PYTHON_REDIS
+	help
+	  python-aioredis was abandoned upstream and replaced by
+	  python-redis
+
+config BR2_PACKAGE_LIBCUEFILE
+	bool "libcuefile has been removed"
+	select BR2_LEGACY
+	help
+	  libcuefile is unmaintained and has been removed
+
+config BR2_PACKAGE_MPD_MUSEPACK
+	bool "musepack support in mpd has been removed"
+	select BR2_LEGACY
+	help
+	  musepack package is unmaintained and has been removed
+
+config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_MUSEPACK
+	bool "musepack support in gst1-plugins-bad has been removed"
+	select BR2_LEGACY
+	help
+	  musepack package is unmaintained and has been removed
+
+config BR2_PACKAGE_MUSEPACK
+	bool "musepack has been removed"
+	select BR2_LEGACY
+	help
+	  musepack is unmaintained and has been removed
+
+config BR2_PACKAGE_RACEHOUND
+	bool "racehound has been removed"
+	select BR2_LEGACY
+	help
+	  racehound is unmaintained and has been removed
+
+config BR2_PACKAGE_TASKD
+	bool "taskd has been removed"
+	select BR2_LEGACY
+	help
+	  taskd was deprecated upstream and has been removed
+
+config BR2_PACKAGE_SCONESERVER
+	bool "sconeserver has been removed"
+	select BR2_LEGACY
+	help
+	  sconeserver is unmaintained and has been removed
+
+config BR2_PACKAGE_QJSON
+	bool "qjson has been removed"
+	select BR2_LEGACY
+	help
+	  qjson was deprecated upstream and has been removed
+
+config BR2_PACKAGE_OPENTRACING_CPP
+	bool "opentracing-cpp has been removed"
+	select BR2_LEGACY
+	help
+	  opentracing-cpp was deprecated upstream and has been removed
+
+config BR2_PACKAGE_OPENPOWERLINK
+	bool "openpowerlink has been removed"
+	select BR2_LEGACY
+	help
+	  openpowerlink is unmaintained and has been removed
+
+config BR2_PACKAGE_ALURE
+	bool "alure has been removed"
+	select BR2_LEGACY
+	help
+	  alure is unmaintained and has been removed
+
+config BR2_PACKAGE_LIBUWSC
+	bool "libuwsc has been removed"
+	select BR2_LEGACY
+	help
+	  libuwsc is unmaintained and has been removed
+
+config BR2_PACKAGE_LIBIQRF
+	bool "libiqrf has been removed"
+	select BR2_LEGACY
+	help
+	  libiqrf is unmaintained and has been removed
+
+config BR2_PACKAGE_LIBCGI
+	bool "libcgi has been removed"
+	select BR2_LEGACY
+	help
+	  libcgi is unmaintained and has been removed
+
+config BR2_PACKAGE_LET_ME_CREATE
+	bool "let-me-create has been removed"
+	select BR2_LEGACY
+	help
+	  let-me-create is unmaintained and has been removed
+
+config BR2_PACKAGE_HAWKTRACER
+	bool "hawktracer has been removed"
+	select BR2_LEGACY
+	help
+	  hawktracer is unmaintained and has been removed
+
+config BR2_PACKAGE_CONNMAN_GTK
+	bool "connman-gtk has been removed"
+	select BR2_LEGACY
+	help
+	  connman-gtk is unmaintained and has been removed
+
+config BR2_PACKAGE_LIBMHASH
+	bool "libmhash has been removed"
+	select BR2_LEGACY
+	help
+	  libmhash is unmaintained and has been removed
+
+config BR2_PACKAGE_DMRAID
+	bool "dmraid has been removed"
+	select BR2_LEGACY
+	help
+	  dmraid is unmaintained and has been removed
+
+config BR2_PACKAGE_LIBNIDS
+	bool "libnids has been removed"
+	select BR2_LEGACY
+	help
+	  libnids is unmaintained and has been removed
+
+config BR2_TARGET_S500_BOOTLOADER
+	bool "s500-bootloader"
+	select BR2_LEGACY
+	help
+	  s500-bootloader package has been removed
+
 config BR2_PACKAGE_OPENCV3_WITH_FFMPEG
 	bool "opencv3 ffmpeg support removed"
 	select BR2_LEGACY
@@ -5950,8 +6138,6 @@ config BR2_PACKAGE_OPENPOWERLINK_KERNEL_MODULE
 	help
 	  openpowerlink kernel modules are built if the
 	  kernel stack library is selected.
-# Note: BR2_PACKAGE_OPENPOWERLINK_KERNEL_MODULE is still referenced from
-# package/openpowerlink/Config.in
 
 config BR2_PACKAGE_OPENPOWERLINK_LIBPCAP
 	bool "openpowerlink package has been updated"
@@ -5960,8 +6146,6 @@ config BR2_PACKAGE_OPENPOWERLINK_LIBPCAP
 	  The user space support has been split in two part:
 	  - a monolithic user space library
 	  - a user space daemon driver
-# Note: BR2_PACKAGE_OPENPOWERLINK_LIBPCAP is still referenced from
-# package/openpowerlink/Config.in
 
 config BR2_LINUX_KERNEL_SAME_AS_HEADERS
 	bool "using the linux headers version for the kernel has been removed"
