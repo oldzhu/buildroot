@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-KVMTOOL_VERSION = 1117dbc8ceb21abc6e8cd9861450695995852290
+KVMTOOL_VERSION = 7ad32e5514aca2b6d19398fd3ae5a7c5e0e1ce24
 KVMTOOL_SITE = https://git.kernel.org/pub/scm/linux/kernel/git/will/kvmtool.git
 KVMTOOL_SITE_METHOD = git
 KVMTOOL_DEPENDENCIES = \
@@ -22,7 +22,7 @@ KVMTOOL_CPE_ID_VALID = YES
 # Disable -Werror, otherwise musl is not happy
 KVMTOOL_MAKE_OPTS = \
 	CROSS_COMPILE="$(TARGET_CROSS)" \
-	LDFLAGS="$(TARGET_LDFLAGS) $(KVMTOOL_EXTRA_LDFLAGS)" \
+	LDFLAGS="$(TARGET_LDFLAGS)" \
 	WERROR=0
 
 define KVMTOOL_BUILD_CMDS
