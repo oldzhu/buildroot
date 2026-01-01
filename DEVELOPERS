@@ -88,7 +88,9 @@ F:	package/cpp-httplib/
 
 N:	Alexander Shirokov <shirokovalexs@gmail.com>
 F:	package/broot/
+F:	package/kibi/
 F:	package/nnn/
+F:	package/zellij/
 
 N:	Alessandro Partesotti <a.partesotti@gmail.com>
 F:	package/oatpp/
@@ -435,6 +437,7 @@ F:	package/libnpth/
 F:	package/libogg/
 F:	package/libopenh264/
 F:	package/libpciaccess/
+F:	package/libplacebo/
 F:	package/libplatform/
 F:	package/libpng/
 F:	package/libsidplay2/
@@ -1710,10 +1713,7 @@ F:	package/erlang-p1-yconf/
 F:	package/erlang-p1-zlib/
 F:	package/erlang-stun/
 F:	package/erlang-xmpp/
-F:	package/forge/
 F:	package/nginx-dav-ext/
-F:	package/vis-network/
-F:	package/vuejs/
 
 N:	John Stile <johns@msli.com>
 F:	package/dhcpcd/
@@ -3051,9 +3051,6 @@ F:	package/czmq/
 F:	package/filemq/
 F:	package/googlefontdirectory/
 F:	package/jansson/
-F:	package/jquery-ui/
-F:	package/jquery-ui-themes/
-F:	package/json-javascript/
 F:	package/lcdapi/
 F:	package/libfreefare/
 F:	package/libjson/
@@ -3180,9 +3177,6 @@ F:	configs/pine64_star64_defconfig
 
 N:	Thomas Claveirole <thomas.claveirole@green-communications.fr>
 F:	package/fcgiwrap/
-F:	package/openlayers/
-F:	package/vuejs/
-F:	package/vuejs-router/
 
 N:	Thomas Devoogdt <thomas@devoogdt.com>
 F:	package/fluent-bit/
@@ -3480,7 +3474,6 @@ F:	package/acl/
 F:	package/attr/
 F:	package/avrdude/
 F:	package/boost/
-F:	package/bootstrap/
 F:	package/cannelloni/
 F:	package/can-utils/
 F:	package/circus/
@@ -3488,8 +3481,6 @@ F:	package/dhcpcd/
 F:	package/feh/
 F:	package/hostapd/
 F:	package/imlib2/
-F:	package/jquery-datetimepicker/
-F:	package/jquery-sidebar/
 F:	package/kmod/
 F:	package/libftdi1/
 F:	package/libical/
@@ -3552,3 +3543,4 @@ F:	package/quazip/
 F:	package/shapelib/
 F:	package/simple-mail/
 F:	package/tinc/
+F:	support/testing/tests/package/test_quazip.py
