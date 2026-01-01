@@ -301,7 +301,6 @@ package/davfs2/0001-src-Makefile.am-do-not-hardcode-fstack-protector-str.patch l
 package/dbus-cpp/0001-gcc4.7.patch lib_patch.Upstream
 package/dbus-cpp/0002-cross-compile-tools.patch lib_patch.Upstream
 package/dbus-cpp/0003-src-pipe.c-fix-build-error-with-gcc-7.x.patch lib_patch.Upstream
-package/dbus/S30dbus Shellcheck lib_sysv.Indent lib_sysv.TrailingSpace lib_sysv.Variables
 package/dc3dd/0001-no_man.patch lib_patch.Upstream
 package/dc3dd/0002-fix-autoreconf.patch lib_patch.Upstream
 package/dc3dd/0003-fix-for-glibc-2.28.patch lib_patch.Upstream
@@ -334,9 +333,7 @@ package/ebtables/0001-replace-ebtables-save-perl-script-with-bash.patch lib_patc
 package/ecryptfs-utils/0001-musl.patch lib_patch.Upstream
 package/ecryptfs-utils/0002-openssl110.patch lib_patch.Upstream
 package/ecryptfs-utils/0003-fix-parallel-build-issue.patch lib_patch.Upstream
-package/efl/0001-ecore_evas-engines-drm-meson.build-use-gl_deps-as-en.patch lib_patch.Upstream
-package/efl/0002-ecore_evas-engines-drm-meson.build-fix-gl_drm-includ.patch lib_patch.Upstream
-package/efl/0003-ecore_fb-fix-build-with-tslib.patch lib_patch.Upstream
+package/efl/0001-ecore_fb-fix-build-with-tslib.patch lib_patch.Upstream
 package/eigen/0001-Adds-new-CMake-Options-for-controlling-build-compone.patch lib_patch.Upstream
 package/elftosb/0001-fixes-includes.patch lib_patch.Upstream
 package/elftosb/0002-force-cxx-compiler.patch lib_patch.Upstream
@@ -742,8 +739,8 @@ package/olsr/0006-build-patch-for-gpsd-3-25.patch lib_patch.Upstream
 package/olsr/S50olsr Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch lib_patch.Upstream
 package/open2300/0001-fix-makefile.patch lib_patch.Upstream
-package/openjdk/17.0.9+9/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch lib_patch.Upstream
-package/openjdk/21.0.1+12/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch lib_patch.Upstream
+package/openjdk/17.0.12+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch lib_patch.Upstream
+package/openjdk/21.0.4+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch lib_patch.Upstream
 package/openldap/0001-fix-bignum.patch lib_patch.Upstream
 package/openldap/0002-disable-docs.patch lib_patch.Upstream
 package/openntpd/S49ntp Shellcheck lib_sysv.Variables
@@ -928,15 +925,6 @@ package/snort/0005-fix-sparc.patch lib_patch.Upstream
 package/snort/0006-Fix-compile-error-when-building-against-uclibc-or-mu.patch lib_patch.Upstream
 package/snort/0007-Fix-error-when-building-on-a-Fedora-host-machine.patch lib_patch.Upstream
 package/snort/0008-Fix-NO-OPTIMIZE.patch lib_patch.Upstream
-package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch lib_patch.Upstream
-package/softether/0002-Create-libsoftether.so-and-dynamically-link.patch lib_patch.Upstream
-package/softether/0003-use-fhs-install-directories.patch lib_patch.Upstream
-package/softether/0004-create-non-forking-softetherd-for-upstart-and-systemd.patch lib_patch.Upstream
-package/softether/0005-change-GetExeDir-to-GetStateDir-in-Cedar-and-Mayaqua.patch lib_patch.Upstream
-package/softether/0006-cross-compile.patch lib_patch.Upstream
-package/softether/0007-iconv.patch lib_patch.Upstream
-package/softether/0008-librt.patch lib_patch.Upstream
-package/softether/0009-uclibc-ai-addrconfig.patch lib_patch.Upstream
 package/solarus/0001-cmake-remove-Werror.patch lib_patch.Upstream
 package/solarus/0002-Add-a-basic-FindOpenGLES2.cmake.patch lib_patch.Sob lib_patch.Upstream
 package/sox/0001-Make-SoX-support-uclibc-based-toolchains.patch lib_patch.Upstream
@@ -1082,10 +1070,6 @@ package/xen/0001-9pfs-include-linux-limits.h-for-XATTR_SIZE_MAX.patch lib_patch.
 package/xen/0002-Fix-build-with-64-bits-time_t.patch lib_patch.Upstream
 package/xen/0003-libs-light-fix-tv_sec-printf-format.patch lib_patch.Upstream
 package/xen/0004-libs-light-fix-tv_sec-fprintf-format.patch lib_patch.Upstream
-package/xinetd/0001-ar.patch lib_patch.Upstream
-package/xinetd/0002-destdir.patch lib_patch.Upstream
-package/xinetd/0003-rpc-fix.patch lib_patch.Upstream
-package/xinetd/0004-configure-rlim_t.patch lib_patch.Upstream
 package/xl2tp/xl2tpd lib_shellscript.TrailingSpace
 package/xml-security-c/0001-fix-build-with-libressl-3.5.0.patch lib_patch.Upstream
 package/yajl/0001-Let-the-shared-and-the-static-library-have-the-same-.patch lib_patch.Upstream
