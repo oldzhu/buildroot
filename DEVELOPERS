@@ -1120,8 +1120,13 @@ N:	Fiona Klute <fiona.klute@gmx.de>
 F:	package/*/S*
 F:	package/panel-mipi-dbi-firmware/
 F:	package/python-aiomqtt/
+F:	package/python-markdown-it-py/
+F:	package/python-mdurl/
+F:	package/python-platformdirs/
 F:	package/python-pyasynchat/
 F:	package/python-pyasyncore/
+F:	package/python-rich/
+F:	package/python-textual/
 F:	support/testing/tests/package/sample_python_networkmanager_goi.py
 F:	support/testing/tests/package/sample_python_pyroute2.py
 F:	support/testing/tests/package/test_nftables.py
@@ -2735,6 +2740,9 @@ F:	package/libqrencode/
 F:	package/psplash/
 F:	package/sispmctl/
 F:	package/zsh/
+
+N:	Philip Molloy <philip@philipmolloy.com>
+F:	package/adsp-ldr/
 
 N:	Philipp Richter <richterphilipp.pops@gmail.com>
 F:	package/libtorrent-rasterbar/
