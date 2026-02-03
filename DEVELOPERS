@@ -2263,6 +2263,7 @@ F:	package/picotool/
 F:	package/python-annotated-doc/
 F:	package/python-apscheduler/
 F:	package/python-crc/
+F:	package/python-diskcache/
 F:	package/python-django/
 F:	package/python-gpiod/
 F:	package/python-immutabledict/
@@ -2280,6 +2281,7 @@ F:	package/python-waitress/
 F:	package/python-whitenoise/
 F:	support/testing/tests/package/test_python_apscheduler.py
 F:	support/testing/tests/package/test_python_crc.py
+F:	support/testing/tests/package/test_python_diskcache.py
 F:	support/testing/tests/package/test_python_django.py
 F:	support/testing/tests/package/test_python_fastapi.py
 F:	support/testing/tests/package/test_python_pydantic.py
@@ -2293,6 +2295,7 @@ F:	support/testing/tests/package/test_python_waitress.py
 F:	support/testing/tests/package/test_python_whitenoise.py
 F:	support/testing/tests/package/sample_python_apscheduler.py
 F:	support/testing/tests/package/sample_python_crc.py
+F:	support/testing/tests/package/sample_python_diskcache.py
 F:	support/testing/tests/package/sample_python_django.py
 F:	support/testing/tests/package/sample_python_fastapi.py
 F:	support/testing/tests/package/sample_python_pydantic.py
@@ -3368,10 +3371,17 @@ F:	package/edk2-non-osi/
 F:	support/testing/tests/boot/test_edk2.py
 
 N:	Vincent Stehlé <vincent.stehle@laposte.net>
+F:	arch/Config.in.hppa
+F:	arch/arch.mk.hppa
 F:	board/arm/foundation-v8/
 F:	board/bananapi/bananapi-m2-zero/
+F:	board/hp/9000/
+F:	board/qemu/hppa-b160l/
+F:	boot/palo/
 F:	configs/arm_foundationv8_defconfig
 F:	configs/bananapi_m2_zero_defconfig
+F:	configs/hp_9000_defconfig
+F:	configs/qemu_hppa_b160l_defconfig
 F:	configs/uevm5432_defconfig
 F:	package/i7z/
 F:	package/msr-tools/

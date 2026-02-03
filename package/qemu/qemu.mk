@@ -6,7 +6,7 @@
 
 # When updating the version, check whether the list of supported targets
 # needs to be updated.
-QEMU_VERSION = 10.1.0
+QEMU_VERSION = 10.2.0
 QEMU_SOURCE = qemu-$(QEMU_VERSION).tar.xz
 QEMU_SITE = https://download.qemu.org
 QEMU_SELINUX_MODULES = qemu virt
@@ -369,6 +369,7 @@ HOST_QEMU_DEPENDENCIES = \
 #       -------         ----
 #       arm             arm
 #       armeb           armeb
+#       hppa            hppa
 #       i486            i386
 #       i586            i386
 #       i686            i386
