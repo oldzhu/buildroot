@@ -1,6 +1,6 @@
 # From https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256  303079a8250b8f381f82b03f90463d12ac98d4f6b149b761ea75af1323521357  linux-6.19.tar.xz
-sha256  030115ff8fb4cb536d8449dc40ebc3e314e86ba1b316a6ae21091a11cc930578  linux-6.18.9.tar.xz
+sha256  0e474968adfcbee32916fd01a89d8ccfd1168d8d32569e76a5c664c793198ebe  linux-6.19.3.tar.xz
+sha256  ed2c3c55fd38e6836c094fce356f2567f9516130b73354a29857960368c5687f  linux-6.18.13.tar.xz
 
 # Licenses hashes
 sha256  fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0  COPYING
