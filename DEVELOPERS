@@ -1167,6 +1167,9 @@ F:	package/tbb/
 N:	Francisco Gonzalez <gzmorell@gmail.com>
 F:	package/ser2net/
 
+N:	Franciszek Stachura <fbstachura@gmail.com>
+F:	support/testing/tests/package/test_memcached.py
+
 N:	Francois Dugast <francois.dugast.foss@gmail.com>
 F:	board/sipeed/licheepi_nano/
 F:	board/visionfive2/
@@ -3478,6 +3481,17 @@ F:	boot/ti-k3-boot-firmware/
 F:	boot/ti-k3-r5-loader/
 F:	configs/ti_am62x_sk_defconfig
 F:	configs/ti_am64x_sk_defconfig
+
+N:	Xukai Wang <kingxukai@zohomail.com>
+F:	package/python-cloudpickle/
+F:	package/python-farama-notifications/
+F:	package/python-gymnasium/
+F:	support/testing/tests/package/sample_python_cloudpickle.py
+F:	support/testing/tests/package/sample_python_farama_notifications.py
+F:	support/testing/tests/package/sample_python_gymnasium.py
+F:	support/testing/tests/package/test_python_cloudpickle.py
+F:	support/testing/tests/package/test_python_farama_notifications.py
+F:	support/testing/tests/package/test_python_gymnasium.py
 
 N:	Yair Ben Avraham <yairba@protonmail.com>
 F:	package/casync/
