@@ -353,7 +353,6 @@ package/freescale-imx/imx-uuc/S80imx-uuc Shellcheck lib_sysv.Indent lib_sysv.Var
 package/freescale-imx/imx-vpu-hantro/0001-Fix-ion.h-header-inclusion-to-be-standard.patch lib_patch.Upstream
 package/freescale-imx/imx-vpu-hantro/0002-Fix-build-with-uclibc-toolchain.patch lib_patch.Upstream
 package/freescale-imx/imx-vpu-hantro/0003-Fix-Linux-kernel-version-header.patch lib_patch.Upstream
-package/freeswitch/0001-libs-srtp-crypto-hash-hmac_ossl.c-fix-build-with-lib.patch lib_patch.Upstream
 package/frr/S50frr Shellcheck
 package/fstrcmp/0001-disable-rpath.patch lib_patch.Upstream
 package/ftop/0001-overflow.patch lib_patch.Upstream
@@ -743,8 +742,6 @@ package/paxtest/0001-genpaxtest-move-log-location.patch lib_patch.Upstream
 package/paxtest/0002-paxtest-page-alignment-ARM-and-NIOS2-arch.patch lib_patch.Upstream
 package/pcm-tools/0001-pmu-query.py-fix-python3-errors-add-linux-platform-s.patch lib_patch.Upstream
 package/pcmanfm/0001-po-de-po-fix-build-with-gettext-tiny.patch lib_patch.Upstream
-package/pcre/0001-Kill-compatibility-bits.patch lib_patch.Upstream
-package/pcre/0002-Disable-C-unit-tests.patch lib_patch.Upstream
 package/pdmenu/0001-autoconf-makeinfo.in-link-with-INTLLIBS-if-needed.patch lib_patch.Upstream
 package/pdmenu/0002-Makefile-autoconf-makeinfo.in-support-build-install-.patch lib_patch.Upstream
 package/perl-net-ssleay/0001-fix-build-system.patch lib_patch.Upstream
@@ -861,9 +858,6 @@ package/sentry-native/0001-sentry.h-include-ucontext.h.patch lib_patch.Upstream
 package/ser2net/S50ser2net Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/setools/0001-Do-not-export-use-setools.InfoFlowAnalysis-and-setoo.patch lib_patch.Upstream
 package/setserial/0001-build-system-fix.patch lib_patch.Upstream
-package/shadowsocks-libev/0001-configure.ac-use-pkg-config-to-find-netfilter_conntr.patch lib_patch.Upstream
-package/shadowsocks-libev/0002-fix-maybe-uninitialized-errors.patch lib_patch.Upstream
-package/shadowsocks-libev/0003-lib-Makefile.am-remove-static-from-LDFLAGS.patch lib_patch.Upstream
 package/shairport-sync/S99shairport-sync Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/shared-mime-info/0001-Remove-incorrect-dependency-from-install-data-hook.patch lib_patch.Upstream
 package/shellinabox/0001-Makefile-disable-always-building-statically.patch lib_patch.Upstream
