@@ -146,6 +146,22 @@ endif
 
 comment "Legacy options removed in 2026.05"
 
+config BR2_PACKAGE_LIBHDHOMERUN
+	bool "libhdhomerun"
+	select BR2_LEGACY
+	help
+	  libhdhomerun was removed from Buildroot as it was
+	  insufficiently maintained. It can be re-added if someone
+	  volunteers to  maintain it.
+
+config BR2_PACKAGE_KODI_PVR_HDHOMERUN
+	bool "kodi-pvr-hdhomerun"
+	select BR2_LEGACY
+	help
+	  kodi-pvr-hdhomerun was removed from Buildroot as it was
+	  insufficiently maintained. It can be re-added if someone
+	  volunteers to maintain it.
+
 config BR2_PACKAGE_ZEEK
 	bool "zeek removed"
 	select BR2_LEGACY
@@ -277,6 +293,13 @@ config BR2_BINUTILS_VERSION_2_43_X
 	help
 	  binutils 2.43 has been removed, select a newer version
 	  instead.
+
+config BR2_parisc10
+	bool "PA-RISC architecture version 1.0 support removed"
+	select BR2_LEGACY
+	help
+	  Following the build issues with glibc 2.43, Buildroot has
+	  removed support for this architecture version.
 
 comment "Legacy options removed in 2026.02"
 
