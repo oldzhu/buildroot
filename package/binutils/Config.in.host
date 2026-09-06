@@ -7,12 +7,9 @@ config BR2_PACKAGE_HOST_BINUTILS_SUPPORTS_CFI
 
 choice
 	prompt "Binutils Version"
-	default BR2_BINUTILS_VERSION_2_45_X
+	default BR2_BINUTILS_VERSION_2_46_X
 	help
 	  Select the version of binutils you wish to use.
-
-config BR2_BINUTILS_VERSION_2_44_X
-	bool "binutils 2.44"
 
 config BR2_BINUTILS_VERSION_2_45_X
 	bool "binutils 2.45.1"
@@ -20,13 +17,16 @@ config BR2_BINUTILS_VERSION_2_45_X
 config BR2_BINUTILS_VERSION_2_46_X
 	bool "binutils 2.46.1"
 
+config BR2_BINUTILS_VERSION_2_47_X
+	bool "binutils 2.47"
+
 endchoice
 
 config BR2_BINUTILS_VERSION
 	string
-	default "2.44"		if BR2_BINUTILS_VERSION_2_44_X
 	default "2.45.1"	if BR2_BINUTILS_VERSION_2_45_X
 	default "2.46.1"	if BR2_BINUTILS_VERSION_2_46_X
+	default "2.47"		if BR2_BINUTILS_VERSION_2_47_X
 
 config BR2_BINUTILS_GPROFNG
 	bool "gprofng support"

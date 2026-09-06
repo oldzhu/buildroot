@@ -11,9 +11,9 @@ class TestAgec(infra.basetest.BRTest):
 
     # generate keypair in file and return pubkey
     def generate_keypair(self, filename):
-        self.assertRunOk(f"agec-keygen > {filename}")
+        self.assertRunOk(f"agecgen > {filename}")
 
-        output, exit_code = self.emulator.run(f"agec-keygen -y < {filename}")
+        output, exit_code = self.emulator.run(f"agecgen -y < {filename}")
         self.assertEqual(exit_code, 0)
         pubkey = output[0].strip()
         self.assertNotEqual(pubkey, "")
@@ -36,7 +36,7 @@ class TestAgec(infra.basetest.BRTest):
         encrypted_file = decrypted_file + ".age"
 
         # should output a valid looking keypair to stdout
-        output, exit_code = self.emulator.run("agec-keygen")
+        output, exit_code = self.emulator.run("agecgen")
         self.assertEqual(exit_code, 0)
         self.assertIn("public key:", output[0])
         self.assertIn("AGE-SECRET-KEY-", output[1])

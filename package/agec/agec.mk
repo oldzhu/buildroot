@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-AGEC_VERSION = 0.1.0
+AGEC_VERSION = 1.0.0
 AGEC_SOURCE = $(AGEC_VERSION).tar.gz
 AGEC_SITE = https://git.sr.ht/~min/agec/archive
 AGEC_LICENSE = 0BSD
