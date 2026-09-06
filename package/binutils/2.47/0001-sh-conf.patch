@@ -1,4 +1,4 @@
-From d5f66b0da8d1e0ed091bff65f8a4db10a82a5420 Mon Sep 17 00:00:00 2001
+From 0bf75276c392cac7794e78e1572abcd793d99e4e Mon Sep 17 00:00:00 2001
 From: Romain Naour <romain.naour@gmail.com>
 Date: Fri, 25 Dec 2015 11:38:13 +0100
 Subject: [PATCH] sh-conf
@@ -14,6 +14,8 @@ Upstream: N/A [Buildroot specific]
 Signed-off-by: Romain Naour <romain.naour@gmail.com>
 [Thomas: rebase on top of 2.29, in which sh64 support was removed.]
 Signed-off-by: Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
+[Bernd: rebased for version 2.47]
+Signed-off-by: Bernd Kuhls <bernd@kuhls.net>
 ---
  configure    | 2 +-
  configure.ac | 2 +-
@@ -23,9 +25,9 @@ diff --git a/configure b/configure
 index bbfb5979546..bcd95684ae1 100755
 --- a/configure
 +++ b/configure
-@@ -4056,7 +4056,7 @@ case "${target}" in
+@@ -4197,7 +4197,7 @@
    nvptx*-*-*)
-     noconfigdirs="$noconfigdirs target-libssp target-libstdc++-v3 target-libobjc"
+     noconfigdirs="$noconfigdirs target-libssp"
      ;;
 -  sh-*-*)
 +  sh*-*-*)
@@ -36,9 +38,9 @@ diff --git a/configure.ac b/configure.ac
 index f9694cdf901..d6a3623ba50 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -1278,7 +1278,7 @@ case "${target}" in
+@@ -1366,7 +1366,7 @@
    nvptx*-*-*)
-     noconfigdirs="$noconfigdirs target-libssp target-libstdc++-v3 target-libobjc"
+     noconfigdirs="$noconfigdirs target-libssp"
      ;;
 -  sh-*-*)
 +  sh*-*-*)
@@ -46,5 +48,5 @@ index f9694cdf901..d6a3623ba50 100644
        sh*-*-elf)
           ;;
 -- 
-2.48.1
+2.51.1
 

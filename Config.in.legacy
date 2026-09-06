@@ -144,6 +144,34 @@ endif
 
 ###############################################################################
 
+comment "Legacy options removed in 2026.11"
+
+config BR2_BINUTILS_VERSION_2_44_X
+	bool "binutils 2.44 has been removed"
+	select BR2_LEGACY
+	help
+	  binutils 2.44 has been removed, select a newer version
+	  instead.
+
+config BR2_KERNEL_HEADERS_7_1
+	bool "kernel headers version 7.1.x are no longer supported"
+	select BR2_LEGACY
+	help
+	  Version 7.1.x of the Linux kernel headers are no longer
+	  maintained upstream and are now removed.
+
+config BR2_PACKAGE_WESTON_SCREENSHARE
+	bool "weston screenshare option removed"
+	select BR2_LEGACY
+	help
+	  Weston screenshare option was removed in v16.0.0.
+
+config BR2_PACKAGE_WESTON_SHELL_FULLSCREEN
+	bool "weston fullscreen shell removed"
+	select BR2_LEGACY
+	help
+	  Weston fullscreen shell option was removed in v16.0.0.
+
 comment "Legacy options removed in 2026.08"
 
 config BR2_PACKAGE_FLUIDSYNTH_SDL2

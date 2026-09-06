@@ -8,7 +8,7 @@
 # If not, we do like other packages
 BINUTILS_VERSION = $(call qstrip,$(BR2_BINUTILS_VERSION))
 ifeq ($(BINUTILS_VERSION),)
-BINUTILS_VERSION = 2.45.1
+BINUTILS_VERSION = 2.46.1
 endif # BINUTILS_VERSION
 
 BINUTILS_SITE ?= $(BR2_GNU_MIRROR)/binutils
