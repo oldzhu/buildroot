@@ -1,7 +1,8 @@
 config BR2_PACKAGE_KODI_ARCH_SUPPORTS
 	bool
-	default y if BR2_PACKAGE_FFMPEG_ARCH_SUPPORTS
-	default y if BR2_PACKAGE_HOST_OPENJDK_BIN_ARCH_SUPPORTS
+	default y
+	depends on BR2_PACKAGE_FFMPEG_ARCH_SUPPORTS
+	depends on BR2_PACKAGE_HOST_OPENJDK_BIN_ARCH_SUPPORTS
 	# i386: needs sse (see upstream PR 10351)
 	depends on !(BR2_i386 && !BR2_X86_CPU_HAS_SSE)
 	# m68k not supported upstream
@@ -202,6 +203,7 @@ comment "nfs support needs a toolchain w/ threads support"
 
 config BR2_PACKAGE_KODI_MYSQL
 	bool "mysql"
+	depends on BR2_TOOLCHAIN_HAS_ATOMIC || BR2_TOOLCHAIN_HAS_SYNC_8 # mariadb
 	select BR2_PACKAGE_MARIADB
 	help
 	  Enable MySQL support
