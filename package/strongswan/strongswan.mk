@@ -42,6 +42,7 @@ STRONGSWAN_CONF_OPTS += \
 	--enable-eap-sim=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_SIM),yes,no) \
 	--enable-eap-sim-file=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_SIM_FILE),yes,no) \
 	--enable-eap-aka=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_AKA),yes,no) \
+	--enable-eap-aka-3gpp=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_AKA_3GPP),yes,no) \
 	--enable-eap-aka-3gpp2=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_AKA_3GPP2),yes,no) \
 	--enable-eap-simaka-sql=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_SIMAKA_SQL),yes,no) \
 	--enable-eap-simaka-pseudonym=$(if $(BR2_PACKAGE_STRONGSWAN_EAP_SIMAKA_PSEUDONYM),yes,no) \
@@ -68,6 +69,13 @@ endif
 
 # setup piddir if BR2_PACKAGE_STRONGSWAN_PIDDIR is not empty
 STRONGSWAN_CONF_OPTS += $(if $(call qstrip,$(BR2_PACKAGE_STRONGSWAN_PIDDIR)),--with-piddir=$(BR2_PACKAGE_STRONGSWAN_PIDDIR))
+
+ifeq ($(BR2_PACKAGE_SYSTEMD),y)
+STRONGSWAN_DEPENDENCIES += systemd
+STRONGSWAN_CONF_OPTS += --enable-systemd
+else
+STRONGSWAN_CONF_OPTS += --disable-systemd
+endif
 
 ifeq ($(BR2_PACKAGE_STRONGSWAN_NONROOT),y)
 STRONGSWAN_CONF_OPTS += \
