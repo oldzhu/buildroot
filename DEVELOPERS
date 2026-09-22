@@ -172,6 +172,7 @@ F:	package/xen/
 
 N:	Alsey Coleman Miller <alseycmiller@gmail.com>
 F:	package/liblc3/
+F:	package/plutovg/
 
 N:	Alvaro G. M <alvaro.gamez@hazent.com>
 F:	package/dcron/
@@ -2130,10 +2131,6 @@ F:	package/rockchip-rkbin/
 
 N:	Klaus Heinrich Kiwi <klaus@linux.vnet.ibm.com>
 F:	package/wqy-zenhei/
-
-N:	Koen Martens <gmc@sonologic.nl>
-F:	package/capnproto/
-F:	package/linuxconsoletools/
 
 N:	Kory Maincent <kory.maincent@bootlin.com>
 F:	board/octavo/osd32mp1-brk/
