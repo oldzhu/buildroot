@@ -1130,6 +1130,7 @@ N:	Falco Hyfing <hyfinglists@gmail.com>
 F:	package/python-pymodbus/
 
 N:	Fengwei Tan <tfx2001@outlook.com>
+F:	package/btop/
 F:	support/testing/tests/core/test_flat_stacksize.py
 
 N:	Fiona Klute <fiona.klute@gmx.de>
@@ -2861,6 +2862,7 @@ F:	support/testing/tests/package/sample_python_s3transfer.py
 F:	support/testing/tests/package/sample_python_sdbus.py
 F:	support/testing/tests/package/sample_python_sdbus_networkmanager.py
 F:	support/testing/tests/package/sample_python_urllib3.py
+F:	support/testing/tests/package/test_harfbuzz.py
 F:	support/testing/tests/package/test_nginx_modsecurity/
 F:	support/testing/tests/package/test_nginx_modsecurity.py
 F:	support/testing/tests/package/test_python_jmespath.py
@@ -3012,6 +3014,11 @@ F:	package/lrzip/
 N:	Sam Voss <sam.voss@gmail.com>
 F:	package/ripgrep/
 
+N:	Sebastian Michel <sebastian.michel@oss.othermo.de>
+F:	package/python-servestatic/
+F:	support/testing/tests/package/sample_python_servestatic.py
+F:	support/testing/tests/package/test_python_servestatic.py
+
 N:	Sébastien Szymanski <sebastien.szymanski@armadeus.com>
 F:	board/armadeus/
 F:	configs/armadeus*
@@ -3082,6 +3089,7 @@ F:	package/htop/
 F:	package/hyperfine/
 F:	package/libenca/
 F:	package/pv/
+F:	package/screenfetch/
 F:	package/unrar/
 F:	package/xterm/
 
