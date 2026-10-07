@@ -12,17 +12,22 @@ KMSXX_INSTALL_STAGING = YES
 KMSXX_DEPENDENCIES = fmt libdrm host-pkgconf
 KMSXX_CONF_OPTS = \
 	-Dkmscube=false \
-	-Dpykms=disabled \
 	-Domap=disabled
 
 ifeq ($(BR2_TOOLCHAIN_HAS_GCC_BUG_85180),y)
 KMSXX_CXXFLAGS += $(TARGET_CXXFLAGS) -O0
 endif
 
+ifeq ($(BR2_PACKAGE_KMSXX_PYKMS),y)
+KMSXX_CONF_OPTS += -Dpykms=enabled
+else
+KMSXX_CONF_OPTS += -Dpykms=disabled
+endif
+
 ifeq ($(BR2_PACKAGE_KMSXX_INSTALL_TESTS),y)
 KMSXX_CONF_OPTS += -Dutils=true
 # extra handling for some utils not installed by default
-KMSXX_EXTRA_UTILS = kmsview kmscapture
+KMSXX_EXTRA_UTILS = kmsview kmscapture kmsprint kmstest
 ifeq ($(BR2_PACKAGE_LIBEVDEV),y)
 KMSXX_DEPENDENCIES += libevdev
 KMSXX_EXTRA_UTILS += kmstouch
