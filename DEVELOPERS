@@ -973,9 +973,6 @@ F:	package/imx-mkimage/
 N:	Erik Stromdahl <erik.stromdahl@gmail.com>
 F:	package/mxsldr/
 
-N:	Ernesto L. Williams Jr <realcontrols@gmail.com>
-F:	package/szip/
-
 N:	Esben Haabendal <esben@haabendal.dk>
 F:	package/python-kiwisolver/
 
@@ -1148,6 +1145,9 @@ F:	support/testing/tests/package/sample_python_pyroute2.py
 F:	support/testing/tests/package/test_nftables.py
 F:	support/testing/tests/package/test_python_networkmanager_goi.py
 F:	support/testing/tests/package/test_python_pyroute2.py
+
+N:	Flaviu Nistor <flaviu.nistor@gmail.com>
+F:	package/python-cramjam/
 
 N:	Flávio Tapajós <flavio.tapajos@newtesc.com.br>
 F:	configs/asus_tinker-s_rk3288_defconfig
@@ -3239,10 +3239,28 @@ F:	package/kvm-unit-tests/
 F:	package/xorcurses/
 
 N:	Thomas Perale <thomas.perale@mind.be>
-F:	package/go/
-F:	utils/generate-cyclonedx
+F:	package/asterisk/
+F:	package/bind/
+F:	package/clamav/
+F:	package/containerd/
+F:	package/dpdk/
+F:	package/gnupg2/
+F:	package/haproxy/
+F:	package/libopenssl/
+F:	package/lxc/
+F:	package/mariadb/
+F:	package/mbedtls/
+F:	package/nodejs/
+F:	package/openjdk/
+F:	package/php/
+F:	package/python-django/
+F:	package/suricata/
+F:	package/subversion/
+F:	package/tor/
+F:	package/zabbix/
 F:	support/scripts/cve-check
 F:	support/scripts/cve.py
+F:	utils/generate-cyclonedx
 
 N:	Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 F:	arch/Config.in.arm
@@ -3569,6 +3587,7 @@ F:	package/feh/
 F:	package/hostapd/
 F:	package/imlib2/
 F:	package/kmod/
+F:	package/libaec/
 F:	package/libftdi1/
 F:	package/libical/
 F:	package/libmbim/
