@@ -57,7 +57,8 @@ UTIL_LINUX_CONF_OPTS += \
 	--disable-makeinstall-chown \
 	--disable-poman \
 	--disable-rpath \
-	--disable-year2038
+	--disable-year2038 \
+	--enable-fs-paths-default=/sbin:/usr/sbin
 
 UTIL_LINUX_LINK_LIBS = $(TARGET_NLS_LIBS)
 
@@ -126,6 +127,14 @@ endif
 UTIL_LINUX_CONF_OPTS += --without-ncursesw --without-ncurses
 endif
 
+# if ncurses is not available, try to fallback onto slang
+ifeq ($(BR2_PACKAGE_SLANG):$(BR2_PACKAGE_NCURSES),y:)
+UTIL_LINUX_DEPENDENCIES += slang
+UTIL_LINUX_CONF_OPTS += --with-slang
+else
+UTIL_LINUX_CONF_OPTS += --without-slang
+endif
+
 # workaround for static_assert on uclibc-ng < 1.0.42
 UTIL_LINUX_CONF_ENV += CFLAGS="$(TARGET_CFLAGS) -Dstatic_assert=_Static_assert"
 
@@ -135,6 +144,11 @@ UTIL_LINUX_CONF_ENV += CFLAGS="$(TARGET_CFLAGS) -Dstatic_assert=_Static_assert"
 # and then pass it again at build time.
 UTIL_LINUX_CONF_ENV += LIBS="$(UTIL_LINUX_LINK_LIBS)"
 UTIL_LINUX_MAKE_OPTS += LIBS="$(UTIL_LINUX_LINK_LIBS)"
+
+# pthread support uses pthread_atfork, which is not available on nommu
+ifeq ($(BR2_USE_MMU),)
+UTIL_LINUX_CONF_ENV += ac_cv_lib_pthread_pthread_atfork=no
+endif
 
 ifeq ($(BR2_PACKAGE_LIBSELINUX),y)
 UTIL_LINUX_DEPENDENCIES += libselinux
