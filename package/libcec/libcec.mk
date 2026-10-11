@@ -4,13 +4,13 @@
 #
 ################################################################################
 
-LIBCEC_VERSION = 7.1.1
+LIBCEC_VERSION = 8.1.7
 LIBCEC_SITE = $(call github,Pulse-Eight,libcec,libcec-$(LIBCEC_VERSION))
 LIBCEC_LICENSE = GPL-2.0+
 LIBCEC_LICENSE_FILES = LICENSE.md
 
 LIBCEC_INSTALL_STAGING = YES
-LIBCEC_DEPENDENCIES = host-pkgconf libplatform
+LIBCEC_DEPENDENCIES = host-pkgconf
 
 ifeq ($(BR2_PACKAGE_HAS_LIBUDEV),y)
 LIBCEC_DEPENDENCIES += libudev
@@ -29,5 +29,10 @@ LIBCEC_CONF_OPTS += -DHAVE_GIT_BIN="" \
 	-DHAVE_WHOAMI_BIN="" \
 	-DHAVE_HOSTNAME_BIN="" \
 	-DHAVE_UNAME_BIN=""
+
+# uses linux/cec.h, which was added in 4.10
+ifeq ($(BR2_TOOLCHAIN_HEADERS_AT_LEAST_4_10),y)
+LIBCEC_CONF_OPTS += -DHAVE_LINUX_API=ON
+endif
 
 $(eval $(cmake-package))

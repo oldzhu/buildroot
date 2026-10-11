@@ -450,7 +450,6 @@ F:	package/libogg/
 F:	package/libopenh264/
 F:	package/libpciaccess/
 F:	package/libplacebo/
-F:	package/libplatform/
 F:	package/libpng/
 F:	package/libsidplay2/
 F:	package/libsilk/
@@ -2466,6 +2465,8 @@ F:	package/protobuf/
 F:	package/sdbus-cpp/
 F:	package/spdlog/
 F:	package/sqlitecpp/
+F:	support/testing/tests/package/br2-external/sqlitecpp/
+F:	support/testing/tests/package/test_sqlitecpp.py
 
 N:	Michael Trimarchi <michael@amarulasolutions.com>
 F:	board/bsh/
@@ -3629,4 +3630,9 @@ F:	package/quazip/
 F:	package/shapelib/
 F:	package/simple-mail/
 F:	package/tinc/
+F:	support/testing/tests/package/test_libusb_compat.py
+F:	support/testing/tests/package/test_libusb_compat/
 F:	support/testing/tests/package/test_quazip.py
+
+N:	Shubham Chakraborty <chakrabortyshubham66@gmail.com>
+F:	package/zstd/
