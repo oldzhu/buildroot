@@ -1495,6 +1495,11 @@ F:	package/gcc-bare-metal/
 F:	package/newlib-bare-metal/
 F:	toolchain/toolchain-bare-metal-buildroot/
 
+N:	Igor Opaniuk <igor.opaniuk@oss.qualcomm.com>
+F:	package/qrtr/
+F:	package/rmtfs/
+F:	package/tqftpserv/
+
 N:	Ilias Apalodimas <apalos@gmail.com>
 F:	package/keepalived/
 
@@ -3502,10 +3507,12 @@ F:	board/stmicroelectronics/stm32f746-disco/
 F:	configs/qemu_riscv32_nommu_virt_defconfig
 F:	configs/stm32f746_disco_sd_defconfig
 F:	package/asterisk/
+F:	package/chawan/
 F:	package/evilwm/
 F:	package/fbv/
 F:	package/libpam-pkcs11/
 F:	package/mksh/
+F:	package/nim/
 F:	package/perl-cgi/
 F:	package/perl-cgi-session/
 F:	package/perl-log-message/
