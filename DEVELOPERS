@@ -2273,6 +2273,7 @@ F:	package/python-log-rate-limit/
 F:	package/python-pydantic/
 F:	package/python-pydantic-core/
 F:	package/python-pydantic-settings/
+F:	package/python-questionary/
 F:	package/python-typing-inspection/
 F:	package/python-tzlocal/
 F:	package/python-sdbus-modemmanager/
@@ -2280,6 +2281,7 @@ F:	package/python-sdbus-systemd/
 F:	package/python-varlink/
 F:	package/python-waitress/
 F:	package/python-whitenoise/
+F:	support/testing/tests/package/test_python_questionary.py
 
 N:	Marcin Bis <marcin@bis.org.pl>
 F:	package/bluez5_utils/
@@ -3243,8 +3245,10 @@ F:	package/fcgiwrap/
 
 N:	Thomas Devoogdt <thomas@devoogdt.com>
 F:	package/fluent-bit/
+F:	package/librdkafka/
 F:	package/libsoup3/
 F:	package/yq/
+F:	support/testing/tests/package/test_fluent_bit.py
 
 N:	Thomas Huth <th.huth+br@posteo.eu>
 F:	package/ascii-invaders/
