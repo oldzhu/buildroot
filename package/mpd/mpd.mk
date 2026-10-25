@@ -5,7 +5,7 @@
 ################################################################################
 
 MPD_VERSION_MAJOR = 0.24
-MPD_VERSION = $(MPD_VERSION_MAJOR).15
+MPD_VERSION = $(MPD_VERSION_MAJOR).17
 MPD_SOURCE = mpd-$(MPD_VERSION).tar.xz
 MPD_SITE = https://www.musicpd.org/download/mpd/$(MPD_VERSION_MAJOR)
 MPD_DEPENDENCIES = host-pkgconf fmt
@@ -26,6 +26,10 @@ MPD_CONF_OPTS = \
 	-Dpipewire=disabled \
 	-Dsidplay=disabled \
 	-Dsnapcast=false
+
+ifeq ($(BR2_ENABLE_RUNTIME_DEBUG),)
+MPD_CXXFLAGS = $(TARGET_CXXFLAGS) -DNDEBUG
+endif
 
 ifeq ($(BR2_PACKAGE_EXPAT),y)
 MPD_DEPENDENCIES += expat
