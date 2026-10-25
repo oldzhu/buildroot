@@ -25,8 +25,20 @@ else ifeq ($(BR2_PACKAGE_LIBFTDI),y)
 AVRDUDE_DEPENDENCIES += libftdi
 endif
 
+ifeq ($(BR2_PACKAGE_LIBSERIALPORT),y)
+AVRDUDE_DEPENDENCIES += libserialport
+else
+AVRDUDE_CONF_OPTS += -DHAVE_LIBSERIALPORT=OFF
+endif
+
 ifeq ($(BR2_PACKAGE_HIDAPI),y)
 AVRDUDE_DEPENDENCIES += hidapi
+endif
+
+ifeq ($(BR2_PACKAGE_READLINE),y)
+AVRDUDE_DEPENDENCIES += readline
+else
+AVRDUDE_CONF_OPTS += -DHAVE_LIBREADLINE=OFF
 endif
 
 $(eval $(cmake-package))
