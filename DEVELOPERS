@@ -225,6 +225,7 @@ N:	Angelo Compagnucci <angelo.compagnucci@gmail.com>
 F:	board/sipeed/lichee_rv/
 F:	board/sipeed/lichee_rv_dock/
 F:	configs/sipeed_lichee_rv*
+F:	docs/website/
 F:	package/apparmor/
 F:	package/corkscrew/
 F:	package/cups/
@@ -233,7 +234,7 @@ F:	package/cutekeyboard/
 F:	package/fail2ban/
 F:	package/grep/
 F:	package/gtkiostream/
-F:	package/htpdate/
+F:	package/httpdate/
 F:	package/i2c-tools/
 F:	package/jq/
 F:	package/libapparmor/
@@ -255,6 +256,7 @@ F:	package/qpdf/
 F:	package/qt5/qt5coap/
 F:	package/qt5/qt5knx/
 F:	package/qt5/qt5mqtt/
+F:	package/qt6/
 F:	package/rtl8723ds/
 F:	package/rtl8723ds-bt/
 F:	package/sam-ba/
@@ -1660,9 +1662,6 @@ F:	package/x11r7/xdriver_xf86-video-imx/
 N:	Jesse Taube <Mr.Bossman075@gmail.com>
 F:	board/freescale/imxrt1050evk/
 F:	configs/imxrt1050-evk_defconfig
-
-N:	Jesse Van Gavere <jesseevg@gmail.com>
-F:	package/qt6/
 
 N:	Jianhui Zhao <zhaojh329@gmail.com>
 F:	package/libuhttpd/

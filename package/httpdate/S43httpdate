@@ -1,18 +1,20 @@
 #!/bin/sh
 
-DAEMON="htpdate"
+DAEMON="httpdate"
 PIDFILE="/var/run/$DAEMON.pid"
 
-HTPDATE_ARGS="-a -s -t https://google.com"
+HTTPDATE_ARGS="-s https://www.google.com"
 
 # shellcheck source=/dev/null
 test -r "/etc/default/$DAEMON" && . "/etc/default/$DAEMON"
 
 start() {
 	printf 'Starting %s: ' "$DAEMON"
+	# httpdate does not write a pidfile, so run it in the foreground
+	# and let start-stop-daemon background it and write it.
 	# shellcheck disable=SC2086 # we need the word splitting
-	start-stop-daemon -S -q -x "/usr/sbin/$DAEMON" \
-		-- -D -i "$PIDFILE" $HTPDATE_ARGS
+	start-stop-daemon -S -q -b -m -p "$PIDFILE" -x "/usr/bin/$DAEMON" \
+		-- -F $HTTPDATE_ARGS
 	status=$?
 	if [ "$status" -eq 0 ]; then
 		echo "OK"
