@@ -146,6 +146,37 @@ endif
 
 comment "Legacy options removed in 2026.11"
 
+config BR2_PACKAGE_RTAI
+	bool "RTAI userspace has been removed"
+	select BR2_LEGACY
+	help
+	  RTAI is unmaintained and has been removed
+
+config BR2_LINUX_KERNEL_EXT_RTAI
+	bool "RTAI Real-time kernel patch has been removed"
+	select BR2_LEGACY
+	help
+	  RTAI is unmaintained and has been removed
+
+config BR2_LINUX_KERNEL_LATEST_CIP_RT_VERSION
+	bool "Latest CIP RT SLTS version has been removed"
+	select BR2_LEGACY
+	help
+	  The CIP RT SLTS kernel option has been removed. CIP does not
+	  provide a separate real-time kernel for its 6.12 SLTS series,
+	  as PREEMPT_RT is part of mainline Linux since 6.12. Use the
+	  latest CIP SLTS version and enable CONFIG_PREEMPT_RT in the
+	  kernel configuration instead.
+
+config BR2_PACKAGE_HTPDATE
+	bool "htpdate has been removed"
+	select BR2_LEGACY
+	select BR2_PACKAGE_HTTPDATE
+	help
+	  htpdate is in maintenance mode upstream, and its users are
+	  advised to migrate to its successor, httpdate, which is
+	  selected instead.
+
 config BR2_PACKAGE_MESA3D_OPENCL
 	bool "Mesa3D OpenCL support is now provided by RustiCL"
 	select BR2_LEGACY
