@@ -904,6 +904,10 @@ N:	Dimitrios Siganos <dimitris@siganos.org>
 F:	package/bvi/
 F:	package/wireless-regdb/
 
+N:	Dinh Nguyen <dinguyen@kernel.org>
+F:	board/altera/
+F:	configs/socfpga_agilex5_vendor_defconfig
+
 N:	Dmitry Chestnykh <dm.chestnykh@gmail.com>
 F:	board/qemu/sparc-ss10/
 F:	configs/qemu_sparc_ss10_defconfig
@@ -1372,6 +1376,9 @@ F:	package/vim/
 F:	package/wilc-driver/
 F:	package/wireshark/
 F:	package/zlib-ng/
+F:	support/testing/tests/package/test_swugenerator.py
+F:	support/testing/tests/package/test_swupdate.py
+F:	support/testing/tests/package/test_swupdate/
 F:	toolchain/
 
 N:	Graeme Smecher <gsmecher@threespeedlogic.com>
