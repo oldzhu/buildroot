@@ -6,6 +6,7 @@ import infra.basetest
 class TestGrubi386BIOS(infra.basetest.BRTest):
     config = \
         """
+        BR2_i386=y
         BR2_x86_core2=y
         BR2_TOOLCHAIN_EXTERNAL=y
         BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_CORE2_GLIBC_STABLE=y
@@ -28,7 +29,7 @@ class TestGrubi386BIOS(infra.basetest.BRTest):
 
     def test_run(self):
         hda = os.path.join(self.builddir, "images", "disk.img")
-        self.emulator.boot(arch="i386", options=["-hda", hda])
+        self.emulator.boot(arch="i386", options=["-cpu", "core2duo", "-hda", hda])
         self.emulator.login()
 
 
