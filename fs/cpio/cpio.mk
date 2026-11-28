@@ -83,6 +83,9 @@ define ROOTFS_CPIO_CMD
 	$(foreach m,$(ROOTFS_CPIO_DRACUT_MODULES), \
 		cp -a $(m)/* $(HOST_DIR)/lib/dracut/modules.d/
 	)
+	export DRACUT_ARCH="$(ARCH)"
+	export DRACUT_INSTALL_PATH=$(BR2_SYSTEM_DEFAULT_PATH)
+	$(if $(BR2_PACKAGE_NETWORK_MANAGER),export NM_VERSION="$(NETWORK_MANAGER_VERSION)")
 	$(HOST_DIR)/bin/dracut \
 		$(ROOTFS_CPIO_OPTS) \
 		-c $(ROOTFS_CPIO_DIR)/empty-config \
